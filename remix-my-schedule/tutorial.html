@@ -1,0 +1,270 @@
+<html>
+  <head>
+    <title>Remix My Schedule Tutorial</title>
+    <style>
+      body {
+        background-color: #EAEAEA;
+        color: white;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        padding: 20px;
+      }
+
+      .tutorial {
+        font-size: 16px;
+        padding: 35px;
+        color: #333;
+        background: #FFEC8D;
+        box-shadow: 0 1px 4px rgba(0,0,0,.2);
+      }
+
+      h1 {
+        font-size: 2.2em;
+        font-weight: normal;
+        margin: 0 0 15px 0;
+        padding: 0 0 5px 0;
+        border-bottom: solid 2px #C9B45B;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        font-weight: normal;
+        color: rgba(0,0,0,.8);
+      }
+
+      h2 {
+        font-size: 2em;
+        margin: 35px 0 5px 0;
+      }
+
+      h3 {
+        font-size: 1.8em;
+        margin: 30px 0 5px 0;
+      }
+
+      h4 {
+        font-size: 1.5em;
+        margin: 25px 0 5px 0;
+      }
+
+      h5 {
+        font-size: 1.2em;
+        margin: 20px 0 5px 0;
+        font-weight: bold
+      }
+
+      h6 {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 20px 0 5px 0;
+      }
+
+
+      code {
+        background: rgba(0,0,0,.1);
+        font-family: monospace;
+        padding: 1px 3px;
+        margin: 0 1px;
+      }
+
+      /* Steps list */
+
+      ol.steps {
+        list-style-type: none;
+        counter-reset: step-counter;
+        padding-left: 60px;
+        margin: 30px 0 30px 0;
+      }
+
+      ol.steps > li {
+        position: relative;
+        margin: 0 0 35px 0;
+        min-height: 50px;
+      }
+
+      ol.steps > li h6 {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: rgba(0,0,0,.6);
+      }
+
+      ol.steps > li p {
+        line-height: 140%;
+      }
+
+      ol.steps > li:before {
+        content: counter(step-counter);
+        counter-increment: step-counter;
+        position: absolute;
+        left: -60px;
+        font-size: 16px;
+        border: solid 2px rgba(0,0,0,.4);
+        border-radius: 50%;
+        padding: 10px 15px;
+        opacity: .5;
+        top: 2px;
+      }
+
+
+      a {
+        color: #357548;
+      }
+
+      a:hover {
+        color: #246036;
+      }
+
+      p, li {
+        color: rgba(0,0,0,.6);
+      }
+
+      p {
+        line-height: 125%;
+      }
+
+      .tip {
+        background: rgba(0,0,0,.1);
+        padding: 10px 14px;
+        border-radius: 2px;
+      }
+
+      hr {
+        border: none;
+        border-bottom: solid 2px #C9B45B;
+        margin: 25px 0;
+      }
+
+      p, ol, ul {
+        margin: 10px 0 20px 0;
+      }
+
+      li {
+        margin: 0 0 10px 0;
+      }
+
+      img {
+        display: block;
+        margin: 5px 0 10px;
+        border: solid 5px white;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+      }
+
+      .code {
+        background: #222;
+        padding: 10px 12px;
+        display: block;
+        font-size: 14px;
+        color: rgba(255,255,255,.8);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tutorial">
+
+      <h1>Remix My Schedule Tutorial</h1>
+      <p>
+<p>Hello and welcome!</p>
+
+<p>In this activity, you'll remix a traditional school schedule into something fantastic to have some fun at the start of a new school year.</p>
+
+<p>First, you'll change the title of the webpage using HTML, the language of the Web..</p>
+
+<p>Then, you'll change all of the usual, traditional classes on a school schedule into fantastic classes garaunteed to teach amazing things.</p>
+
+<p>Finally, you'll change the credits on the webpage using HTML so that people know you remixed this page.</p>
+
+      <ol class="steps">
+        <!-- Step 1-->
+        <li>
+            <h6>Change the title of the page</h6>
+			
+			<p>To change the title of Remix My Schedule, you'll edit <code>HTML</code>, the language of the Web.</p>
+			
+			<p>Go to <code>line </code>. Find the text between the <code>h1</code> tags.</p>
+			
+			<p>In HTML, <code>h1</code> tags and most others have an opening tag and a closing tag, and in the closing tag a <code>/</code> goes in front of the tag itself, like <code>/h1</code>. Brackets - like this <code><></code> go around each opening and closing tag. Check out the code to see what I mean.</p>
+	
+	
+	Try to change the words in the title, but leave the opening and closing <code>h1</code> tags alone. For example, you might call this page 'Best Schedule Ever' or 'My Amazing Classes.' The idea here is just to get some practice changing text so you can see how your webpage changes when you change the <code>HTML</code>.</p>
+        </li>
+
+        <!-- Step 2-->
+        <li>
+          <h6>Change your classes</h6>
+		  <p>To change the classes on your schedule, find the list on the page. It is an unordered list with <code>ul</code> tags. Unordered lists use bullet points on a webpage, while ordered lists use the <code>ol</code> tag to make numbered lists.</p>
+		  
+		  <p>Each item in a list is surrounded by list-item tags, or <code>li</code> tags.
+		  
+		  <p>Change each class in an <code>li</code> tag so that it becomes some kind of unbelievably cool class you would love to take. Make one of the classes your "best class ever" from our opening activity.</p>
+			  
+			  <p>For example, a remixed schedule might look like this</p>
+			  
+			  <blockquote>
+				  <code>
+				  	<ul>
+						<li><strong>Class 1:</strong> Game Design for Beginners</li>
+						<li><strong>Class 2:</strong> Sneaker Customization 101</li>
+						<li><strong>Class 3:</strong> Oraganizing Youth for Change</li>
+						<li><strong>Lunch</strong></li>
+						<li>...and so on.</li>
+					</ul>
+				  </code>
+			  </blockquote>
+			  
+			  <p>Be careful to tag each item correctly and to use a <code>/</code> to close each tag at the end of a line.</p>
+			  		 
+        </li>
+
+        <!-- Step 3 -->
+        <li>
+          <h6>Give yourself credit</h6>
+		  
+		  <p>Now that you've done all this work, give yourself credit for a job well done.</p>
+		  
+		  <p>Go to <code>line </code> and add 'Remixed by [you].' Use your first name or initial. Don't use your last name or give out any other personal information here. If you wonder if you should use your initial or name, ask a teacher for advice.</p>
+		  
+		  <p>The 'CC-BY' line here means that the page is licensed for other people to remix as long as they give the original maker credit. This kind of license is called a Creative Commons Attribution license because when you atribute something to someone, you say 'This was made by' whoever made it.</p>
+
+        </li>
+
+        <!-- Step 4 -->
+        
+        <li>
+          <h6>OPTIONAL: Mess around with the code</h6>
+		  
+		  <p>Congratulations on remixing <code>HTML</code>!</p>
+
+		  <p>If you'd like to explore and remix more of the page, you can remix the <code>stylesheet</code> file in the left sidebar called <code>style.css</code>. <code>CSS</code> stands for 'cascading stylesheet.' A <code>stylesheet</code> tells different parts of a webpage how to look. Change some of the number values you see in <code>style.css</code>to find out what happens to your page. Messing with things like <code>color</code> or <code>font-size</code> ought to cause big changes to your page.</p>
+		  
+		  <p>Even though you can include <code>CSS</code> on a webpage like <code>index.html</code>, we often save our <code>.css</code> files (and other files, like <code>.js</code> or images) separately so we can keep our code clean and use our <code>.css</code> files on several different webpages at once.</p>
+		  
+		  <p>If you're interested, try to find the background-colors and font colors in the stylesheet and change them to match your school colors. You can find HTML color codes at sites like <a href="https://www.w3schools.com/tags/ref_colorpicker.asp">this color picker</a>.</p>
+
+		  <p>Be sure to save, reload, and test your page often so you can undo any changes that completely break it.</p>
+		  
+		  
+	  </li>
+	  
+	  <!-- Step 5 -->
+	  
+	  <li>
+		  <h6>Share your remix</h6>
+		  
+		  <p>When you're ready to share your postcard, click 'Publish' in Thimble follow the link you get to see your new webpage.</p>
+		  
+		  <p>Once you've saved your page, copy the URL and send it to your teacher or ask your teacher to write it down for you. You can visit that web address from any Internet-connected device to share your work with family and friends.</p>
+		  
+		  <p>Share the URL with your family and ask your family members about their favorite classes and the fantastic things they want to learn next. You can remix their ideas into your make!</p>
+		  
+	  </li>
+
+      </ol>
+
+      <p>
+        Great job! You finished the tutorial! You can make your own tutorials for others to follow
+        by adding a <code>tutorial.html</code> page to any Thimble project.
+      </p>
+
+    </div>
+  </body>
+</html>

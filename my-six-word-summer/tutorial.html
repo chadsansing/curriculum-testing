@@ -1,0 +1,277 @@
+<html>
+  <head>
+    <title>My Six-Word Summer Tutorial</title>
+    <style>
+      body {
+        background-color: #EAEAEA;
+        color: white;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        padding: 20px;
+      }
+
+      .tutorial {
+        font-size: 16px;
+        padding: 35px;
+        color: #333;
+        background: #FFEC8D;
+        box-shadow: 0 1px 4px rgba(0,0,0,.2);
+      }
+
+      h1 {
+        font-size: 2.2em;
+        font-weight: normal;
+        margin: 0 0 15px 0;
+        padding: 0 0 5px 0;
+        border-bottom: solid 2px #C9B45B;
+      }
+
+      h1,h2,h3,h4,h5,h6 {
+        font-weight: normal;
+        color: rgba(0,0,0,.8);
+      }
+
+      h2 {
+        font-size: 2em;
+        margin: 35px 0 5px 0;
+      }
+
+      h3 {
+        font-size: 1.8em;
+        margin: 30px 0 5px 0;
+      }
+
+      h4 {
+        font-size: 1.5em;
+        margin: 25px 0 5px 0;
+      }
+
+      h5 {
+        font-size: 1.2em;
+        margin: 20px 0 5px 0;
+        font-weight: bold
+      }
+
+      h6 {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 20px 0 5px 0;
+      }
+
+
+      code {
+        background: rgba(0,0,0,.1);
+        font-family: monospace;
+        padding: 1px 3px;
+        margin: 0 1px;
+      }
+
+      /* Steps list */
+
+      ol.steps {
+        list-style-type: none;
+        counter-reset: step-counter;
+        padding-left: 60px;
+        margin: 30px 0 30px 0;
+      }
+
+      ol.steps > li {
+        position: relative;
+        margin: 0 0 35px 0;
+        min-height: 50px;
+      }
+
+      ol.steps > li h6 {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: rgba(0,0,0,.6);
+      }
+
+      ol.steps > li p {
+        line-height: 140%;
+      }
+
+      ol.steps > li:before {
+        content: counter(step-counter);
+        counter-increment: step-counter;
+        position: absolute;
+        left: -60px;
+        font-size: 16px;
+        border: solid 2px rgba(0,0,0,.4);
+        border-radius: 50%;
+        padding: 10px 15px;
+        opacity: .5;
+        top: 2px;
+      }
+
+
+      a {
+        color: #357548;
+      }
+
+      a:hover {
+        color: #246036;
+      }
+
+      p, li {
+        color: rgba(0,0,0,.6);
+      }
+
+      p {
+        line-height: 125%;
+      }
+
+      .tip {
+        background: rgba(0,0,0,.1);
+        padding: 10px 14px;
+        border-radius: 2px;
+      }
+
+      hr {
+        border: none;
+        border-bottom: solid 2px #C9B45B;
+        margin: 25px 0;
+      }
+
+      p, ol, ul {
+        margin: 10px 0 20px 0;
+      }
+
+      li {
+        margin: 0 0 10px 0;
+      }
+
+      img {
+        display: block;
+        margin: 5px 0 10px;
+        border: solid 5px white;
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+      }
+
+      .code {
+        background: #222;
+        padding: 10px 12px;
+        display: block;
+        font-size: 14px;
+        color: rgba(255,255,255,.8);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tutorial">
+
+      <h1>My Six-Word Summer Tutorial</h1>
+      <p>
+<p>Hello and welcome!</p>
+
+<p>In this activity, you'll remix a traditional six-word story about your summer vacation. You'll also use Creative Commons to search for a new image for your remixed webpage. Pictures licensed with a Creative Commons license let you use other people's work so long as you follow a few simple rules like giving them credit and sharing your remix, as well.</p>
+
+<p>First, you'll change the title of the webpage using HTML, the language of the Web..</p>
+
+<p>Then, you'll change the story on the webpage to be a story of your own.</p>
+
+<p>After that, you'll use the Creative Commons search page to find a new image for the background of your remixed webpage.
+
+<p>Finally, you'll change the credits on the webpage using HTML so that people know you remixed this page.</p>
+
+      <ol class="steps">
+        <!-- Step 1-->
+        <li>
+            <h6>Change the title of the page</h6>
+			
+			<p>To change the title of "My Six-Word Summer," you'll edit <code>HTML</code>, the language of the Web.</p>
+			
+			<p>Go to <code>line </code>. Find the text between the <code>h1</code> tags.</p>
+			
+			<p>In HTML, <code>h1</code> tags and most others have an opening tag and a closing tag, and in the closing tag a <code>/</code> goes in front of the tag itself, like <code>/h1</code>. Brackets - like this <code>< ></code> go around each opening and closing tag. Check out the code to see what I mean.</p>
+	
+	
+	Try to change the words in the title, but leave the opening and closing <code>h1</code> tags alone. For example, you might call this page 'Best Summer Ever' or 'My Boring Summer.' The idea here is just to get some practice changing text so you can see how your webpage changes when you change the <code>HTML</code>.</p>
+        </li>
+
+        <!-- Step 2-->
+        <li>
+          <h6>Change the six-word story</h6>
+		  
+		  <p>To change the story on your webpage, go to <code>line </code>, find the paragraph, or <code>p</code> with the <code>id</code> "mySummer." Delete the lines of text in the story and replace them with the story from your brainstorming or storyboarding. Be sure to stick with just six words!</p>
+			  		 
+        </li>
+		
+		<!-- Step 3 -->
+		
+		<li>
+			
+			<h6>Conduct a Creative Commons image search</h6>
+			
+			<p>Open a new tab or window under the 'File' menu in the upper left-hand corner of your screen. Go to the <a href=“http://search.creativecommons.org”>Creative Commons search page</a>. Images shared with a Creative Commons license are generally okay to use and share online. They are not as strictly controlled as copyrighted images.</p>
+
+			<p>Click on an image service you like and then use the search box to look for an image like the one you want for your story. Click through the thumbnail you find and get to the picture itself online. Then right-click on the picture and choose to copy the image address or location.</p>
+
+			<p>It's important, also, to make note of who took the picture you want to use so you can give the person credit later.</p>
+
+			<p>Be sure to ask for help if you're not sure if you have the right address for the picture or not.</p>
+			
+		</li>
+		
+		<!-- Step 4 -->
+		
+		<li>
+			
+			<h6>Change the background picture</h6>
+			
+			<p>Go to <code>line </code> and find the <code>img</code> tag. We use the <code>img</code> to embed images, or pictures, on webpages.  Find the part of your <code>img</code> tag that says <code>src</code>. Here, <code>src</code> stands for "source" - the source of the picture. The source we're going to use is the URL, or Web address, of the picture you found with your Creative COmmon search. Paste the URL (or Web address) of your new background picture over the old address now.</p>
+
+        <!-- Step 5 -->
+        <li>
+          <h6>Give yourself credit</h6>
+		  
+		  <p>Now that you've done all this work, give yourself credit for a job well done.</p>
+		  
+		  <p>Go to <code>line </code> and add 'Remixed by [you].' Use your first name or initial. Don't use your last name or give out any other personal information here. If you wonder if you should use your initial or name, ask a teacher for advice.</p>
+		  
+		  <p>The 'CC-BY' line here means that the page is licensed for other people to remix as long as they give the original maker credit. This kind of license is called a Creative Commons Attribution license because when you atribute something to someone, you say 'This was made by' whoever made it.</p>
+
+        </li>
+
+        <!-- Step 6 -->
+        
+        <li>
+          <h6>OPTIONAL: Mess around with the code</h6>
+		  
+		  <p>Congratulations on remixing <code>HTML</code>!</p>
+
+		  <p>If you'd like to explore and remix more of the page, you can remix the <code>stylesheet</code> file in the left sidebar called <code>style.css</code>. <code>CSS</code> stands for 'cascading stylesheet.' A <code>stylesheet</code> tells different parts of a webpage how to look. Change some of the number values you see in <code>style.css</code>to find out what happens to your page. Messing with things like <code>color</code> or <code>font-size</code> ought to cause big changes to your page.</p>
+		  
+		  <p>Even though you can include <code>CSS</code> on a webpage like <code>index.html</code>, we often save our <code>.css</code> files (and other files, like <code>.js</code> or images) separately so we can keep our code clean and use our <code>.css</code> files on several different webpages at once.</p>
+		  
+		  <p>If you're interested, try to find the background-colors and font colors in the stylesheet and change them to match your school colors. You can find HTML color codes at sites like <a href="https://www.w3schools.com/tags/ref_colorpicker.asp">this color picker</a>.</p>
+
+		  <p>Be sure to save, reload, and test your page often so you can undo any changes that completely break it.</p>
+		  
+		  
+	  </li>
+	  
+	  <!-- Step 7 -->
+	  
+	  <li>
+		  <h6>Share your remix</h6>
+		  
+		  <p>When you're ready to share your six-word story, click 'Publish' in Thimble follow the link you get to see your new webpage.</p>
+		  
+		  <p>Once you've saved your page, copy the URL and send it to your teacher or ask your teacher to write it down for you. You can visit that web address from any Internet-connected device to share your work with family and friends.</p>
+		  
+		  <p>Share the URL with your family and ask your family members about their favorite - or most dramatic - summer vacation memories!</p>
+		  
+	  </li>
+
+      </ol>
+
+      <p>
+        Great job! You finished the tutorial! You can make your own tutorials for others to follow
+        by adding a <code>tutorial.html</code> page to any Thimble project.
+      </p>
+
+    </div>
+  </body>
+</html>

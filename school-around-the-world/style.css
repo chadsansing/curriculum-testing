@@ -1,0 +1,83 @@
+body{
+	background-color: #000;
+}
+
+h1{
+	float: right;
+	color: #fff;
+	position:absolute;
+	right: 18px;	
+	top: 25px;
+	font-family: 'Bubblegum Sans', monospace;
+	font-size: 60px;
+	text-shadow: 0px 0px 5px #39f, 0px 0px 10px #69f, 0px 0px 15px #9bf, 0px 0px 20px #bef, 0px 0px 25px #fff;
+}
+
+ul{
+	list-style-type: none;
+	font-family: 'Averia Sans Libre', monospace;
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+#license a{
+	color: #aaa;
+	font-family: monospace;
+	font-size: 12px;	
+}
+
+#planet{
+	background-image: url('images/planet_earth.jpg');
+	background-fill: cover;
+	background-repeat: none;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	height: 500px;
+	width: 800px;
+	z-index: -999;
+}
+
+#license{
+	position: fixed;
+	bottom: 25px;
+	right: 18px;
+	float: right;
+	color: #aaa;
+	font-family: monospace;
+	font-size: 12px;
+	text-align: right;
+	z-index: 999;
+}
+
+#container{
+	position: absolute;
+	top: 175px;
+	width: 100%;
+	z-index: 499;
+}
+
+.schoolPic{
+	background-image:url('images/india_classroom.jpg');
+	background-size: cover;
+	background-repeat: none;
+	float: left;
+	position: absolute;
+	left: 18px;
+	width: 45%;
+	height: 500px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px #39f, 0px 0px 4px #69f, 0px 0px 6px #9bf, 0px 0px 8px #bef;
+}
+
+.schoolText{
+	float: right;
+	position: absolute;
+	right: 36px;
+	width: 45%;
+	height: 500px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px #39f, 0px 0px 4px #69f, 0px 0px 6px #9bf, 0px 0px 8px #bef;
+}
