@@ -1,0 +1,54 @@
+/*Heart image by ClkerFreeVectorImages, https://pixabay.com/p-305090/?no_redirect*/
+
+body{
+	background-image:url('https://pixabay.com/static/uploads/photo/2014/04/02/10/58/heart-305090_640.png');
+	background-size: cover;
+	background-repeat: none;
+}
+
+h1{
+	font-family: 'Fredoka One', sans-serif;
+	font-size: 72px;
+	color: #fff;
+	text-shadow: 0px 0px 10px #06f, 0px 0px 15px #69f, 0px 0px 20px #0ff;
+	margin-left: 100px;
+	margin-top: 75px;
+}
+
+a{
+	color:#555;
+}
+
+.viz{
+	text-align:center;
+}
+
+a:hover{
+	color:#999;
+}
+
+a:visited{
+	color:#333;
+}
+
+#content{
+	margin-left:auto;
+	margin-right: auto;
+	padding-left:25px;
+	padding-right:25px;
+	background-color: #fff;
+	height:450px;
+	width:600px;
+	border: 4px solid #9cf;
+	border-radius:10px;
+	color: #000;
+	font-size: 32px;
+	font-family:'Roboto', serif;
+	font-weight: 500;
+}
+
+#license{
+	font-size: 12px;
+	font-family: monospace;
+}
+
