@@ -1,7 +1,7 @@
 /*Heart image by ClkerFreeVectorImages, https://pixabay.com/p-305090/?no_redirect*/
 
 body{
-	background-image:url('https://pixabay.com/static/uploads/photo/2014/04/02/10/58/heart-305090_640.png');
+	background-image:url('heart.png');
 	background-size: cover;
 	background-repeat: none;
 }
