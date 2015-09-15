@@ -23,6 +23,11 @@ a{
 	text-align:center;
 }
 
+.home{
+	font-family: 'Fredoka One', sans-serif;
+	font-size: 14px;
+}
+
 a:hover{
 	color:#999;
 }
