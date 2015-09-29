@@ -1,0 +1,107 @@
+body{
+
+    background: -webkit-linear-gradient(left top, #3f6 , #222); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #3f6 , #222); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #3f6 , #222); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #3f6 , #222); /* Standard syntax  */
+	min-height:100vh;
+	overflow-x: hidden;
+}
+
+#title{
+  position: relative;
+  top:10px;
+  border: 5px solid #ff0;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+  font-family: 'New Rocker', monospace;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2{
+  position: relative;
+  top:10px;
+  left:25px;
+  color:#fff;
+  font-family: "Play", monospace;
+  font-size: 24px;
+}
+
+h3{
+  position: relative;
+  top:10px;
+  font-family: "Play", monospace;
+}
+
+.songTitle{
+  position: relative;
+  top:10px;
+  left:25px;
+  font-family: "Play", monospace;
+  font-size: 16px;
+  color: #ff0;
+
+}
+
+.madeWith{
+  position: relative;
+  top:10px;
+  left:25px;
+  font-family: "Play", monospace;
+  font-size: 14px;
+  color:#fff;
+
+}
+
+.makeYourOwn{
+  position: relative;
+  top:10px;
+  font-family: "Play", monospace;
+  font-size: 16px;
+  color:#fff;
+
+}
+
+.player{
+  position: relative;
+  top:20px;
+  left:25px;
+  box-shadow: 0px 0px 10px #fff, 0px 0px 15px #ff0, 0px 0px 20px #dd0, 0px 0px 25px #bb0;
+}
+
+a {
+  color: #ff0;
+}
+
+
+#myTape{
+  position: relative;
+  top:10px;
+  left:25px;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+}
+
+#dubCube{
+	position: relative;
+	top: 10px;
+	right: 100px;
+	right:100px;
+	float:right;
+}
+
+
+#license{
+  position: relative;
+  top:20px;
+  left:25px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #fff;
+}
