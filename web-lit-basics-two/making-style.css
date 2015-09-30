@@ -1,102 +1,99 @@
 body{
-	background-color: #0c1c8c;
+  background-color: #0c1c8c;
 }
 
 a {
-	color:#cff;
+  color:#cff;
 }
 
 a.visited {
-	color:#add;
+  color:#add;
 }
 
 h1{
-	display:inline;
-	position: relative;
-	top:0px;
-	left: 25px;
-	font-family: 'Permanent Marker', sans-serif;
-	font-size: 64px;
-	color:#fff;
-	text-shadow: 0px 0px 5px #0c1c8c, 0px 0px 10px #0c1c8c, 0px 0px 15px #0c1c8c;
+  display:inline;
+  position: relative;
+  top:0px;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 64px;
+  color:#fff;
+  text-shadow: 0px 0px 5px #0c1c8c, 0px 0px 10px #0c1c8c, 0px 0px 15px #0c1c8c;
 }
 
 h2{
-	position: relative;
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+img{
+  max-width: 100%;
 }
 
 .leftText{
-	color: #fff;
+  color: #fff;
 }
 
 .rightText{
-	color:#0c1c8c;
+  color:#0c1c8c;
 }
 
 h3{
-	position: relative;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	color: #fff;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #fff;
 }
 
 p{
-	position: relative;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #fff;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
 ul{
-	position: relative;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #fff;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
-/*.lineDrive{
-	length: 100%;
-	height: 10px;
-	text-shadow: 5px 5px #000;
-	color: #fff;
-}*/
-
 #banner{
-	position: absolute;
-	top:0;
-	left:0;	
-	width:100%;
-	padding: 10px;
-	background-color: #fff;
+  position: relative;
+  top:0;
+  left:0;	
+  width:100%;
+  padding-left: 25px;
+  background-color: #fff;
+}
+
+#clear{
+  display: inline-block;
+  clear:both;
+  width: 20%;
 }
 
 #lefty{
-	position: absolute;
-	float:left;
-	top:110px;
-	left: 25px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 40%;
+  display: inline-block;
+  padding-left: 25px;
+  max-width: 300px;
+  float: left;
+
 }
 
 #righty{
-	position: absolute;
-	float:right;
-	top:110px;
-	right: 0px;
-	margin-right: auto;
-	margin-left: auto;
-	width: 50%;
-	background-color: #fff;
-	min-height:100%;
-	padding-left: 25px;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+  float:left;
+  max-width: 300px;
+  height: 100%;
+  background-color: #fff;
 }
 
 #license{
-	font-family: monospace;
-	font-size: 12px;
-	color: #fff;
+  font-family: monospace;
+  font-size: 12px;
+  color: #fff;
 }
