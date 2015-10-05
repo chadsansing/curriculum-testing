@@ -1,0 +1,106 @@
+/*Color palette from http://eithin.co.uk/blog/2015/08/colour-palettes-for-july/ by Eithin.*/	
+
+body{
+	background-color: #602460;
+}
+
+h1{
+	font-family: 'Bangers', monospace;
+	font-size: 64px;
+	display: inline;
+	color: #fcf;
+	text-shadow: 4px 4px #e12c93;
+}
+
+h2{	
+	font-size: 24px;
+}
+
+p{	
+	font-family: 'Cabin', sans-serif;
+}
+
+#definition{
+	font-family: monospace;
+	font-size: 16px;
+}
+
+blockquote{
+	font-size: 16px;
+	width: 60%;
+	margin-bottom: 25px;
+	padding: 5px;
+	background-color: #fcf;
+	color: #602460;
+	border: 3px solid #e12c93;
+	border-radius: 10px;
+}
+
+#pic1{
+	font-family: 'Cabin', sans-serif;
+	background-color: #fff;
+	color: #602460;
+	display: inline-block;
+	float: left;
+	min-width: 300px;
+	border: 3px #e12c93 solid;
+	border-radius: 10px;
+	height:450px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#pic2{
+	font-family: 'Cabin', sans-serif;
+	background-color: #fff;
+	color: #602460;
+	display: inline-block;
+	float: left;
+	min-width: 300px;	
+	border: 3px #e12c93 solid;
+	border-radius: 10px;
+	height: 450px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#pic3{
+	font-family: 'Cabin', sans-serif;
+	background-color: #fff;
+	color: #602460;
+	display: inline-block;
+	float: left;
+	min-width: 300px;
+	border: 3px #e12c93 solid;
+	border-radius: 10px;
+	height:450px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+}
+
+a{
+	color: #602460;
+}
+
+#license{
+	position: relative;
+	left: 5px;
+	clear:both;
+	background-color: #fcf;
+	font-family: monospace;
+	font-size: 12px;
+	color: #602460;
+	padding: 5px;
+	width: 250px;
+}
+
+form{
+	display: inline;
+}
+
