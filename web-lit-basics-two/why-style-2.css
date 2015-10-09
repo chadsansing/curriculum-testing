@@ -1,0 +1,98 @@
+body{
+  min-width:1000px;
+  background-color: #000;
+  padding-left: 25px;
+}
+
+h1{
+  font-family: "Annie Use Your Telescope", sans-serif;
+  font-size: 72px;
+  display: inline;
+  color: #fb6;
+}
+
+h2{
+  font-family: "Annie Use Your Telescope", sans-serif;
+  font-size: 32px;
+  display: inline;
+  color: #0c0;
+}
+
+h3{
+  font-family: "Annie Use Your Telescope", sans-serif;
+  font-size: 24px;
+  display: inline;
+  color: #9cf;
+}
+
+p{
+  color: #9cf;
+}
+
+a {
+  color: #bbb;
+}
+
+#device{
+  width: 40%;
+  display:inline;
+  float:left;
+  color: #eb5;
+}
+
+#responses{
+  width:60%;
+  display:inline;
+  float:left;
+  color: #f96;
+}
+
+.response1{
+  height: 12px;
+  width:16px;
+  display: inline-block;
+  background-color: #0cf;
+}
+
+.response2{
+  height: 12px;
+  width:16px;
+  display: inline-block;
+  background-color: #0fc;
+}
+
+/*This is a CSS comment. Make your own response!*/
+
+/*.response3{
+  height: 12px;
+  width: 16px;
+  display: inline-block;
+  background-color: orange;
+}
+*/
+
+.next {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+  clear: both;
+}
+
+#container{
+  width: 70%;
+  height: 1%;
+  overflow: hidden;
+  font-family: "Didact Gothic", sans-serif;
+  border: 3px solid #bbb;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+#license {
+  font-family: monospace;
+  font-size: 14px;
+  color: #9cf;
+}

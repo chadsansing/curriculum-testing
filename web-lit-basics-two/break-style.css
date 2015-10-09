@@ -1,0 +1,84 @@
+body{
+	background-color: #000;
+	background-image:url("galaxy-1.jpg");
+}
+
+/*Background image from https://commons.wikimedia.org/wiki/File:NGC_3521-_the_Bubble_galaxy.jpg*/
+
+h1{
+	color:#444;
+	font-family: "Special Elite", monospace;
+	font-size: 36px;
+}
+
+h3{
+	color: #400;
+	font-family: "Black Ops One", monospace;
+	font-size: 20px;
+}
+
+img{
+	display: inline-block;
+	float:left;
+}
+
+a {
+	color: #fff;
+}
+
+#flipped{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+#muzak{
+	position: absolute;
+	top: 100px;
+	right: 25px;
+	z-index: 999;
+}
+
+#planets{
+	margin: 0 auto;
+	width: 100%;
+	text-align:center;
+	clear: both;
+	color: #fff;
+	font-size: 72px;
+	z-index: 999;
+}
+
+#myTitle{
+	text-shadow: 0 0 5px #fff, 0 0 10px #fcc, 0 0 15px #f9c, 0 0 20px #f6c, 0 0 25px #f3c, 0 0 30px #f03;
+	font-family: "Press Start 2p", serif;
+	font-size: 36px;
+}
+
+#kawaii1{
+	text-shadow: 0 0 5px #fff, 0 0 10px #09f, 0 0 15px #06f, 0 0 20px #03f, 0 0 25px #00f, 0 0 30px #00c;
+}
+
+#kawaii2{
+	text-shadow: 0 0 5px #fff, 0 0 10px #fc9, 0 0 15px #fc6, 0 0 20px #fc3, 0 0 25px #fc0, 0 0 30px #f90;
+}
+
+#leftLines{
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	z-index: 499;
+}
+
+#rightLines{
+	position: absolute;
+	top: 50px;
+	left: 650px;
+	z-index: 499;
+}
+
+#license{
+	font-family: monospace;
+	color: #fff;
+	font-size:12px;
+}
