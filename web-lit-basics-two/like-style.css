@@ -1,0 +1,12 @@
+.likeButton{
+	height:100px;
+	width:100px;
+	border-radius:5px;
+	background-image: url("https://c2.staticflickr.com/6/5638/22101000942_e9bb5f1480_o.png");
+}
+
+#buttonHolder{
+	height:100px;
+	width:100px;
+	border-radius:5px;
+}
