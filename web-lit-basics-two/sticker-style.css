@@ -1,0 +1,66 @@
+body{
+	background-color: #111;
+	padding-left: .25em;
+	padding-right: .25em;
+	min-width:320px;
+	color: #fff;
+}
+
+a {
+	color: #f09;
+}
+
+h1{
+	color: #fff;
+	font-family: "Bubblegum Sans", sans-serif;
+	font-size: 4em;
+	margin-bottom: .25em;
+	text-shadow: 4px 4px #f09;
+}
+
+h2{	
+	color: #fff;
+	font-family: "Bubblegum Sans", sans-serif;
+	font-size: 2.5em;
+	margin-bottom: .25em;
+	text-shadow: 3px 3px #f09;
+	
+}
+
+img{
+	border: 2px solid transparent;
+	border-radius: 999px;
+}
+
+p{
+	font-family: "Sanchez", sans-serif;
+	font-size: 1.2em;
+}
+
+li{
+	font-family: "Sanchez", sans-serif;
+	font-size: 1em;
+}
+
+#gallery{
+	background-color: #ccc;
+	border: 5px solid #f09;
+	border-radius: 15px;
+	min-width:320px;
+	padding: .5em;
+	
+}
+
+#license{
+	font-size: 1em;
+	font-family: monospace;
+}
+
+.sink{
+	padding-top: .5em;
+}
+
+.sticker {
+	display:inline-block;
+	min-width: 100px;
+}
