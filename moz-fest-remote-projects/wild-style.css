@@ -57,7 +57,7 @@ p{
 }
 
 .animalPic{
-	border: 3px solid #000;
+	border: 0px solid transparent;
 	border-radius:999px;
 	height: 210px;
 	width: 210px;
