@@ -1,0 +1,72 @@
+a{
+	color: inherit;
+	font-weight:400;
+}
+
+body{
+	margin:0;
+	font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background: -webkit-linear-gradient(left top, #01bc85 , #0097d6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #01bc85, #0097d6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #01bc85, #0097d6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #01bc85 , #0097d6); /* Standard syntax */
+}   
+
+header, main, footer {
+  padding: 2em;
+}
+
+header p {
+  margin-top:  0;
+}
+
+h1{
+	color:#fff;
+	font-size: 2em;
+	font-weight:800;
+}
+
+h2{
+	color:#fff;
+	font-size: 1.5em;
+	font-weight:700;
+}
+
+h3{
+	color:#fff;	
+	font-size: 1.25em;
+	font-weight:600;
+}
+
+p{
+	color:#000;
+	font-size:1.1em;
+	font-weight: 400;
+}
+
+li{
+	color:#000;
+	font-size:1em;
+	font-weight: 300;	
+}
+
+#banner{
+	z-index:999;
+}
+
+#bannerBG{
+	background-image:url('https://c2.staticflickr.com/4/3834/10511543316_f6203132ff_b.jpg');
+	background-size: 100%;
+	opacity:.1;
+	z-index:-999;
+}
+
+#license {
+    border-top: 1px solid #eee;
+    font-size: .75em;
+    font-weight: 300;
+    color: #aaa;
+}
