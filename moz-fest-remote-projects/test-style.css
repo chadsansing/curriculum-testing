@@ -3,21 +3,23 @@ a{
 }
 
 body{
-	font-family:"Open Sans", sans-serif;
+	font:14px/1.4 "Open Sans", sans-serif;
 	margin:0;
+}
+
+header, main, footer {
+	padding: 2em;
 }
 
 h1{
 	font-size:2em;
 	font-weight:800;
-	padding-left:.25em;
 	text-align:center;
 }
 
 h2{
 	font-size:1.5em;
 	font-weight:600;
-	padding-left:.25em;
 	text-align:center;
 }
 
@@ -34,27 +36,29 @@ li{
 p{
 	font-size:1.1em;
 	font-weight:400;
-	padding-left:1em;
-	padding-right:1em;
+	padding: .4em;
+}
+
+.row{
+	clear:both;
+	margin-bottom: 2em;
+}
+.row::after {
+	clear:both;
+	content:'';
+	display:block;
 }
 
 .activity{
-	display:inline-block;
-	padding-right:8em;	
-}
-
-.activityCloser{
-	display:inline-block;	
+	display:block;
+	float:left;
+	min-width: 260px;
+	width: 33%;
 }
 
 #banner{
 	background-color:#c13812;
 	color:#fff;
-	padding-top:1em;
-	padding-bottom:.25em;
-	position:relative;
-	top:-1.5em;
-	width:100%;
 }
 
 #banner a{
@@ -62,13 +66,12 @@ p{
 }
 
 #license{
-	clear:both;
+	border-top: 1px solid #eee;
 	font-size:.75em;
 	font-weight:300;
+	color: #aaa;
 }
 
-#testBed{
-	width:90%;
-	margin-left:auto;
-	margin-right:auto;
+#license a{
+	color: #aaa;
 }
