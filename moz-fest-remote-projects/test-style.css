@@ -1,74 +1,83 @@
-a{
-	color:#000;
+/* layout */
+body {
+	font: 14px/1.4 "Open Sans", sans-serif;
+	margin: 0;
 }
 
-body{
-	font-family:"Open Sans", sans-serif;
-	margin:0;
+header, main, footer {
+	padding: 2em;
 }
 
-h1{
-	font-size:2em;
-	font-weight:800;
-	padding-left:.25em;
-	text-align:center;
+header {
+	background-color: #c13812;
+	color: #fff;
 }
 
-h2{
-	font-size:1.5em;
-	font-weight:600;
-	padding-left:.25em;
-	text-align:center;
+header p {
+	margin-top:  0;
 }
 
-h3{
-	font-size:1.25em;
+.row {
+	clear: both;
+	margin-bottom: 2em;
+}
+.row::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.activity {
+	display: block;
+	float: left;
+	min-width: 260px;
+	width: 33%;
+}
+
+/* typography */
+h1 {
+	font-size: 2em;
+	font-weight: 800;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.25em;
 	font-weight: 600;
 }
 
-li{
-	font-size:.9em;
-	font-weight:400;
+h4 {
+	font-style: italic;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
-p{
-	font-size:1.1em;
-	font-weight:400;
-	padding-left:1em;
-	padding-right:1em;
+li {
+	font-size: .9em;
+	font-weight: 400;
 }
 
-.activity{
-	display:inline-block;
-	padding-right:8em;	
+p {
+	font-size: 1.1em;
+	font-weight: 400;
+	padding: .4em;
 }
 
-.activityCloser{
-	display:inline-block;	
+a {
+	color: inherit;
 }
 
-#banner{
-	background-color:#c13812;
-	color:#fff;
-	padding-top:1em;
-	padding-bottom:.25em;
-	position:relative;
-	top:-1.5em;
-	width:100%;
-}
+/* specific styles */
 
-#banner a{
-	color:#fff;
-}
-
-#license{
-	clear:both;
-	font-size:.75em;
-	font-weight:300;
-}
-
-#testBed{
-	width:90%;
-	margin-left:auto;
-	margin-right:auto;
+#license {
+	border-top: 1px solid #eee;
+	font-size: .75em;
+	font-weight: 300;
+	color: #aaa;
 }
