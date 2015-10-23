@@ -1,0 +1,89 @@
+/* Layout */
+
+body {
+	background-color:#000;
+	margin:0;
+}
+
+footer{
+	clear:both;
+	border-top: 1px solid #333;
+}
+
+h1{
+	display:inline-block;
+}
+
+h2{
+}
+
+header{
+	border-bottom: 1px solid #333;
+	text-align:center;
+}
+
+header, footer {
+	padding-top:1em;
+	padding-bottom:1em;
+}
+
+main {
+	padding-left:1em;
+}
+
+/* Typography */
+
+a {
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: inherit;
+	font-weight:300;
+}
+
+header{
+	color:#fff;
+}
+
+h1{
+	font-family: 'Audiowide', sans-serif;
+	font-size: 3em;
+	text-shadow: 0 0 5px #0ff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0f3, 0 0 25px #0f3, 0 0 30px #0f3, 0 0 35px #0c0, 0 0 40px #0c0, 0 0 45px #0c0; 
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight:600;
+}
+
+/* Specific styles */
+
+#license{
+	clear:both;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size:.9em;
+	padding-top:1em;
+	padding-left:1em;
+}
+
+#playlist{
+	min-width:350px;
+	margin-right:auto;
+	margin-left:auto;
+	width:75%;
+
+}
+
+.kawaii{
+	font-size:1em;
+	font-weight:300;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #cc0, 0 0 25px #cc0, 0 0 30px #cc0, 0 0 35px #aa0, 0 0 40px #aa0, 0 0 45px #aa0; 
+}
+
+.track {
+	float: left;
+	padding-top:1em;
+	padding-bottom:1em;
+	width:500px;
+}
