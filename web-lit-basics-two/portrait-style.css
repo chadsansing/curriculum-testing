@@ -1,0 +1,34 @@
+/* Picture frame image CC0 - Public Domain, from https://pixabay.com/en/frame-gold-border-rectangular-320391/ */
+
+/* White brick wall image CC0 - Public Domain, from https://pixabay.com/en/wall-bricks-white-white-brick-wall-769963/ */
+
+/* Layout */
+
+body {
+	background-image:url('white-brick-wall.jpg');
+	background-size:cover;
+}
+
+/* Typography */
+
+a{
+	
+}
+
+/* Specific styles */
+
+#license{
+	
+}
+
+#portrait{
+	background-image:url('picture-frame.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	height:640px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2em;
+	width:480px;
+	
+}
