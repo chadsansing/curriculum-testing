@@ -1,5 +1,3 @@
-/* Picture frame image CC0 - Public Domain, from https://pixabay.com/en/frame-gold-border-rectangular-320391/ */
-
 /* White brick wall image CC0 - Public Domain, from https://pixabay.com/en/wall-bricks-white-white-brick-wall-769963/ */
 
 /* Layout */
@@ -7,28 +5,61 @@
 body {
 	background-image:url('white-brick-wall.jpg');
 	background-size:cover;
+	font-size: 1.1em;
+}
+
+header, main, footer{
 }
 
 /* Typography */
 
 a{
+	font-color:#000;
 	
 }
 
 /* Specific styles */
 
+#card{
+	position:absolute;
+	background-color: #eee;
+	top:560px;
+	left:10px;
+	padding:.25em;
+	width: 175px;
+}
+
 #license{
+	position: absolute;
+	left:10px;
+	top:625px;
+	font-family:monospace;
+	font-size:.75em;
+	
+}
+
+#license a{
+	color:#000;
+}
+
+#container{
+	height:640px;
+	margin-top:2em;
+	text-align:center;
+	width:480px;	
+}
+
+#frame{
+	position:absolute;
+	left:10px;
+	top:10px;
+	z-index:999;
 	
 }
 
 #portrait{
-	background-image:url('picture-frame.png');
-	background-size:contain;
-	background-repeat:no-repeat;
-	height:640px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:2em;
-	width:480px;
-	
+	position:absolute;
+	top:85px;
+	left:65px;
+	z-index:-999;
 }
