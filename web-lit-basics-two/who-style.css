@@ -1,0 +1,85 @@
+/* Layout */
+
+h1, h2, h3{
+	display:inline;
+}
+header, main, footer{
+	margin-left:1em;	
+}
+
+img{
+	height:360px;
+	width:360px;
+}
+
+main{
+	margin-top:1em;
+}
+
+p{
+	display:inline;
+}
+
+/* Typography */
+
+a{
+	color:#000;
+}
+
+h1{
+	font-family:"Bangers", serif;
+	font-size: 5em;
+	text-shadow:4px 4px #fff, 6px 6px #000;
+}
+
+h2, h3{
+	font-family: "Open Sans", sans-serif;
+}
+
+h2{
+	font-size: 2em;
+	font-weight:600;
+}
+
+h3{
+	font-size:1.5em;
+	font-weight:400;
+}
+
+
+/* Specific styles */
+
+.answer{
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.1em;
+}
+
+.question{
+	font-family: "Bangers", serif;
+	font-size: 1.5em;
+}
+
+#answerBox{
+	border: 3px solid #000;
+	border-radius: 5px;
+	float:left;
+	height:350px;
+	margin-top:1em;
+	padding:.5em;
+	width:360px;
+}
+
+#license{
+	clear:both;
+	font-family: monospace;
+	font-size:.75em;
+	padding-top:1em;
+}
+
+#pictureBox{
+	border: 3px solid #000;
+	border-radius: 5px;
+	float:left;
+	margin-right:1em;
+	margin-top:1em;
+}
