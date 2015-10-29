@@ -1,0 +1,95 @@
+body {
+	overflow:hidden;
+	background: #000;
+	margin-left:.5em;
+	margin-top:.25em;
+	padding-right:.25em;
+	z-index: -5;
+}
+
+button{
+	border:4px solid #d06;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:10px;
+	outline:none;
+	font-family: 'Trade Winds', sans-serif;
+	font-size: 1.75em;
+	color:#d06;
+	background-color: #ddd;
+	text-align:center;
+	height:60px;
+	width:250px;
+	text-decoration: none;
+	cursor: pointer;
+	opacity:.75;
+}
+
+button:hover {
+	opacity:1;
+}
+
+h1{
+ display: inline;
+ font-family: 'Trade Winds', monospace;
+ font-size: 1.25em;
+ color:#fff;
+}
+
+h2{
+ font-family: 'Open Sans', sans-serif;        
+ font-size: 1.1em;
+ font-weight: 400;
+ display: inline;
+ color: #f08; 
+}
+
+#adventure{
+ width: 315px;
+ height: 500px;
+ background:#003;
+ border: 2px solid black;
+ border-radius: 5px;
+ padding: 5px;
+}
+
+#buttonHolder{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1em;
+	margin-bottom:1.5em;
+	width:80%;
+}
+
+#encounter{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight:300;
+	padding-left:.5em;
+	padding-bottom:2em;
+}
+
+#reward{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	font-weight:300;
+	padding-left:.5em;
+	position:absolute;
+	top:350px;
+	width:300px;
+}
+
+#reminder{
+	position:absolute;
+	top:490px;
+	width:300px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8em;
+	font-weight:300;
+	padding-left:2em;
+	padding-bottom:2em;
+	
+}
