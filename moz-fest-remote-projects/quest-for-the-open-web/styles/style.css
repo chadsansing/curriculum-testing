@@ -1,0 +1,102 @@
+    body {
+     overflow:hidden;
+     background: #000;
+     margin-left:.25em;
+	 margin-top:.25em;
+     z-index: -5;
+    }
+
+    #quest{
+     width: 315px;
+     height: 500px;
+     background:#fff;
+     border: 2px solid black;
+     border-radius: 5px;
+     padding: 5px;
+    }
+
+    h1{
+     display: inline;
+     font-family: 'Trade Winds', monospace;
+     font-size: 1.5em;
+	 color:#903;
+    }
+
+    h2{
+     font-family: 'Open Sans', sans-serif;        
+     font-size: 1.125em;
+	 font-weight: 400;
+     display: inline;
+     color: #003; 
+    }
+
+    #userName{
+     font-family: 'Open Sans', sans-serif;        
+     font-size: .9em;
+     color: #903;
+     display: inline;
+    }
+
+    #tapMe {
+	  color: #903;
+      font-family: 'Trade Winds', monospace;
+      font-size:.9em;
+      position: absolute;
+      left:215px;
+      top:150px;
+      width:100px;
+      z-index:0;
+    }
+
+    #touchMe {
+      position:absolute;
+      left:108px;
+      width:150px;
+      top:150px;
+      height:80px;
+      z-index:2;
+    }
+
+    #myTrueName{
+     position: absolute;
+     top: 275px;
+     left: 10px;
+     width: 290px;
+     padding: 15px;
+     z-index: 0;
+	 color:#003;
+     font-family: 'Trade Winds', monospace;
+     font-size: 1.25em;
+    }
+
+    #myBuff{
+     position: absolute;
+     top: 400px;
+     left: 10px;
+     width: 290px;
+     padding: 15px;
+     z-index: 0;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1.1em;
+	 font-weight:300;
+     color: #003; 
+    }
+
+
+    #adventure {
+     position: absolute;
+     top: 475px;
+     left: 73px;
+     font-family: 'Trade Winds', monospace;        
+     font-size: 1.25em;
+     color: #903;
+     display: inline;
+     z-index: 2;
+	 text-align:center;
+    }
+
+    a {
+     text-decoration: none;
+     color: inherit;
+     }
+
