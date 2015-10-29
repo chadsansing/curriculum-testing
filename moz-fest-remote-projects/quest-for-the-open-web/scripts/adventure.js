@@ -18,6 +18,6 @@ function Quest(){
 	var message=messages[Math.round(Math.random()*(messages.length-1))];
 	
 	document.getElementById('encounter').innerHTML="<div>You " + verb + " " + challenge + " of <span style='color:#f08'>" + adversary + " the " + adjective + "</span> at " + place + ".</div>"
-	document.getElementById('reward').innerHTML="<div>You find the <span style='color:#f08; text-transform:lowercase;'>" + loot + " of " + quality + "</span> and a scroll with a mysterious message that reads <span style='color:#f08;'><a href='" + message + "'>" + message + "</a></span>.</div>"
+	document.getElementById('reward').innerHTML="<div>You find the <span style='color:#f08; text-transform:lowercase;'>" + loot + " of " + quality + "</span> and a scroll with a mysterious message that reads <span style='color:#f08;'><a href='" + message + "' target='blank_'>" + message + "</a></span>.</div>"
 	
 }
