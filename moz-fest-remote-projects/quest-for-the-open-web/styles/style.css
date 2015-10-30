@@ -43,7 +43,7 @@
       font-size:.9em;
       position: absolute;
       left:215px;
-      top:150px;
+      top:175px;
       width:100px;
       z-index:0;
     }
@@ -52,14 +52,14 @@
       position:absolute;
       left:108px;
       width:150px;
-      top:150px;
+      top:160px;
       height:80px;
       z-index:2;
     }
 
     #myTrueName{
      position: absolute;
-     top: 250px;
+     top: 260px;
      left: 10px;
      width: 290px;
      padding: 15px;
@@ -71,7 +71,7 @@
 
     #myBuff{
      position: absolute;
-     top: 385px;
+     top: 395px;
      left: 10px;
      width: 290px;
      padding: 15px;
@@ -85,7 +85,7 @@
 
     #adventure {
      position: absolute;
-     top: 440px;
+     top: 450px;
      left: 73px;
      font-family: 'Trade Winds', monospace;        
      font-size: 1.25em;
