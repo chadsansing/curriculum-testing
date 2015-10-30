@@ -19,7 +19,7 @@
      display: inline;
      font-family: 'Trade Winds', monospace;
      font-size: 1.5em;
-	 color:#903;
+	 color:#f08;
     }
 
     h2{
@@ -33,12 +33,12 @@
     #userName{
      font-family: 'Open Sans', sans-serif;        
      font-size: .9em;
-     color: #903;
+     color: #f08;
      display: inline;
     }
 
     #tapMe {
-	  color: #903;
+	  color: #f08;
       font-family: 'Trade Winds', monospace;
       font-size:.9em;
       position: absolute;
@@ -52,14 +52,14 @@
       position:absolute;
       left:108px;
       width:150px;
-      top:150px;
+      top:130px;
       height:80px;
       z-index:2;
     }
 
     #myTrueName{
      position: absolute;
-     top: 275px;
+     top: 230px;
      left: 10px;
      width: 290px;
      padding: 15px;
@@ -71,7 +71,7 @@
 
     #myBuff{
      position: absolute;
-     top: 400px;
+     top: 365px;
      left: 10px;
      width: 290px;
      padding: 15px;
@@ -85,11 +85,11 @@
 
     #adventure {
      position: absolute;
-     top: 475px;
+     top: 430px;
      left: 73px;
      font-family: 'Trade Winds', monospace;        
      font-size: 1.25em;
-     color: #903;
+     color: #f08;
      display: inline;
      z-index: 2;
 	 text-align:center;
