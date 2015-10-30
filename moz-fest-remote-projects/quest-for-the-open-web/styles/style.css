@@ -42,7 +42,7 @@
       font-family: 'Trade Winds', monospace;
       font-size:.9em;
       position: absolute;
-      left:205px;
+      left:215px;
       top:150px;
       width:100px;
       z-index:0;
@@ -52,7 +52,7 @@
       position:absolute;
       left:108px;
       width:150px;
-      top:150px;
+      top:160px;
       height:80px;
       z-index:2;
     }
