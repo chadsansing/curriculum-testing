@@ -42,8 +42,8 @@
       font-family: 'Trade Winds', monospace;
       font-size:.9em;
       position: absolute;
-      left:215px;
-      top:200px;
+      left:205px;
+      top:150px;
       width:100px;
       z-index:0;
     }
@@ -52,14 +52,14 @@
       position:absolute;
       left:108px;
       width:150px;
-      top:200px;
+      top:150px;
       height:80px;
       z-index:2;
     }
 
     #myTrueName{
      position: absolute;
-     top: 280px;
+     top: 270px;
      left: 10px;
      width: 290px;
      padding: 15px;
@@ -71,7 +71,7 @@
 
     #myBuff{
      position: absolute;
-     top: 415px;
+     top: 405px;
      left: 10px;
      width: 290px;
      padding: 15px;
