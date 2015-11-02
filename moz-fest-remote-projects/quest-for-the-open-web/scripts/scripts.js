@@ -12,7 +12,7 @@ var origins = ['the Open Web', 'repo', 'product', 'comms', 'social media', 'the 
 
 var buffs= ["+1", "+2", "+3", "+5"];
 
-var skills = ["memes", "design sketches", "mock-ups", "brainstorms", "kittehs", "doge", "much", "so very", "rainbows", "the Interwebz", "Facegramming the Instatube", "same-same-but-different", "zines", "boardgames", "card games", "flow", "hyper-focus", "easter eggs", "blog posts", "lazy consensus", "3D printing", "learning pathways", "Web comics",  "glitchstep", "chiptunes", "level design", "quest writing", "unicorns", "IRC", "Webbertubez", "design", "search", "navigation", "composing", "collaborating", "community practice", "sharing", "Git", "version control", "project management", "credibility", "Open practice", "privacy", "security", "data management", "UI", "UX", "AI"];
+var skills = ["memes", "design sketches", "mock-ups", "brainstorms", "kittehs", "doge", "much", "so very", "rainbows", "the Interwebz", "Facegramming the Instatube", "same-same-but-different", "zines", "boardgames", "card games", "flow", "hyper-focus", "secret levels", "blog posts", "lazy consensus", "3D printing", "learning pathways", "Web comics",  "glitchstep", "chiptunes", "level design", "quest writing", "unicorns", "IRC", "Webbertubez", "design", "search", "navigation", "composing", "collaborating", "community practice", "sharing", "Git", "version control", "project management", "credibility", "Open practice", "privacy", "security", "data management", "UI", "UX", "AI"];
 
 //alt names math 
 //this.altName = altNames[Math.round(Math.random()*altNames.length)];
