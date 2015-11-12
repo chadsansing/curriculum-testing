@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<!--
+
+===========================================================
+This is a comment. It does not show up on a webpage. 
+Coders leave comments in the projects for others to reference later. 
+Look for comments in this template to help you edit it. 
+Keep your window open kind of broadly to make it easy to read the comments.
+===========================================================
+
+-->
+
+<!--
+
+===========================================================
+Welcome to the MLN Lesson Plan template!
+
+Use this template to create your own session or educational
+resource  for learners. Edit the HTML below to add your own
+content, links and media.
+
+===========================================================
+
+-->
+
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/makerstrap/makerstrap.complete.min.css">
+    <link rel="stylesheet" href="https://mozilla.github.io/webmaker-curriculum//stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="https://mozilla.github.io/webmaker-curriculum//stylesheets/print.css" media="print">
+
+
+    <!-- ADD YOUR TITLE HERE -->
+
+    <title>Animation on the Open Web with Fabble, Para Para, and 3D Projection Mapping | Creating a 2D Para Para Animation</title>
+
+  </head>
+
+  <body>
+
+    <!-- START IGNORE. -->
+
+    <nav class="navbar navbar-webmaker">
+
+      <div class="container">
+
+        <div>
+
+          <button type="button" class="navbar-toggle" ng-click="collapseToggle()"><span class="sr-only">Toggle navigation</span></button> <!-- logo -->
+
+          <ul class="nav navbar-nav navbar-right navbar-collapse text-center-xs collapse">
+
+            <!--By default, this navigation element links to the @MozTeach Twitter 
+account. If you have a Twitter account that better complements this l
+esson, edit the link and text.-->
+
+            <li>
+              <a href="https://twitter.com/mozteach">@MozTeach</a>
+            </li>
+
+            <!-- END IGNORE -->
+
+            <!--You can create a thread on Disource, our community forum, for this 
+activity and link to it here.-->
+
+            <li>
+              <a href="https://discourse.webmaker.org/category/curriculum">Disourse Thread</a>
+            </li>
+
+            <!--If you are sharing work in GitHub, you can edit this adress. 
+Otherwise, it will link to this template.-->
+
+            <li>	
+
+              <a href="https://github.com/chadsansing/curriculum-testing/para-para-and-fabble">View on GitHub</a>
+            </li>
+
+
+          </ul>
+
+          <!--If you do not create a Discourse thread or GitHub version of your lesson, 
+consider deleting lines 58-60 and/or lines 65-68.-->
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!--The sidebar begins here.-->
+
+    <div class="wrapper">
+
+      <aside class="aside">
+
+        <div class="image" style="background-color:#fff;">
+
+          <!-- 
+===========================================================
+
+Add your lesson plan image here.
+
+1. The file name or URL of the image goes in the quotes after src=. 
+2. The URL after href= should go to the page where you found the image 
+or to your homepage or Twitter account if you made the image. 
+3. The plain text that says "Mozilla Learning Networks" should be changed 
+to credit the image's author.
+
+===========================================================
+
+-->
+
+          <img src="http://parapara.mozlabs.jp/designs/space/preview/space.png" alt="An image of an alien landscape"> <a href="http://en.mozillafactory.org/tagged/COMOZILLA" class="attribution"><i class="fa fa-camera"></i> Mozilla Factory</a>
+
+        </div>
+
+        <div class="goals">
+
+          <div class="literacy">
+
+            <!-- 
+===========================================================
+
+This is where you add Web Literacy competency buttons.
+
+To do so...
+
+1. Pick a competency here:
+https://teach.mozilla.org/teach-like-mozilla/web-literacy/.
+2. Find it's name and color here in makerstrap.png:
+https://drive.google.com/a/mozillafoundation.org/folderview?id=0B_rbDAen9prkUmd1N1lFM3E0dFk&usp=drive_web.
+3. Change the end of the href= and the class= values to match the 
+name of the button/color.
+4. Copy, paste, and edit to add more buttons.
+
+===========================================================
+
+-->
+
+            <h4>Web Literacy Competencies</h4><a href="https://webmaker.org/en-US/resources/literacy/weblit-composing"><button class="btn literacy-color-composing">Composing</button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-open-practices"><button class="btn literacy-color-open-practices">Open Practice</button></a><a href="https://webmaker.org/en-US/resources/literacy/weblit-sharing"><button class="btn literacy-color-sharing">Sharing</button></a>
+			
+			<p>&nbsp;</p>
+			
+			<h4>21st Century Skills</h4>
+			
+			<ul>
+				<li>Collaboration</li>
+				<li>Communication</li>
+				<li>Creativity</li>
+				<li>Problem-solving</li>
+			</ul>
+
+            <!--Add your audience here. Note that MLN tools have ToS saying users 
+must be 13+ to use them.-->
+
+            <h4>Audience</h4>
+            <ul>
+              <li>5+</li> 
+              <li>Beginner Web users</li>
+            </ul>
+
+            <!--Add materials here. Use <li>item</li> to add new items and lines.-->
+
+            <h4>Materials</h4>
+
+            <ul>
+
+              <li>Internet connected computer</li>
+
+            </ul>
+
+            <!--Add learning objectives here. You can reference your own verbs or those 
+at https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Objectives.
+Use <li>objective> to add new objectives and lines.  -->
+
+            <h4>Learning Objectives</h4>
+
+            <ul>
+				<li>Read &amp; follow directions to compose 2D animations with Para Para.</li>
+				<li>Share Web-native work on a Para Para wall.</li>
+            </ul>
+
+            <!--Here is another link to Discourse for discussing the activity. Delete the generic address and add your own if you start a thread on Discourse for this activity.-->
+
+            <h4>Join the Discussion</h4>
+
+            <p>Ask questions and find inspiration for adaptation and remix on <a href="https://discourse.webmaker.org" target="blank_">Discourse</a>, our community forum.</p>
+          </div>
+
+          </aside>
+
+        <!--The side bar ends here.-->
+
+        <!--The main column begins here.-->
+
+        <article class="main">
+
+          <div>
+
+            <hgroup class="text-light">
+
+              <!--Make your title here match the one you put in the <head>.-->
+
+              <h2><a href="index.html">Animation on the Open Web with Fabble, Para Para, and 3D Projection Mapping</a></h2><br>
+
+              <!--Make your lesson name here match the one you put in the <head>.-->
+
+              <h3>Creating a 2D Para Para Animation</h3>
+
+              <!--Next, credit yourself and others who worked on the lesson. You may wish to link names to homepages or social media pages.-->
+
+              <p id="made-by">Made by <a href="http://en.mozillafactory.org/tagged/COMOZILLA">Mozilla Factory</a> and <a href="https://twitter.com/smithisgeneric">Karen Smith</a> and remixed by <a href="https://teach.mozilla.org">Mozilla Learning Networks</a></p> 
+
+                <!--Write a brief summary of your lesson including the Web Literacy competencies covered in it.--></p>
+
+              <p class="lead">Learners will do something, learning <strong>specific Web Literacy competencies</strong>.</p>
+
+              <!--Edit the time here to match the duration of your lesson.-->
+
+              <p class="leadTime"><i class="fa fa-clock-o"></i> X minutes</p>
+
+            </hgroup>
+
+          </div>
+
+          <div class="agenda">
+
+            <!--Next up: preparing for the lesson.-->
+
+            <ul>
+
+              <li>
+
+                <div>
+                  <!-- EXPLAIN WHAT OTHERS WANTING TO RUN THIS ACTIVITY WILL NEED -->
+
+                  <h3>Preparation</h3>
+
+                  <!--Here you can encourage other teachers to try your lesson 
+and/or project first by prodividing a link to it. Add your 
+link after href=.-->
+					  
+				  <p>Create a Mozilla Persona account to access <a href="http://parapara.mozlabs.jp">Para Para</a>. You can sign-up from the Para Para site.</p>
+
+                  <p>Create a Para Para Wall and session for your workshop.</p>
+				  
+				  <p>Add a few example animations to the wall to help learners see what they're aiming for during the session.</p>
+				  
+                  <!--The next set of instructions is boilerplate copy for teachers 
+who want to try the activity. Feel free to edit or delete it 
+if it doesn't fit your plan. The link here in line 228 should 
+be the same one from line 220.-->
+
+                <!--Here you can remind teachers to set up any accounts they and 
+their students might need for your lesson. Add your link 
+after href= and edit in the name of the web service you'll 
+use.-->
+
+                <!--Also remind teachers to post a link tp any webpages students 
+will need for the lesson and/or project. Add your link in 
+between the quotes after href=.-->
+
+              </div>
+            </li>
+
+          <!--Now the individual steps in your lesson begin.-->
+
+          <!--
+
+===========================================================
+Each step has the following structure
+
+<li>
+<div>
+
+<div class="time">
+<p>[Number]<br>
+min</p></div>
+
+<h3>[Name of the step]</h3>
+
+<p>A series of instructions in paragraphs...</p>
+
+<ul>
+<li>...and lists.</li>
+</ul>
+
+</div>	
+</li>
+
+You sould cut and paste that structure and edit it for however many 
+steps you have.
+
+Lists can be <ul>, or unordered, with bullet points, or they can be 
+<ol>, ordered, with numbers.
+
+Remember you can add links like this:
+
+<a href="[web address]">[name of the webpage]</a>
+
+You can also add images like this:
+
+<img src="[file name or web address]">
+
+To embed media like videos or music, check out the "Share" tabs on 
+popular sites like YouTube and Soundcloud.
+
+Ship questions to @MozTeach on Twitter.
+
+Happy lesson planning!
+===========================================================
+
+-->
+		
+		<li>
+		<div>
+
+		<div class="time">
+		<p>5<br>
+		min</p></div>
+
+		<h3>Introduction</h3>
+		
+		<p style="text-align:center;"><img src="" alt=""></p>
+
+		<p>Show learners the <a href="http://parapara.mozlabs.jp">Para Para</a> site at Mozilla Japan and view a gallery to get a sense of how a group of users can contribute animations to a collaborative wall. </p>
+
+		</div>	
+		</li>
+		
+		<li>
+		<div>
+
+		<div class="time">
+		<p>5<br>
+		min</p></div>
+
+		<h3>Creating a Wall</h3>
+		
+		<p style="text-align:center;"><img src="https://farm8.staticflickr.com/7271/13573702895_d0fb3c3c87.jpg" alt="A screen-captured image from the Para Para website" width="90%"><br>Image credit <a href="https://www.flickr.com/photos/karenlouisesmith/13573757333">Karen Smith</a></p>
+
+		<p>To make your own collaborative wall, click 'Create a New Event.' You can login with Persona.</p>
+		</div>	
+		</li>
+		
+		<li>
+		<div>
+
+		<div class="time">
+		<p>5<br>
+		min</p></div>
+
+		<h3>Customizing Your Wall</h3>
+
+		<p>After you create your new wall, give it a descriptive name and select a background fit for your class, club, or workshop.</p>
+
+		</div>	
+		</li>
+		
+		<li>
+		<div>
+
+		<div class="time">
+		<p>5<br>
+		min</p></div>
+
+		<h3>Facilitating Collaborative Animations</h3>
+		
+<p style="text-align:center;"><img src="https://farm4.staticflickr.com/3695/13574072894_e8baeece6a.jpg" alt="An screen-captured image from the Para Para website" width="90%"><br>Image credit <a href="https://www.flickr.com/photos/karenlouisesmith/13574072894/">Karen Smith</a></p>
+		
+		<p>Next, you'll navigate to a page that lets you facilitate the animation session. Share the link for the editor with participants. Consider launching the wall in a new window and projecting it for your learners to view.</p>
+
+
+		</div>	
+		</li>
+		
+		<li>
+		<div>
+
+		<div class="time">
+		<p>30<br>
+		min</p></div>
+
+		<h3>Creating Animations</h3>
+		
+<p style="text-align:center;"><img src="https://farm8.staticflickr.com/7047/13574072474_80d40c5d07.jpg" alt="An screen-captured image from the Para Para website" width="90%"><br>Image credit <a href="https://www.flickr.com/photos/karenlouisesmith/13574072474/">Karen Smith</a></p>
+		
+
+		<p>Invite learners to create animations using the editor from tablets, phones or laptops. An animation is created by drawing in consecutive cells. Para Para loops through the cells to animate the pictures. Learners can press play to preview their animations before publishing them to the group's shared wall.</p>
+
+		</div>	
+		</li>
+		
+          <li>
+            <div>
+              <div class="time">
+                <p>10<br>
+                  min</p></div><!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
+
+              <h3>Hosting a Viewing Party</h3>
+			  
+			  <p style="text-align:center;"><img src="" alt=""></p>
+
+              <p>View the animations on a screen or projected against a wall. Discuss with participants how the wall acts as a shared, open space for community artwork, discussion, and participation.</p>
+
+          </div>
+
+        </li>
+
+
+      <!--This is where your individual steps end.-->
+
+      </ul>
+
+    <!--This is where the big list holding your steps ends.-->
+
+    </div>
+
+  <!--This is where the big container for the main column ends.-->
+
+  </article>
+
+<!--This is where the sidebar and maincolumn end together.-->
+
+<!--The footer of the page begins here.-->
+
+<footer class="footer">
+
+  <!--
+
+===========================================================
+If you would like to link this lesson to another as part of a series, you can use the button below to do so.
+
+1. Add a link to the next actvity after href=.
+2. Change the ending of the button's class= attribute to match a Web Literacy competency from the next lesson.
+See the makerstrap .png again at 
+https://drive.google.com/a/mozillafoundation.org/folderview?id=0B_rbDAen9prkUmd1N1lFM3E0dFk&usp=drive_web.
+4. Edit the name of the linked activity.
+5. You may delete this link and button if your lesson is standalone.
+===========================================================
+
+-->
+
+
+  <a href="http://fabble.cc/comozilla/pm-with-parapara#5620b71f6769742ae1b64400"><button class="btn literacy-color-sharing">Sharing Projects on Fabble [External]</button></a> <a href="http://fabble.cc/comozilla/pm-with-parapara#5620b71f6769742ae1b64400"><button class="btn literacy-color-composing">Creating Projection-Mapped 3D Animations with Para Para [External]</button></a> 
+
+  <!--
+
+===========================================================
+The default license for this page is CC-BY-SA, which means...
+
+1. This is a Creative Commons license.
+2. If you use this page, you're expected to attribute its design to Mozilla 
+Learning Networks (it was made *BY* MLN).
+3. You are exppected to share your remix of this page using the same license so 
+others credit you and MLN and share their work forward, too; they *SHARE ALIKE*.
+===========================================================
+
+-->
+
+  <div class="license">
+
+    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+
+  </div>
+
+</footer>
+
+<!--The footer ends.-->
+
+</div>
+
+<!--The page container and then the page end.-->
+
+</body>
+
+</html>
