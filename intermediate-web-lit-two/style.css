@@ -1,0 +1,21 @@
+form {
+	display: inline;
+	padding-bottom: 1em;
+}
+
+header{
+	padding-bottom: 1em;
+}
+
+input{
+	height: 1.25em;
+	max-width: 10em;
+}
+
+section{
+	padding-bottom: 2em;
+}
+
+.answer{
+	display:inline;
+}
