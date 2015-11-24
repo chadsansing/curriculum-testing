@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>CSS Building Blocks Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="https://thimble.mozilla.org/tutorial/tutorial.css">
+
+</head>
+
+<body>
+
+	<div class="tutorial">
+
+		<h1>CSS Building Blocks Tutorial</h1>
+		
+		<p>
+			
+		This project will help you learn to display, position, and style content on a webpage. You will
+		
+		</p>
+		
+		<ol>
+			<li>Know and understand how to use the <code>&lt;div&gt;</code> tag.</li>
+			<li>Change the display type of blocks made using the <code>&lt;div&gt;</code> tag.</li>
+			<li>Change the color of those blocks.</li>
+			<li>Change the size of those blocks.</li>
+			<li>Change the position of those blocks.</li>
+		</ol>
+		
+		<p>It's a good idea to chunk this tutorial for yourself or your learners. Never be afraid to use the parts that make sense to you and to skip the rest. You can also remix this whole project and delete the parts of the tutorial you don't want to teach right now. If you're not quite ready, for example, to tackle display or positioning, then just start with color and size. If you don't want to worry about picking between websafe color names, hexcodes, and rgba codes in the color section, just pick websafe color names or hexcodes to work on for now. This tutorial is meant to help you, not frustrate you, so don't feel you have to do everything at once!</p>
+		
+		<p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
+		
+		<p>
+		Let's get started!
+		</p>
+
+		<h3>Step-by-Step Instructions</h3>
+		
+		<ol class="steps">
+		
+			<li>
+
+				<h4>
+				<strong>What's a <code>div</code>?</strong>
+			</h4>
+				
+				<p><strong>TL;DR:</strong> a <code>div</code> is an element you can use to create part of a webpage with special rules.</p>
+				
+				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Mozilla Developer Network</a>, a <code>div</code> is</p>
+				
+				<blockquote>the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>Basically, it means that when you create a <code>div</code> and give it an <code>id</code> or <code>class</code> (a sepcial label), you can write instructions on a cascading style sheet (CSS) that create special rules for how that div displays on a webpage. You can mess with its color, position, and size, to begin with, as well as any special effects you want the <code>div</code> to have, like animations or shadows, that are different from the rest of the page.</p>
+				
+								<p>If you want to create a sort of unique part of your web page and no other element like <code>header</code>, <code>p</code> (for paragraph), or <code>section</code> will do, then use a <code>div</code>.</p>
+				
+			</li>
+			
+			<li>
+				
+				<h4>How do <code>div</code> elements work?</h4>
+				
+				<p><strong>TL;DR:</strong>: A <code>.css</code> stylesheet files tells each <code>div</code> on a webpage what to do.</p>
+				
+				<p>Let's see how <code>div</code> elements in <code>html</code> files work with instructions from <code>css</code> files.</p>
+				
+					
+				<p>Visit the file called <code>index.html</code> in the FILES sidebar on the left. You'll see lots of <code>div</code> elements in that page creating special areas and rules for things like the <code>banner</code> text at the top of the page, the six boxes in the <code>main</code> part of the page, and the licensing information in the <code>footer</code> of the page.</p>
+				
+				<p>Then, if you go to the file called <code>style.css</code> and scroll to the bottom of the pafe, you'll find the special, specific styles for those <code>div</code> elements.</p>
+				
+				<p>You don't need to know everything going on right now, but look for common attributes like <code>background-color</code>, <code>border</code>, <code>color</code>, <code>display</code>, and <code>position</code> inside the instructions for the <code>div</code> elements called <code>#boxOne</code> through <code>#boxSix</code>. This is where the color, position, and size of each box in <code>index.html</code> comes from in this project.</p>
+				
+				<p>Finally, if you take another quick look at the top of the <code>index.html</code> file, you can find a <code>linl</code> elements that connects the webpage to its stylesheet called <code>style.css</code>.</p>		
+					
+					
+			</li>
+			
+			<li>
+				
+				<h4>Change <code>display</code></h4>
+				
+				<p><strong>TL;DR:</strong>: HTML elements can be <code>inline</code> and wrap within a line or <code>block</code> and occupy their own lines (or sometimes mix both).</p>
+				
+				<p>In a webpage, the <code>display</code> attribute determines how each element 'stacks' or 'wraps' with other elements. Elements that are <code>inline</code>, like <code>&lt;strong&gt;</code> (for bold text), fit, or wrap, inside the lines of codes in which they appear. These <code>inline</code> elements appear horizontally, or side-by-side, without making new line breaks. They line up like blocks in a row.</p>
+				
+				<p>On the other hand, <code>block</code> elements occupy their own lines on the screen and trigger a new line break wherver they appear. These elements stack verically like blocks in a tower. For example, the <code>&lt;p&gt;</code> code, for paragraph, alwys starts a new line. Text inside the paragraph wraps, but the paragraph itself is a block element - a line break happens before and after it.</p>
+				
+				<p>Each <code>HTML</code> element has a defauly display setting of <code>inline</code> or <code>block</code>, but those settings can be changed through styling in <code>.css</code> files. Our <code>div</code> elements in <code>index.html</code> are set to be <code>inline-block</code> which lets them occupy the same amount of space they would normally occupy, but also to line up next to one another.</p>
+				
+				<p>Go to the <code>style.css</code> file and find the <code>display</code> element for each box <code>div</code>. Change the <code>display</code> value to <code>inline</code> for each block. What happens?</p>
+				
+				<p>Then change the <code>display</code> value to <code>block</code> for each bix <code>div</code>. What happens?</p>
+				
+				<p>Finally, change the <code>display</code> value for each block <code>div</code> back to <code>inline-block</code> for the rest of the activity.</p>
+				
+			</li>
+			
+			<li>
+				
+				<h4>Change <code>background-color</code> and <code>border</code> color</h4>
+				
+				<p><strong>TL;DR:</strong> you can use color codes and names to change the color of elements on a webpage.</p>
+				
+				<p>There are plenty of ways to change the color of elements on a webpage using <code>.css</code> files. If you are in a 'TL;DR' mood, just mess around with color names and hexcodes today, and skip the l;ast section on rgba colors.<p>
+				
+				<p><strong>Websafe color names</strong></p>
+					
+				<p>To begin, go to our <code>style.css</code> file and visit the <code>div</code> elements representing our boxes at the bottom of the page.</p>
+				
+				<p>Each box <code>div</code> has two colors, a <code>background-color</code> attribute and a color value for its <code>border</code> attribute.</p>
+				
+				<p>You can change colors three ways with <code>HTML</code> and <code>CSS</code>. First, you can just type 'websafe' color names, like 'red,' 'green,' or 'blue.' Here is <a href="http://www.w3schools.com/HTML/html_colornames.asp">a site from w3schools.com</a> with color names (and hex codes, which we'll get to in a moment). Try typing some of these names into the <code>CSS</code> instructions for our boxes. When you delete the color codes that are already there for <code>background-color</code> and the last part of each <code>border</code> element, be sure to delete the <code>#</code>, as well.</p>
+				
+				<p><strong>Hexcodes</strong></p>
+				
+				<p>Next, let's play with hexcodes. Color hexcodes (from the Greek 'hex' for 'six') are six-character color codes that look like this: <code>#000000</code>.</p>
+				
+				<p>In a color hexcode, the first two characters are red values, the next two characters are green values, and the last two characters are blue values. Charcaters can be any number between 0 and 9, or any letter between 'a' and 'f.' The number 0 is the darkest value, and the letter 'f' is the brightest value, so <code>#000000</code> displays as black, while <code>#ffffff</code> displays as white. Something like <code>#ff0000</code> would be a bright red, while <code>#550000</code> would be a darker red. If ever you have the same two values for each color in a hexcode, like in <code>#ff0000</code> where both red values are 'f,' both blue values are 0, and both green values are 0, you can shortcut the code down to three characters like this: <code>#f00</code>. That is to say, <code>#ff0000</code> equals <code>#f00</code>. Unless you're building a webpage for printing, it's good to use hexcodes.</p>
+				
+				<p>Use a site like that <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">w3schools.com list of colors</a> or a chart like <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">this one</a> to pick hexcodes and mess with the <code>background-color</code> and <code>border</code> color value for each box.</p>
+				
+				<p><strong>RGBA values</strong></p>
+				
+				<p>Finally, we can also use 'rgba' values for a color. The abbreviation 'rgba' stands for, 'red, green, blue, alpha,' where 'alpha' is a value for opacity. All rgba values are between 0 and 255, which represent the 256 steps (0 is the first step) a color can take in an 8-bit binary number. Circuitry runs on those 8-bit binary numbers as electricity defines how much of a circuit is on or off. Those 8-bit binary numbers control the color display and intensity of electronics like multi-color LEDs or color-printer heads, so when you use rgba values, you're essentially borrowing analog, physical color values created by passing current through part of a circuit that creates a physical response to the amount of voltage it receives. Hence, 'rgba' values are great to use on webpages that see frequent printing or that want to approximate the colors of, say, an LED connected to a microprocessor like the arduino.</p>
+				
+				<p>In our <code>style.css</code> file, you can use rgba values like this: <code>rgba(0, 0, 256, 1)</code>. In an rgba code, the first number represents the red value, the second is the green, the third is the blue, and the fourth is opacity. Colors can go from 0 (darkest) to 255 (brightest), and alpha, or opacity, can go from 0 (transparent) to 1 (opaque) using decimal values, as well.</p>
+				
+				<p>Here is a great <a href="http://www.css3maker.com/css-3-rgba.html">rgba color resource</a> that gives you the <code>CSS</code> code for <code>background-color</code> and <code>color</code>.</p>
+				
+				
+			</li>
+			
+			<li>
+				
+				<h4>Change <code>size</code></h4>
+				
+				<p><strong>TL;DR:</strong> You can change the size of an element using the <code>height</code> and <code>width</code> attributes.
+				
+				<p>Now for something a bit less code intensive: sizing. Visit our boxes in <code>style.css</code>. Find the <code>height</code> and <code>width</code> atrributes. Go ahead and change them a few times to see what happens. Try to make huge boxes and tiny bpxes. Mix and match diffetent boxes' sizes. In general, see what happens to the layout of the webpage as you change the size of elements inside it.</p>
+				
+			</li>
+			
+			<li>
+				
+				<h4>Change <code>position</code></h4>
+				
+				<p><strong>TL;DR:</strong> You can place an element like a <code>div</code> anywhere on a webpage using its stylesheet.</p>
+				
+				<p>As you take one more look at our boxes' <code>doiv</code> elements inside <code>style.css</code>, you can see that each has a <code>position</code>. The <code>position</code> of each <code>div</code> element works with its <code>left</code> and <code>top</code> attributes. For example, an element like one of our boxes that is positioned as <code>relative</code> with <code>left</code> and <code>top</code> values of <code>25px</code> is positioned 25 pixes down from the top of the part of the page it's in, as well as 25 pixels to the left of the last part of the page that appears before it.</p>
+				
+				<p>There are several values for the  <code>position</code> attribute. Here are three commonly used values:</p>
+				
+				<ul>
+					<li><strong>Absolute</strong> - this kind of positioning anchors an element at a specific place, but still allows for page scrolling. Elements positioned with <code>absolute</code> depend on the entire page.</li>
+					<li><strong>Fixed</strong> - this kind of positioning anchors an element at a specific place and anchors the whole page at the same time, preventing scrolling. Elements positioned with <code>fixed</code> depend on the entire page.</li>
+					<li><strong>Relative</strong> - this kind of positioning places an element relative to the part of the page it's in or to the last element that appears before it. Elements positioned with <code>relative</code> depend on spatial relationships to other parts of the page rather than to the entire page.</li>
+				</ul>
+				
+				<p>Once you choose a value for <code>position<code>, you can place an element using <code>top</code>, <code>bottom</code>, <code>left</code>, or <code>right</code>. You can use either <code>top</code> or <code>bottom</code> and either <code>left</code> or <code>right</code>. You can also position something just from the <code>top</code> or <code>bottom</code> or just from gthe <code>left</code> or <code>right</code>.</p>
+				
+				<p>Dive back into <code>style.css</code> and see what you can 'break' by changing the value of <code>position</code> to <code>absolute</code> or <code>fixed</code>. You can also increase or decrease the values for <code>top</code> or <code>left</code>. Fianlly, you can also see what happens when you change <code>top</code> to <code>bottom</code> or <code>left</code> to <code>right</code>.</p>
+				
+			</li>
+			
+			<li>
+				
+				<h4>Mess with the code</h4>
+				
+				<p><strong>TL;DR:</strong> You can mess with anything you see in Thimble - break this webpage!</p>
+				
+				<p>Never be afraid to mess around with other parts of the webpage, either! For example, you can change the words on <code>index.html</code> by finding the <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> tags. You can stay inside <code>style.css</code> and change the <code>color</code> and <code>font-size</code> values of those elements, as well. Have fun exploring the web!</p>
+				
+			</li>
+				
+		</ol>
+
+		<p>Congratulations! You took a deep dive into CSS today and learned how to style <code>div</code> elements on a webpage. Keep coding and building for the web to create your own crazy cool webpages and pieces of art using code for creative expression.</p>
+		
+		<h4>Secret missions!</h4>
+		
+		<p>Have you mastered this project? Why not take it further. Make your own art online, download it (and drag it into Thimble) or grab its link, and then research how to change the <code>background-color</code> of each box's <code>div</code> element to a <code>background-image</code>. Find out how to swap out the web fonts on <code>index.html</code> and <code>style.css</code>. Change the size of each box <code>div</code> and perhaps even add more; then change their <code>display</code> and <code>position</code> attributes to construct a building or landscape on the screen. Whenever you're ready, take control and steer your own magic carpet ride of learning to read, write, and participate on the Web!</p>
+
+</div>
+
+</body>
+
+</html>
