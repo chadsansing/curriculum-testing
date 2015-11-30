@@ -51,7 +51,7 @@
 				
 				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Mozilla Developer Network</a>, a <code>div</code> is</p>
 				
-				<blockquote>the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</blockquote>
+				<blockquote><em>the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</em></blockquote>
 				
 				<p>What does that mean?</p>
 				
@@ -76,7 +76,7 @@
 				
 				<p>You don't need to know everything going on right now, but look for common attributes like <code>background-color</code>, <code>border</code>, <code>color</code>, <code>display</code>, and <code>position</code> inside the instructions for the <code>div</code> elements called <code>#boxOne</code> through <code>#boxSix</code>. This is where the color, position, and size of each box in <code>index.html</code> comes from in this project.</p>
 				
-				<p>Finally, if you take another quick look at the top of the <code>index.html</code> file, you can find a <code>linl</code> elements that connects the webpage to its stylesheet called <code>style.css</code>.</p>		
+				<p>Finally, if you take another quick look at the top of the <code>index.html</code> file, you can find a <code>link</code> elements that connects the webpage to its stylesheet called <code>style.css</code>.</p>		
 					
 					
 			</li>
@@ -107,7 +107,7 @@
 				
 				<p><strong>TL;DR:</strong> you can use color codes and names to change the color of elements on a webpage.</p>
 				
-				<p>There are plenty of ways to change the color of elements on a webpage using <code>.css</code> files. If you are in a 'TL;DR' mood, just mess around with color names and hexcodes today, and skip the l;ast section on rgba colors.<p>
+				<p>There are plenty of ways to change the color of elements on a webpage using <code>.css</code> files. If you are in a 'TL;DR' mood, just mess around with color names and hexcodes today, and skip the last section on rgba colors.<p>
 				
 				<p><strong>Websafe color names</strong></p>
 					
@@ -121,7 +121,7 @@
 				
 				<p>Next, let's play with hexcodes. Color hexcodes (from the Greek 'hex' for 'six') are six-character color codes that look like this: <code>#000000</code>.</p>
 				
-				<p>In a color hexcode, the first two characters are red values, the next two characters are green values, and the last two characters are blue values. Charcaters can be any number between 0 and 9, or any letter between 'a' and 'f.' The number 0 is the darkest value, and the letter 'f' is the brightest value, so <code>#000000</code> displays as black, while <code>#ffffff</code> displays as white. Something like <code>#ff0000</code> would be a bright red, while <code>#550000</code> would be a darker red. If ever you have the same two values for each color in a hexcode, like in <code>#ff0000</code> where both red values are 'f,' both blue values are 0, and both green values are 0, you can shortcut the code down to three characters like this: <code>#f00</code>. That is to say, <code>#ff0000</code> equals <code>#f00</code>. Unless you're building a webpage for printing, it's good to use hexcodes.</p>
+				<p>In a color hexcode, the first two characters are red values, the next two characters are green values, and the last two characters are blue values. Characters can be any number between 0 and 9, or any letter between 'a' and 'f.' The number 0 is the darkest value, and the letter 'f' is the brightest value, so <code>#000000</code> displays as black, while <code>#ffffff</code> displays as white. Something like <code>#ff0000</code> would be a bright red, while <code>#550000</code> would be a darker red. If ever you have the same two values for each color in a hexcode, like in <code>#ff0000</code> where both red values are 'f,' both blue values are 0, and both green values are 0, you can shortcut the code down to three characters like this: <code>#f00</code>. That is to say, <code>#ff0000</code> equals <code>#f00</code>. Unless you're building a webpage for printing, it's good to use hexcodes.</p>
 				
 				<p>Use a site like that <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">w3schools.com list of colors</a> or a chart like <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">this one</a> to pick hexcodes and mess with the <code>background-color</code> and <code>border</code> color value for each box.</p>
 				
@@ -142,7 +142,7 @@
 				
 				<p><strong>TL;DR:</strong> You can change the size of an element using the <code>height</code> and <code>width</code> attributes.
 				
-				<p>Now for something a bit less code intensive: sizing. Visit our boxes in <code>style.css</code>. Find the <code>height</code> and <code>width</code> atrributes. Go ahead and change them a few times to see what happens. Try to make huge boxes and tiny bpxes. Mix and match diffetent boxes' sizes. In general, see what happens to the layout of the webpage as you change the size of elements inside it.</p>
+				<p>Now for something a bit less code intensive: sizing. Visit our boxes in <code>style.css</code>. Find the <code>height</code> and <code>width</code> atrributes. Go ahead and change them a few times to see what happens. Try to make huge boxes and tiny boxes. Mix and match diffetent boxes' sizes. In general, see what happens to the layout of the webpage as you change the size of elements inside it.</p>
 				
 			</li>
 			
@@ -152,19 +152,19 @@
 				
 				<p><strong>TL;DR:</strong> You can place an element like a <code>div</code> anywhere on a webpage using its stylesheet.</p>
 				
-				<p>As you take one more look at our boxes' <code>doiv</code> elements inside <code>style.css</code>, you can see that each has a <code>position</code>. The <code>position</code> of each <code>div</code> element works with its <code>left</code> and <code>top</code> attributes. For example, an element like one of our boxes that is positioned as <code>relative</code> with <code>left</code> and <code>top</code> values of <code>25px</code> is positioned 25 pixes down from the top of the part of the page it's in, as well as 25 pixels to the left of the last part of the page that appears before it.</p>
+				<p>As you take one more look at our boxes' <code>div</code> elements inside <code>style.css</code>, you can see that each has a <code>position</code>. The <code>position</code> of each <code>div</code> element works with its <code>left</code> and <code>top</code> attributes. For example, an element like one of our boxes that is positioned as <code>relative</code> with <code>left</code> and <code>top</code> values of <code>25px</code> is positioned 25 pixels down from the top of the part of the page it's in, as well as 25 pixels to the left of the last part of the page that appears before it.</p>
 				
 				<p>There are several values for the  <code>position</code> attribute. Here are three commonly used values:</p>
 				
 				<ul>
 					<li><strong>Absolute</strong> - this kind of positioning anchors an element at a specific place, but still allows for page scrolling. Elements positioned with <code>absolute</code> depend on the entire page.</li>
 					<li><strong>Fixed</strong> - this kind of positioning anchors an element at a specific place and anchors the whole page at the same time, preventing scrolling. Elements positioned with <code>fixed</code> depend on the entire page.</li>
-					<li><strong>Relative</strong> - this kind of positioning places an element relative to the part of the page it's in or to the last element that appears before it. Elements positioned with <code>relative</code> depend on spatial relationships to other parts of the page rather than to the entire page.</li>
+					<li><strong>Relative</strong> - this kind of positioning places an element relative to the part of the page it's in or to the last element that appears before it. Elements positioned with <code>relative</code> depend on spatial relationships to other parts of the page rather than to only the entire page.</li>
 				</ul>
 				
-				<p>Once you choose a value for <code>position<code>, you can place an element using <code>top</code>, <code>bottom</code>, <code>left</code>, or <code>right</code>. You can use either <code>top</code> or <code>bottom</code> and either <code>left</code> or <code>right</code>. You can also position something just from the <code>top</code> or <code>bottom</code> or just from gthe <code>left</code> or <code>right</code>.</p>
+				<p>Once you choose a value for <code>position</code>, you can place an element using <code>top</code>, <code>bottom</code>, <code>left</code>, or <code>right</code>. You can use either <code>top</code> or <code>bottom</code> and either <code>left</code> or <code>right</code>. You can also position something just from the <code>top</code> or <code>bottom</code> or just from gthe <code>left</code> or <code>right</code>.</p>
 				
-				<p>Dive back into <code>style.css</code> and see what you can 'break' by changing the value of <code>position</code> to <code>absolute</code> or <code>fixed</code>. You can also increase or decrease the values for <code>top</code> or <code>left</code>. Fianlly, you can also see what happens when you change <code>top</code> to <code>bottom</code> or <code>left</code> to <code>right</code>.</p>
+				<p>Dive back into <code>style.css</code> and see what you can 'break' by changing the value of <code>position</code> to <code>absolute</code> or <code>fixed</code>. You can also increase or decrease the value for <code>top</code> and <code>left</code>. Finally, you can also see what happens when you change <code>top</code> to <code>bottom</code> or <code>left</code> to <code>right</code>.</p>
 				
 			</li>
 			
@@ -184,7 +184,7 @@
 		
 		<h4>Secret missions!</h4>
 		
-		<p>Have you mastered this project? Why not take it further. Make your own art online, download it (and drag it into Thimble) or grab its link, and then research how to change the <code>background-color</code> of each box's <code>div</code> element to a <code>background-image</code>. Find out how to swap out the web fonts on <code>index.html</code> and <code>style.css</code>. Change the size of each box <code>div</code> and perhaps even add more; then change their <code>display</code> and <code>position</code> attributes to construct a building or landscape on the screen. Whenever you're ready, take control and steer your own magic carpet ride of learning to read, write, and participate on the Web!</p>
+		<p>Have you mastered this project? Why not take it further? Make your own art online, download it (and drag it into Thimble) or grab its link, and then research how to change the <code>background-color</code> of each box's <code>div</code> element to a <code>background-image</code>. Find out how to swap out the web fonts on <code>index.html</code> and <code>style.css</code>. Change the size of each box <code>div</code> and perhaps even add more; then change their <code>display</code> and <code>position</code> attributes to construct a building or landscape on the screen. Whenever you're ready, take control and steer your own magic carpet ride of learning to read, write, and participate on the Web!</p>
 
 </div>
 
