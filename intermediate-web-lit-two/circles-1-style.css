@@ -1,5 +1,91 @@
 /*Layout*/
 
+body{
+	padding-left:.5em;
+}
+
+
+h1{
+	display:inline-block;
+	margin-bottom:.125em;
+	margin-top:.25em;
+}
+
+h2{
+	display:inline-block;
+	margin-bottom:.5em;
+	margin-top:.125em;
+}
+
 /*Typography*/
 
+code{
+	font-family: 'Roboto Mono', monospace;
+	font-size:.9em;
+	font-weight: 300;
+}
+
+h1{
+	font-family: 'Righteous', sans-serif;
+	font-size:3em;
+	
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size:1.5em;
+	font-weight:500;
+}
+
 /*Specific styles*/
+
+#circleOne{
+	background-color: #f00;
+	border: 3px solid #a00;
+	border-radius:999px;
+	height:200px;
+	position:absolute;
+	opacity:.5;
+	top:150px;
+	width:200px;
+	z-index:999;
+	
+}
+
+#circleTwo{
+	background-color: #ff0;
+	border: 3px solid #aa0;
+	border-radius:999px;
+	height:200px;
+	position:absolute;
+	opacity:.5;
+	width:200px;
+	top:300px;
+	z-index:0;
+	
+}
+
+#circleThree{
+	background-color: #00f;
+	border: 3px solid #00a;
+	border-radius:999px;
+	height:200px;
+	opacity:.5;
+	position:absolute;
+	top:450px;
+	width:200px;
+	z-index:-999;
+	
+}
+
+#license{
+	color:#000;
+	font-family: monospace;
+	font-size:.9em;
+	position: absolute;
+	top:675px;
+}
+
+#license a{
+	color:#000;
+}
