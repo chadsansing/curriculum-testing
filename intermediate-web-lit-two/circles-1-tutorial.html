@@ -2,207 +2,254 @@
 
 <html>
 
-<head>
+  <head>
 
-	<title>CSS Circles Tutorial</title>
-	<link rel="stylesheet" type="text/css" href="https://thimble.mozilla.org/tutorial/tutorial.css">
+    <title>CSS Circles Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="https://thimble.mozilla.org/tutorial/tutorial.css">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-	<div class="tutorial">
+    <div class="tutorial">
 
-		<h1>CSS Circles Tutorial</h1>
+      <h1>CSS Circles Tutorial</h1>
+
+      <p>
+
+        This project will help you learn style the color, position, and style of content on a webpage. You will
+
+      </p>
+
+      <ol>
+        <li>Know and understand how to use the <code>&lt;div&gt;</code> tag.</li>
+        <li>Change the color of circles made using the <code>&lt;div&gt;</code> element.</li>
+        <li>Change the size of those circles.</li>
+        <li>Change the position of those circles.</li>
+      </ol>
+
+      <p></p>
+
+      <p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
+
+      <p>
+        Let's get started! You can follow the steps in this activity in order, or jump around from item to item depending on what interests you the most. Changing color and size are probably the best places to start if you want to see high-impact changes on your webpage right away. <a name="navList">&nbsp;</a></p>
+
+      <nav>
+
+        <ul>
+          <li><a href="#whats-a-div">What's a <code>div</code>?</a></li>
+          <li><a href="#how-do-div-elements-work">How do <code>div</code> elements work?</a></li>
+          <li><a href="#change-background-color-and-border-color">Change <code>background-color</code> and <code>border</code>color</a></li>
+          <li><a href="#change-size">Change size</a></li>
+          <li><a href="#change-position">Change <code>position</code></a></li>
+          <li><a href="#mess-with-the-code">Mess with the code</a></li>
+        </ul>
+      
+      </nav>
+
+
+
+        <h3>Step-by-Step Instructions</h3>
+
+        <ol class="steps">
+
+          <li>
+
+            <a name="whats-a-div"><h4>What's a <code>div</code>?</h4></a>
+
+            <p><strong>TL;DR:</strong> a <code>div</code> is an element you can use to create part of a webpage with special rules.</p>
+
+            <p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Mozilla Developer Network</a>, a <code>div</code> is</p>
+
+            <blockquote><em>the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</em></blockquote>
+
+            <p>What does that mean?</p>
+
+            <p>Basically, it means that when you create a <code>div</code> and give it an <code>id</code> or <code>class</code> (a sepcial label), you can write instructions on a cascading style sheet (CSS) that create special rules for how that div displays on a webpage. You can mess with its color, position, and size, to begin with, as well as any special effects you want the <code>div</code> to have, like animations or shadows, that are different from the rest of the page.</p>
+
+            <p>If you want to create a sort of unique part of your web page and no other element like <code>header</code>, <code>p</code> (for paragraph), or <code>section</code> will do, then use a <code>div</code>.</p>
+
+            <p>Back to <a href="#navList">navigation.</a></p>
+
+          </li>
+
+          <li>
+
+            <a name="how-do-div-elements-work"><h4>How do <code>div</code> elements work?</h4></a>
+
+            <p><strong>TL;DR:</strong>: A <code>.css</code> stylesheet files tells each <code>div</code> on a webpage what to do.</p>
+
+            <p>Let's see how <code>div</code> elements in <code>html</code> files work with instructions from <code>css</code> files.</p>
+
+
+            <p>Visit the file called <code>index.html</code> in the FILES sidebar on the left. You'll see lots of <code>div</code> elements in that page creating special areas and rules for things like the <code>h1</code> text at the top of the page, the three circles in the <code>main</code> part of the page, and the licensing information in the <code>footer</code> of the page.</p>
+
+            <p>Then, if you go to the file called <code>style.css</code> and scroll to the bottom of the pafe, you'll find the special, specific styles for those circular <code>div</code> elements.</p>
+
+            <p>You don't need to know everything going on right now, but look for common attributes like <code>background-color</code>, <code>border</code>, <code>height</code>, <code>position</code>, and <code>width</code> (to name a few) inside the instructions for the <code>div</code> elements called <code>#circleOne</code> through <code>#circleThree</code>. This is where the color, position, and size of each circle in <code>index.html</code> comes from in this project.</p>
+
+            <p>Finally, if you take another quick look at the top of the <code>index.html</code> file, you can find a <code>link</code> elements that connects the webpage to its stylesheet called <code>style.css</code>.</p>
+
+            <p>Back to <a href="#navList">navigation.</a></p>		
+
+
+          </li>
+
+          <li>
+
+            <a name="change-background-color-and-border-color"><h4>Change <code>background-color</code> and <code>border</code> color</h4></a>
+
+            <p><strong>TL;DR:</strong> you can use color codes and names to change the color of elements on a webpage.</p>
+
+            <p>There are plenty of ways to change the color of elements on a webpage using <code>.css</code> files. If you are in a 'TL;DR' mood, just mess around with color names and hexcodes today, and skip the last section on rgba colors.<p>
+
+            <p><strong>Websafe color names</strong></p>
+
+            <p>To begin, go to our <code>style.css</code> file and visit the <code>div</code> elements representing our circles at the bottom of the style page.</p>
+
+            <p>Each circle <code>div</code> has two colors, a <code>background-color</code> attribute and a color value for its <code>border</code> attribute.</p>
+
+            <p>You can change colors three ways with <code>HTML</code> and <code>CSS</code>. First, you can just type 'websafe' color names, like 'red,' 'green,' or 'blue.' Here is <a href="http://www.w3schools.com/HTML/html_colornames.asp">a site from w3schools.com</a> with color names (and hex codes, which we'll get to in a moment). Try typing some of these names into the <code>CSS</code> instructions for our circles. When you delete the color codes that are already there for <code>background-color</code> and the last part of each <code>border</code> element, be sure to delete the <code>#</code>, as well.</p>
+
+            <p><strong>Hexcodes</strong></p>
+
+            <p>Next, let's play with hexcodes. Color hexcodes (from the Greek 'hex' for 'six') are six-character color codes that look like this: <code>#000000</code>.</p>
+
+            <p>In a color hexcode, the first two characters are red values, the next two characters are green values, and the last two characters are blue values. Characters can be any number between 0 and 9, or any letter between 'a' and 'f.' The number 0 is the darkest value, and the letter 'f' is the brightest value, so <code>#000000</code> displays as black, while <code>#ffffff</code> displays as white. Something like <code>#ff0000</code> would be a bright red, while <code>#550000</code> would be a darker red. If ever you have the same two values for each color in a hexcode, like in <code>#ff0000</code> where both red values are 'f,' both blue values are 0, and both green values are 0, you can shortcut the code down to three characters like this: <code>#f00</code>. That is to say, <code>#ff0000</code> equals <code>#f00</code>. Unless you're building a webpage for printing, it's good to use hexcodes.</p>
+
+            <p>Use a site like that <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">w3schools.com list of colors</a> or a chart like <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">this one</a> to pick hexcodes and mess with the <code>background-color</code> and <code>border</code> color value for each circle.</p>
+
+            <p><strong>RGBA values</strong></p>
+
+            <p>Finally, we can also use 'rgba' values for a color. The abbreviation 'rgba' stands for, 'red, green, blue, alpha,' where 'alpha' is a value for opacity. All rgba values are between 0 and 255, which represent the 256 steps (0 is the first step) a color can take in a 8-bit binary number (and these steps match those availble in a 5 volt circuit). Circuitry runs on those 8-bit binary numbers as electricity defines how much of a circuit is on or off. Those 8-bit binary numbers control the color display and intensity of electronics like multi-color LEDs or color-printer heads, so when you use rgba values, you're essentially borrowing analog, physical color values created by passing current through part of a circuit that creates a physical response to the amount of voltage it receives. Hence, 'rgba' values are great to use on webpages that see frequent printing or that want to approximate the colors of, say, an LED connected to a microprocessor like the arduino.</p>
+
+            <p>In our <code>style.css</code> file, you can use rgba values like this: <code>rgba(0, 0, 256, 1)</code>. In an rgba code, the first number represents the red value, the second is the green, the third is the blue, and the fourth is opacity. Colors can go from 0 (darkest) to 255 (brightest), and alpha, or opacity, can go from 0 (transparent) to 1 (opaque) using decimal values, as well.</p>
+
+            <p>Here is a great <a href="http://www.css3maker.com/css-3-rgba.html">rgba color resource</a> that gives you the <code>CSS</code> code for <code>background-color</code> and <code>color</code>.</p>
+
+            <p>Back to <a href="#navList">navigation.</a></p>
+
+
+          </li>
+
+          <li>
+
+            <a name="change-size"><h4>Change <code>size</code></h4></a>
+
+            <p><strong>TL;DR:</strong> You can change the size of an element using the <code>height</code> and <code>width</code> attributes.
+
+            <p>Now for something a bit less code intensive: sizing. Visit our circlees in <code>style.css</code>. Find the <code>height</code> and <code>width</code> atrributes. Go ahead and change them a few times to see what happens. Mix and match diffetent circlees' sizes. In general, see what happens to the layout of the webpage as you change the size of elements inside it.</p>
+
+            <p>You can also play with <code>border-radius</code> here. A <code>border-radius</code> of <code>999</code> bends a rectangular <code>div</code> into a circular shape. See how our circles deform when you change 999 to another value. Set the <code>border-radius</code> back to <code>999</code> to restore the circles.</p>
+
+            <p>Back to <a href="#navList">navigation.</a></p>
+
+          </li>
+
+          <li>
+
+            <a name="change-position"><h4>Change <code>position</code></h4></a>
+
+            <p><strong>TL;DR:</strong> You can place an element like a <code>div</code> anywhere on a webpage using its stylesheet.</p>
+
+            <p>As you take one more look at our circlees' <code>div</code> elements inside <code>style.css</code>, you can see that each has a <code>position</code>. The <code>position</code> of each <code>div</code> element works with its <code>top</code> attribute on this page.  For example, an element like <code>#circleOne</code> that is positioned as <code>relative</code> with a <code>top</code> value of <code>25px</code> is relatively positioned 25 pixels underneath the preceding element of the page - the beginning of the <code>main</code> layout element.</p>
+
+            <p>There are several values for the  <code>position</code> attribute. Here are three commonly used values:</p>
+
+            <ul>
+              <li><strong>Absolute</strong> - this kind of positioning anchors an element at a specific place, but still allows for page scrolling. Elements positioned with <code>absolute</code> depend on the entire page.</li>
+              <li><strong>Fixed</strong> - this kind of positioning anchors an element at a specific place and anchors the whole page at the same time, preventing scrolling. Elements positioned with <code>fixed</code> depend on the entire page.</li>
+              <li><strong>Relative</strong> - this kind of positioning places an element relative to the part of the page it's in or to the last element that appears before it. Elements positioned with <code>relative</code> depend on spatial relationships to other parts of the page rather than to only the entire page.</li>
+            </ul>
+
+            <p>Once you choose a value for <code>position</code>, you can place an element using <code>top</code>, <code>bottom</code>, <code>left</code>, or <code>right</code>. You can use either <code>top</code> or <code>bottom</code> and either <code>left</code> or <code>right</code>. You can also position something just from the <code>top</code> or <code>bottom</code> or just from gthe <code>left</code> or <code>right</code>.</p>
+
+            <p>Dive back into <code>style.css</code> and see what you can 'break' by changing the value of <code>position</code> to <code>absolute</code> or <code>fixed</code>. You can also increase or decrease the values for <code>top</code>. Finally, you can also see what happens when you change <code>top</code> to <code>bottom</code> or <code>left</code> to <code>right</code>.</p>
+
+            <p>You can also shift the blocks to line up horizontally instead of stacking vertically.</p>
+            
+            <ol>
+              
+              <li>Give each circular <code>div</code> a <code>absolute</code> value for <code>position</code>, as well as the same value for <code>top</code>.</li>
+              <li>Next, add a <code>left:_px;</code> line to the instructions for each of those <code>div</code> elements on <code>style.css</code>.</li>
+              <li>Fill in the blank with different pixel values to begin moving the circles around the page horizontally.</li>
+            </ol>
+
+            <p>You can play around with positioning even further by using a <code>absolute</code> or <code>fixed</code> value for <code>position</code> and then changing the circles' <code>top</code> and <code>left</code> values indepdently of one another to make a huge Venn diagram.</p>
+
+            <p>You can also add more circular <code>div</code> elements to <code>index.html</code> like this:</p>
+
+            <p><code>&lt;div id="circleFour"&gt;&lt;/div&gt;</code>.</p>
+
+            <p>Then, for each circle you add on <code>index.html</code>, go back to <code>style.css</code> and create a new set of instructions for that <code>div</code> element. You can copy and paste the circle before your new one and then change its name from, say, <code>#circleThree</code> to <code>#circleFour</code> on <code>style.css</code>. After that, change the values for each attribute in the circle (like <code>height</code> or <code>top</code>) until the <code>div</code> displays how you want it to on your webpage.</p>
+
+            <p>Back to <a href="#navList">navigation.</a></p>
+
+
+
+          </li>
+
+          <li>
+
+            <a name="mess-with-the-code"><h4>Mess with the code</h4></a>
+
+            <p><strong>TL;DR:</strong> You can mess with anything you see in Thimble - break this webpage!</p>
+
+            <p>Never be afraid to mess around with other parts of the webpage, either! For example, you can change the words on <code>index.html</code> by finding the <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> tags. You can stay inside <code>style.css</code> and change the <code>color</code> and <code>font-size</code> values of those elements, as well. Have fun exploring the web!</p>
+
+            <p>Back to <a href="#navList">navigation.</a></p>
+
+          </li>
+
+        </ol>
+        <p>Congratulations! You've learned a lot about CSS, <code>div</code> elements, and styling today! Keep writing the web to express yourself online!</p>
+
+        <h4>Secret missions!</h4>
 		
-		<p>
-			
-		This project will help you learn style the color, position, and style of content on a webpage. You will
-		
-		</p>
+		<p>Did you know that you can make triangular divs, too? Check this out.</p>
 		
 		<ol>
-			<li>Know and understand how to use the <code>&lt;div&gt;</code> tag.</li>
-			<li>Change the color of circles made using the <code>&lt;div&gt;</code> element.</li>
-			<li>Change the size of those circles.</li>
-			<li>Change the position of those circles.</li>
-		</ol>
-		
-		<p></p>
-		
-		<p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
-		
-		<p>
-		Let's get started! You can follow the steps in this activity in order, or jump around from item to item depending on what interests you the most. Changing color and size are probably the best places to start if you want to see high-impact changes on your webpage right away. <a name="navList">&nbsp;</a></p>
-		
-		<nav>
-			
-			<ul>
-				<li><a href="#whats-a-div">What's a <code>div</code>?</li>
-				<li><a href="#how-do-div-elements-work">How do <code>div</code> elements work?</a></li>
-				<li><a href="#change-background-color-and-border-color">Change <code>background-color</code> and <code>border</code>color</a></li>
-				<li><a href="#change-size">Change size</li>
-				<li><a href="#change-position">Change <code>position</code></li>
-				<li><a href="#mess-with-the-code">Mess with the code</a></li>
-			
-		</nav>
-		
-
-
-		<h3>Step-by-Step Instructions</h3>
-		
-		<ol class="steps">
-		
-			<li>
-
-				<a name="whats-a-div"><h4>What's a <code>div</code>?</h4></a>
-				
-				<p><strong>TL;DR:</strong> a <code>div</code> is an element you can use to create part of a webpage with special rules.</p>
-				
-				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Mozilla Developer Network</a>, a <code>div</code> is</p>
-				
-				<blockquote><em>the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate.</em></blockquote>
-				
-				<p>What does that mean?</p>
-				
-				<p>Basically, it means that when you create a <code>div</code> and give it an <code>id</code> or <code>class</code> (a sepcial label), you can write instructions on a cascading style sheet (CSS) that create special rules for how that div displays on a webpage. You can mess with its color, position, and size, to begin with, as well as any special effects you want the <code>div</code> to have, like animations or shadows, that are different from the rest of the page.</p>
-				
-								<p>If you want to create a sort of unique part of your web page and no other element like <code>header</code>, <code>p</code> (for paragraph), or <code>section</code> will do, then use a <code>div</code>.</p>
-								
-								<p>Back to <a href="#navList">navigation.</a></p>
-				
-			</li>
-			
-			<li>
-				
-				<a name="how-do-div-elements-work"><h4>How do <code>div</code> elements work?</h4></a>
-				
-				<p><strong>TL;DR:</strong>: A <code>.css</code> stylesheet files tells each <code>div</code> on a webpage what to do.</p>
-				
-				<p>Let's see how <code>div</code> elements in <code>html</code> files work with instructions from <code>css</code> files.</p>
-				
-					
-				<p>Visit the file called <code>index.html</code> in the FILES sidebar on the left. You'll see lots of <code>div</code> elements in that page creating special areas and rules for things like the <code>h1</code> text at the top of the page, the three circles in the <code>main</code> part of the page, and the licensing information in the <code>footer</code> of the page.</p>
-				
-				<p>Then, if you go to the file called <code>style.css</code> and scroll to the bottom of the pafe, you'll find the special, specific styles for those circular <code>div</code> elements.</p>
-				
-				<p>You don't need to know everything going on right now, but look for common attributes like <code>background-color</code>, <code>border</code>, <code>height</code>, <code>position</code>, and <code>width</code> (to name a few) inside the instructions for the <code>div</code> elements called <code>#circleOne</code> through <code>#circleThree</code>. This is where the color, position, and size of each circle in <code>index.html</code> comes from in this project.</p>
-				
-				<p>Finally, if you take another quick look at the top of the <code>index.html</code> file, you can find a <code>link</code> elements that connects the webpage to its stylesheet called <code>style.css</code>.</p>
-				
-				<p>Back to <a href="#navList">navigation.</a></p>		
-					
-					
-			</li>
-			
-			<li>
-				
-				<a name="change-background-color-and-border-color"><h4>Change <code>background-color</code> and <code>border</code> color</h4></a>
-				
-				<p><strong>TL;DR:</strong> you can use color codes and names to change the color of elements on a webpage.</p>
-				
-				<p>There are plenty of ways to change the color of elements on a webpage using <code>.css</code> files. If you are in a 'TL;DR' mood, just mess around with color names and hexcodes today, and skip the last section on rgba colors.<p>
-				
-				<p><strong>Websafe color names</strong></p>
-					
-				<p>To begin, go to our <code>style.css</code> file and visit the <code>div</code> elements representing our circles at the bottom of the style page.</p>
-				
-				<p>Each circle <code>div</code> has two colors, a <code>background-color</code> attribute and a color value for its <code>border</code> attribute.</p>
-				
-				<p>You can change colors three ways with <code>HTML</code> and <code>CSS</code>. First, you can just type 'websafe' color names, like 'red,' 'green,' or 'blue.' Here is <a href="http://www.w3schools.com/HTML/html_colornames.asp">a site from w3schools.com</a> with color names (and hex codes, which we'll get to in a moment). Try typing some of these names into the <code>CSS</code> instructions for our circles. When you delete the color codes that are already there for <code>background-color</code> and the last part of each <code>border</code> element, be sure to delete the <code>#</code>, as well.</p>
-				
-				<p><strong>Hexcodes</strong></p>
-				
-				<p>Next, let's play with hexcodes. Color hexcodes (from the Greek 'hex' for 'six') are six-character color codes that look like this: <code>#000000</code>.</p>
-				
-				<p>In a color hexcode, the first two characters are red values, the next two characters are green values, and the last two characters are blue values. Characters can be any number between 0 and 9, or any letter between 'a' and 'f.' The number 0 is the darkest value, and the letter 'f' is the brightest value, so <code>#000000</code> displays as black, while <code>#ffffff</code> displays as white. Something like <code>#ff0000</code> would be a bright red, while <code>#550000</code> would be a darker red. If ever you have the same two values for each color in a hexcode, like in <code>#ff0000</code> where both red values are 'f,' both blue values are 0, and both green values are 0, you can shortcut the code down to three characters like this: <code>#f00</code>. That is to say, <code>#ff0000</code> equals <code>#f00</code>. Unless you're building a webpage for printing, it's good to use hexcodes.</p>
-				
-				<p>Use a site like that <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">w3schools.com list of colors</a> or a chart like <a href="http://www.techyuva.com/wp-content/uploads/hexagon_800.gif">this one</a> to pick hexcodes and mess with the <code>background-color</code> and <code>border</code> color value for each circle.</p>
-				
-				<p><strong>RGBA values</strong></p>
-				
-				<p>Finally, we can also use 'rgba' values for a color. The abbreviation 'rgba' stands for, 'red, green, blue, alpha,' where 'alpha' is a value for opacity. All rgba values are between 0 and 255, which represent the 256 steps (0 is the first step) a color can take in a 8-bit binary number (and these steps match those availble in a 5 volt circuit). Circuitry runs on those 8-bit binary numbers as electricity defines how much of a circuit is on or off. Those 8-bit binary numbers control the color display and intensity of electronics like multi-color LEDs or color-printer heads, so when you use rgba values, you're essentially borrowing analog, physical color values created by passing current through part of a circuit that creates a physical response to the amount of voltage it receives. Hence, 'rgba' values are great to use on webpages that see frequent printing or that want to approximate the colors of, say, an LED connected to a microprocessor like the arduino.</p>
-				
-				<p>In our <code>style.css</code> file, you can use rgba values like this: <code>rgba(0, 0, 256, 1)</code>. In an rgba code, the first number represents the red value, the second is the green, the third is the blue, and the fourth is opacity. Colors can go from 0 (darkest) to 255 (brightest), and alpha, or opacity, can go from 0 (transparent) to 1 (opaque) using decimal values, as well.</p>
-				
-				<p>Here is a great <a href="http://www.css3maker.com/css-3-rgba.html">rgba color resource</a> that gives you the <code>CSS</code> code for <code>background-color</code> and <code>color</code>.</p>
-				
-				<p>Back to <a href="#navList">navigation.</a></p>
-				
-				
-			</li>
-			
-			<li>
-				
-				<a name="change-size"><h4>Change <code>size</code></h4></a>
-				
-				<p><strong>TL;DR:</strong> You can change the size of an element using the <code>height</code> and <code>width</code> attributes.
-				
-				<p>Now for something a bit less code intensive: sizing. Visit our circlees in <code>style.css</code>. Find the <code>height</code> and <code>width</code> atrributes. Go ahead and change them a few times to see what happens. Mix and match diffetent circlees' sizes. In general, see what happens to the layout of the webpage as you change the size of elements inside it.</p>
-				
-				<p>You can also play with <code>border-radius</code> here. A <code>border-radius</code> of <code>999</code> bends a rectangular <code>div</code> into a circular shape. See how our circles deform when you change 999 to another value. Set the <code>border-radius</code> back to <code>999</code> to restore the circles.</p>
-				
-				<p>Back to <a href="#navList">navigation.</a></p>
-				
-			</li>
-			
-			<li>
-				
-				<a name="change-position"><h4>Change <code>position</code></h4></a>
-				
-				<p><strong>TL;DR:</strong> You can place an element like a <code>div</code> anywhere on a webpage using its stylesheet.</p>
-				
-				<p>As you take one more look at our circlees' <code>doiv</code> elements inside <code>style.css</code>, you can see that each has a <code>position</code>. The <code>position</code> of each <code>div</code> element works with its <code>top</code> attribute on this page.  For example, an element like <code>#circleOne</code> that is positioned as <code>absolute</code> with a <code>top</code> value of <code>150px</code> is positioned 150 pixels down from the top of the page.</p>
-				
-				<p>There are several values for the  <code>position</code> attribute. Here are three commonly used values:</p>
+			<li>Add <code>&lt;div id="triangle"&gt;&lt;/div&gt;</code> beneath the circles in the <code>main</code> layout element of <code>index.html</code>.</li>
+			<li>Go to <code>style.css</code> and add instructions for <code>#triangle</code> underneath the instructions for the circular <code>div</code> elements.</li>
+			<li>Instead of using one <code>border</code> attribute for each circle in <code>style.css</code>, use any three of the following <code>border</code> attributes:
 				
 				<ul>
-					<li><strong>Absolute</strong> - this kind of positioning anchors an element at a specific place, but still allows for page scrolling. Elements positioned with <code>absolute</code> depend on the entire page.</li>
-					<li><strong>Fixed</strong> - this kind of positioning anchors an element at a specific place and anchors the whole page at the same time, preventing scrolling. Elements positioned with <code>fixed</code> depend on the entire page.</li>
-					<li><strong>Relative</strong> - this kind of positioning places an element relative to the part of the page it's in or to the last element that appears before it. Elements positioned with <code>relative</code> depend on spatial relationships to other parts of the page rather than to only the entire page.</li>
+					<li><code>border-top</code>.</li>
+					<li><code>border-bottom</code>.</li>
+					<li><code>border-left</code>.</li>
+					<li><code>border-right</code>.</li>
 				</ul>
-				
-				<p>Once you choose a value for <code>position</code>, you can place an element using <code>top</code>, <code>bottom</code>, <code>left</code>, or <code>right</code>. You can use either <code>top</code> or <code>bottom</code> and either <code>left</code> or <code>right</code>. You can also position something just from the <code>top</code> or <code>bottom</code> or just from gthe <code>left</code> or <code>right</code>.</p>
-				
-				<p>Dive back into <code>style.css</code> and see what you can 'break' by changing the value of <code>position</code> to <code>absolute</code> or <code>fixed</code>. You can also increase or decrease the values for <code>top</code>. Finally, you can also see what happens when you change <code>top</code> to <code>bottom</code> or <code>left</code> to <code>right</code>.</p>
-				
-				<p>You can also shift the blocks to line up horizontally instead of stacking vertically. Give each circular <code>div</code> the same value for <code>top</code> and then add a <code>left:_px;</code> line to the instructions for each of those <code>div</code> elements on <code>style.css</code>. Fill in the blank with different pixel values to begin moving the circles around the page horizontally.</p>
-				
-				<p>You can play around with positioning even further by changing the circles' <code>top</code> and <code>left</code> values indepdently of one another to make a huge Venn diagram.</p>
-				
-				<p>You can also add more circular <code>div</code> elements to <code>index.html</code> like this:</p>
-				
-				<p><code>&lt;div id="circleFour"&gt;&lt;/div&gt;</code>.</p>
-				
-				<p>Then, for each circle you add on <code>index.html</code>, go back to <code>style.css</code> and create a new set of instructions for that <code>div</code> element. You can copy and paste the circle before your new one and then change its name from, say, <code>#circleThree</code> to <code>#circleFour</code> on <code>style.css</code>. After that, change the values for each attribute in the circle (like <code>height</code> or <code>top</code>) until the <code>div</code> displays how you want it to on your webpage.</p>
-				
-				<p>Back to <a href="#navList">navigation.</a></p>
-					
-					
-				
 			</li>
-			
-			<li>
-				
-				<a name="mess-with-the-code"><h4>Mess with the code</h4></a>
-				
-				<p><strong>TL;DR:</strong> You can mess with anything you see in Thimble - break this webpage!</p>
-				
-				<p>Never be afraid to mess around with other parts of the webpage, either! For example, you can change the words on <code>index.html</code> by finding the <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> tags. You can stay inside <code>style.css</code> and change the <code>color</code> and <code>font-size</code> values of those elements, as well. Have fun exploring the web!</p>
-				
-				<p>Back to <a href="#navList">navigation.</a></p>
-				
-			</li>
-				
-		</ol>
-		<p>Congratulations! You've learned a lot about CSS, <code>div</code> elements, and styling today! Keep writing the web to express yourself online!</p>
+			<li>Give each <code>border</code> attribute a value of <code>100px</code> to create some volume and a border style of <code>solid</code>. (Remember, each <code>border</code> attribute works like this: <code>border: [width] [style] [color];</code>.)</li>
+			<li>Give two of the <code>border</code> attributes a value of <code>transparent</code> for color.</li>
+			<li>Give the third and last <code>border</code> the color value you want your entire triangle to have.
+			<li>Then, style the rest of that <code>div</code> with a <code>height</code> and <code>width</code> of <code>0</code>.</li>
+			<li>Give the triangle a <code>position</code> value of <code>relative</code> about <code>25px</code> from the <code>top</code> of the last element.</li>
+			<li>By now, your  instructions for the triangle on <code>style.css</code> should look something like this:<br><br>
 		
-		<h4>Secret missions!</h4>
+		<code>
+			#triangle{<br>
+				&nbsp;&nbsp;border-top: 100px solid transparent;<br>
+				&nbsp;&nbsp;border-left: 100px solid transparent;<br>
+				&nbsp;&nbsp;border-right: 100px solid #00a;<br>
+				&nbsp;&nbsp;height:0;<br>
+				&nbsp;&nbsp;position:relative;<br>
+				&nbsp;&nbsp;top:25px;<br>
+				&nbsp;&nbsp;width:0;<br>
+			}
+		</code></li>
 		
-		<p></p>
+		<li>Go back to <code>index.html</code> to see what happened!</li>
+		
+	</ol>
+	
+	<p>You can change color values or add values for attributes like <code>opacity</code> to play around further with the triangle.</p>
 
-</div>
+        <p></p>
 
-</body>
+        </div>
 
-</html>
+      </body>
+
+    </html>
