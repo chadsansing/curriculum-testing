@@ -1,0 +1,109 @@
+/*Layout*/
+
+body{
+	margin-left:1em;
+}
+
+p{
+	padding-bottom:1em;
+}
+
+/*Typography*/
+
+a{
+	color:#fe0;
+}
+
+body{
+	background-color: #000;
+	color:#fff;
+}
+
+code{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	font-weight:300;
+}
+
+h1{
+	font-family: 'Finger Paint', sans-serif;
+	font-size:4em;
+	margin-bottom:0em;
+
+}
+
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	font-weight:400;
+}
+
+p{
+	font-family: 'Roboto Slab', sans-serif;
+	font-size:1.25em;
+	font-weight:400;
+}
+
+/*Specific styles*/
+
+/*Webotron the Friendly Bot parts*/
+
+
+
+#head{
+	background-image:url('webotron-head.png');
+	background-repeat:no-repeat;
+	float:left;
+	height:200px;
+	width:200px;
+	
+}
+
+#armOne{
+	background-image:url('webotron-arm-1.png');
+	float:left;
+	height:200px;
+	width:50px;
+}
+
+#body {
+	background-image:url('webotron-body.png');
+	float:left;
+	height:200px;
+	width:100px;	
+}
+
+#armTwo{
+	background-image:url('webotron-arm-2.png');
+	float:left;
+	height:200px;
+	width:50px;	
+}
+
+#legOne{
+	background-image:url('webotron-leg-1.png');
+	float:left;
+	height:200px;
+	width:100px;
+}
+
+#legTwo{
+	background-image:url('webotron-leg-2.png');
+	float:left;
+	height:200px;
+	width:100px;
+}
+
+/*License*/
+
+#license{
+	clear:both;
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-size:.75em;
+	padding-top:2em;
+}
+
+#license a{
+	color:#fff;
+}
