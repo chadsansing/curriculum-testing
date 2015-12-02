@@ -23,7 +23,7 @@
 		
 		<ol>
 			<li>Know and understand how to use the <code>clear</code> and <code>float</code>.</li>
-			<li>Change the order of <code>div</code> elements on webpage using HTML.</li>
+			<li>Change the order of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"><code>div</code></a> elements on webpage using HTML.</li>
 			<li>Change the <code>float</code> value of <code>div</code> elements using CSS.</li>
 			<li>Change the <code>clear</code> value of <code>div</code> elements using CSS.</li>
 		</ol>
@@ -31,7 +31,7 @@
 		<p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
 		
 		<p>
-		Let's get started! You can follow the tutorial sequentially - step by step in order - or jump between sections using these links: <a name="navList">&nbsp</a>
+		Let's get started! You can follow the tutorial sequentially - step by step in order - or jump between sections using these links: <a name="navList">&nbsp;</a>
 		</p>
 		
 		<ol>
@@ -51,9 +51,25 @@
 
 				<h4><a id="whats-float">What's <code>float</code>?</a></h4>
 				
-				<p><strong>TL;DR:</strong></p>
+				<p><strong>TL;DR:</strong> The <code>float</code> attribute makes an element stick or wrap to the side of a webpage or container.</p>
 				
-				<p></p>
+				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Mozilla Developer Network</a> (MDN), <code>float</code></p>
+				
+				<blockquote><em>specifies that an element should be taken from the normal flow and placed along the left or right side of its container, where text and inline elements will wrap around it.</em></blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>When you assign an element, like a <code>div</code> or <code>p</code> (for paragraph) a <code>float</code> value, you tell it to stick as closely as possible to one side or the other of its container - the part of the webpage that holds the element.</p>
+				
+				<p>For example, if we <code>float</code> a paragraph with a value of <code>right</code> in our stylesheet (like this: <code>float:right;</code>), then that paragraph will stick to the right side of the webpage's <code>body</code> element or any other container surrounding the paragraph - like <code>header</code> or a <code>div</code>.</p>
+				
+				<p>If we have two or more elements floating to the same side of page or container, they will stack horizontally like blocks in a row or beads on an abacus all pushed to one side. We can think also of compartmental eaters here - mashed potatoes <code>float</code> to the left side of the plate; green beans <code>float</code> to the right.</p>
+				
+				<p>The <code>float</code> attrbiute takes an element out of its normal space on a page or within a container and shifts towards one side or another.</p>
+				
+				<p>While there are other values for <code>float</code>, such as <code>none</code>, <code>left</code> and <code>right</code> are commonly used.</p>
+				
+				<p>The <code>float</code> attribute is useful because it lets you create a layout that can expand from something very vertical (on a mobile device) to something very horizontal (on a computer or tablet screen). As the size of your display expands, elements can spread out for readability. As the size of your display contracts, elements with <code>float</code> can still stack vertically (as elements usually do on mobile devices) when they can't wrap horizontally. This way you can have a horizontal layout for computer displays without using positioning that cuts off or loses content on mobile devices. This kind of intentionally scalable layout is called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Responsive_web_design">responsive design</a>. We'll do more work with responsive design in another activity.</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -63,9 +79,19 @@
 				
 				<h4><a id="whats-clear">What's <code>clear</code>?</a></h4>
 				
-				<p><strong>TL;DR:</strong></p>
+				<p><strong>TL;DR:</strong> The <code>clear</code> attribute breaks the way elements wrap with <code>float</code>.</p>
 				
-				<p></p>
+				<p>Again, according to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear">MDN</a>, <code>clear</code></p>
+				
+				<blockquote><em>specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them. The clear property applies to both floating and non-floating elements.</em></blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>When you give an element the <code>clear</code> attribute and a value of <code>left</code> or <code>right</code>, you tell it to create a line-break between itself and whatever floating element comes before it. A cleared element no longer wraps around the floated element that comes before it.</p>
+				
+				<p>For example, if I wanted to <code>float</code> two paragraphs or images to the right side of the <code>body</code> of my webpage, but I wanted them both to be on their own lines, I would style both images with <code>float:right;</code>, but also style the second image with <code>clear:right;</code> to float it beneath the image that comes before it. Otherwise, both images would stack horozontally toward the right.</p>
+				
+				<p>You can style an element with <code>clear:both;</code> if you want it on its own line and it's between two elements that <code>float</code>.
 				
 				<p><a href="#navList">Back to navigation.</a></p>		
 					
@@ -74,11 +100,17 @@
 			
 			<li>
 				
-				<h4><a id="rearrange-the-div-elements">Rearrange the <code>div</code> elments</a></h4>
+				<h4><a id="rearrange-the-div-elements">Rearrange the <code>div</code> elements</a></h4>
 				
-				<p><strong>TL;DR:</strong></p>
+				<p><strong>TL;DR:</strong> Webotron's parts are in the wrong order to <code>float</code> and <code>clear</code>.</p>
 				
-				<p></p>
+				<p>Webotron's parts are out of order. Before we can use <code>float</code> and <code>clear</code> to rebuild the friendly robot, we need to rearrange the <code>div</code> elements in <code>index.html</code> so that Webotron will stack correctly later in the activity.</p>
+				
+				<p>Check out the <code>div</code> elements that hold Webotron's parts beginning at <code>line 38</code> of <code>index.html</code> (which you can find in th left FILES sidebar). Think about how you would need to order those parts to assemble Webotron correctly with the robot's head on one 'line,' its arms and body on another, and its legs below that.</p>
+				
+				<p>Use some notecards, Post-Its, or torn up pieces of paper to help you puzzle out the right layout for our robot.</p>
+				
+				<p>Finally, cut and paste the <code>div</code> elements into the right order, but don't stress out over this step too much. You can change tbe order of the parts later on, as well, once you test <code>float</code> and <code>clear</code>.</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -88,9 +120,15 @@
 				
 				<h4><a id="play-with-the-float-attribute">Play with the <code>float</code> attribute</a></h4>
 				
-				<p><strong>TL;DR:</strong> </p>
+				<p><strong>TL;DR:</strong> See what happens when you change <code>float</code> values.</p>
 				
-				<p></p>
+				<p>After you have reordered the <code>div</code> elements on <code>index.html</code>, go back to the FILES sidebar and go to the file called <code>style.sss</code>. This is the stylesheet that tells the different parts of our webpage how to look and where to be.</p>
+				
+				<p>Head down to <code>line 53</code> where you can find the styling instructions for the <code>div</code> elements that hold Webotron's parts. You can see that right now each part has been assigned a <code>float:left;</code>.</p>
+				
+				<p>Play around with the layout of these parts by changing <code>float:left;</code> to <code>float:right;</code>. See what happens when you delete the <code>float</code> lines entirely. Try to explain in your own words what's happening as you change the <code>float</code> value for each piece of Webotron.</p>
+				
+				<p>After you mess around with <code>float</code> for a bit, make sure that you add <code>float:left;</code> back to each of Webotron's '<code>div</code> elements.</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -101,9 +139,15 @@
 				
 				<h4><a id="add-the-clear-attribute">Add the <code>clear</code> attribute</a></h4>
 				
-				<p><strong>TL;DR:</strong> </p>
+				<p><strong>TL;DR:</strong> Puzzle out where Webotron's linebreaks belong.</p>
 				
-				<p></p>
+				<p>It's time to rebuild Webotron using <code>clear</code>. You need to create two line breaks using <code>clear:left;</code> to prevent Webotron's body and legs from wrapping to the robot's head.</p>
+				
+				<p>Where do you think they should go?</p>
+				
+				<p>Add <code>clear:left;</code> to the styling instructions for Webotron's <code>div</code> elements beginning, again, at <code>line 58</code> of <code>style.css</code>. Experiment until you find the best two spots to add a <code>clear</code> value. Use notecards, Post-Its, or torn up pieces of paper to help visualize what to do.</p>
+				
+				<p>When you finish, Webotron should be reassembled and stand tall to represent his band, the Scrambled Divs!</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -113,9 +157,11 @@
 				
 				<h4><a id="mess-with-the-code">Mess with the code</a></h4>
 				
-				<p><strong>TL;DR:</strong> </p>
+				<p><strong>TL;DR:</strong> Break this page!</p>
 				
-				<p></p>
+				<p>As you worked on the styling instructions for Webotron's <code>div</code> elements in <code>style.css</code>, you probably saw instructions for other parts of the page, like the <code>&lt;h1&gt;</code> tag for the heading - or title - on the page.</p>
+				
+				<p>Look through <code>style.css</code> and see if you can pick out a few attributes to change, like <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color"><code>background-color</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color"><code>color</code></a>, or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size"><code>font-size</code></a> (which is labeled with <code>em</code> as a unit of measurement on this page). Mess with those values to see how they change the way <code>index.html</code> displays on the screen. What can you find out about CSS by playing with the code?</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
