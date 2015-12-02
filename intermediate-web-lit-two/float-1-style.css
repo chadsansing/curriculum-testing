@@ -1,7 +1,12 @@
 /*Layout*/
 
 body{
+	background-color: #000;
 	margin-left:1em;
+}
+
+h1{
+	margin-bottom:0em;
 }
 
 p{
@@ -10,12 +15,11 @@ p{
 
 /*Typography*/
 
-a{
+main a{
 	color:#fe0;
 }
 
 body{
-	background-color: #000;
 	color:#fff;
 }
 
@@ -28,8 +32,6 @@ code{
 h1{
 	font-family: 'Finger Paint', sans-serif;
 	font-size:4em;
-	margin-bottom:0em;
-
 }
 
 h2{
