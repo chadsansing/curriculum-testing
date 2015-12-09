@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>CSS Pyramid Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="https://thimble.mozilla.org/tutorial/tutorial.css">
+
+</head>
+
+<body>
+
+	<div class="tutorial">
+
+		<h1>CSS Pyramid Tutorial</h1>
+		
+		<p>This project will help you learn how to use the <code>font-size</code> attribute and CSS to change the size of default elements, like <code>h1</code>, as well as the size of unique elements (that use ids) and type of elements (called classes). By the time you finish, you will</p>
+		
+		<ol>
+			<li>Know and understand how to use a stylesheet to style parts of a webpage.</li>
+			<li>Know and understand how to style <code>font-size</code> using CSS, or a cascading style sheet.</li>
+			<li>Change <code>font-size</code> of default HTML elements like <code>h1</code> and <code>h2</code>.</li>
+			<li>Change <code>font-size</code> of unique HTML elements with <code>id</code> labels.</li> 
+			<li>Change <code>font-size</code> of types of HTML elements with <code>class</code> labels.</li>
+		</ol>
+		
+		<p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
+		
+		<p>
+		Let's get started! You can follow the tutorial sequentially - step by step in order - or jump between sections using these links: <a name="navList">&nbsp;</a>
+		</p>
+		
+		<ol>
+			<li><a href="#whats-css">What's CSS?</a></li>
+			<li><a href="#whats-an-id">What's an <code>id</code>?</a></li>
+			<li><a href="#whats-a-class">What's a <code>class</code>?</a></li>
+			<li><a href="#whats-font-size">What's <code>font-size?</code></li>
+			<li><a href="#change-font-size">Change the <code>font-size</code></a></li>
+			<li><a href="#mess-with-the-code">Mess with the code</a></li>
+		</ol>
+
+		<h3>Step-by-Step Instructions</h3>
+		
+		<ol class="steps">
+		
+			<li>
+
+				<h4><a id="whats-css">What's CSSs?</a></h4>
+				
+				<p><strong>TL;DR:</strong> CSS tells your broswer how to show different parts of your webpage.</p>
+				
+				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla Developer Network</a> (MDN),a Cascading Style Sheet</p>
+				
+				<blockquote><em>most of the time abbreviated as CSS, is a stylesheet language used to describe the presentation of a document written in HTML.... CSS describes how the structured element must be rendered on screen, on paper, in speech, or on other media.</em></blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>CSS gives your broswer instructions about how to display each part of a webpage. Browsers have default settings, so if you don't give a webpage CSS instructions, a browser will just show your text and media in a plain serif font on a white background. However, if you include a stylesheet in your code (using the <code>&lt;script&gt;&lt;/script</code> tags) or if you link your webpage to an external stylsheet (saved as a .css file), you can control how your page looks. For example, you can set a particular kind of font, as well as the size and color of the letters on your page. Advanced CSS users can even animate parts of a page using display cues and timings.</p>
+				
+				<p>When your write a stylesheet, it's like you're creating a text-based paint-by-numbers for a browser to follow while displaying your webpage.</p>
+				
+				<p>You can see the <code>link</code> that connects our webpage, <code>index.html</code>, to our stylesheet, <code>style.css</code> at <code>line 14</code> of the <code>index.html</code> file in the left sidebar called FILES. It looks like this:</p>
+				
+				<p><code>&lt;link rel="stylesheet" href="pyramid-1-style.css" type="text/css"&gt;
+</code></p>
+					
+					<p>If you click on <code>style.css</code>, you can see the stylesheet itself. The directions from the stylesheet make it into the webpage through that <code>link</code> at <code>line 14</code>.</p>
+				
+				<p><a href="#navList">Back to navigation.</a></p>
+				
+			</li>
+			
+			<li>
+
+				<h4><a id="whats-an-id">What's an <code>id</code>?</a></h4>
+				
+				<p><strong>TL;DR:</strong> An <code>id</code> is a unique label you can give an HTML element to style it differently from other parts of your webpage.</p>
+				
+				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id">Mozilla Developer Network</a> (MDN), <code>id</code></p>
+				
+				<blockquote><em>defines a unique identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).</em></blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>When you use an <code>id</code>, you give part of your page an absolutely unique identity. You can style this identity with specific instructions in your stylsheet that apply <strong>only</strong> to the element with the matching <code>id</code>.</p>
+				
+				<p>It's useful to use an ID when you have to position a partof your page just-so or when you want part of your page to stand out from the rest because of an attrbiute like color or size.</p>
+				
+				<p>Here is one way to think of how <code>id</code> relates to the rest of your webpage and stylesheet, including parts labeled with a <code>class</code>:</p>
+				
+				<ul>
+					<li>Imagine that all people are like a default element (say paragraphs or <code>&lt;p&gt;</code> tags) in HTML.</p></li>
+					<li>Some of those people might belong to a certain <code>class</code>, like, 'People in the band.'</li>
+					<li>One person might have a specific role or <code>id</code> in that band, like, 'The singer.'</li>
+				</ul>
+				
+				<p>You can see an example of an <code>id</code> and its styling instructions by looking at the <code>div</code> called <code>levelOne</code> at <code>line 32</code> of <code>index.html</code> and <code>line 41</code> of <code>style.css</code>.</p>
+				
+				<p><strong>HTML:</strong><code>&lt;div id="levelOne" class="textRow"&gt;&lt;/div&gt;</code></p>
+				<p><strong>CSS:</strong><br>
+					<code>#levelOne{<br>
+							font-size: 2em;<br>
+						}</code></p>
+				
+				<p><a href="#navList">Back to navigation.</a></p>
+				
+			</li>
+			
+			<li>
+
+				<h4><a id="whats-a-class">What's a <code>class</code>?</a></h4>
+				
+				<p><strong>TL;DR:</strong> A <code>class</code> is a shared label you can apply to several parts of a webpage to display them the same way.</p>
+				
+				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">Mozilla Developer Network</a> (MDN),</p>
+				
+				<blockquote><em>is a space-separated list of the classes of the element. Classes allows CSS and Javascript to select and access specific elements via the class selectors....</em></blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>When you use a <code>class</code> in your stylesheet and webpage, you tell your broswer to display every element with that class in the same way. For example, if you created a <code>class</code> called <code>redText</code>, you could give your stylesheet instructions to display every <code>redText</code> paragraph or heading with a red font color.</p> 
+				
+				
+				<p>You can see an example of a <code>class</code> and its styling instructions by looking at a <code>div</code> with labeled with <code>textRow</code> at <code>line 32</code>, <code>line 34</code>, or <code>line36</code> of <code>index.html</code> and <code>line 62</code> of <code>style.css</code>.</p>
+				
+				<p><strong>HTML:</strong><code>&lt;div id="levelOne" class="textRow"&gt;&lt;/div&gt;</code></p>
+				<p><strong>CSS:</strong><br>
+					<code>.textRow{<br>
+							color:#303;<br>
+							font-family: 'Fredoka One', cursive;<br>
+							text-align:center;<br>
+							text-shadow: -1px -1px #aaa;<br>
+						}</code></p>
+				
+				<p><a href="#navList">Back to navigation.</a></p>
+				
+			</li>
+			
+			<li>
+
+				<h4><a id="whats-font-size">What is <code>font-size</code></a></h4>
+				
+				<p><strong>TL;DR:</strong> You can use CSS to control the size of text on a webpage.</p>
+				
+				<p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">Mozilla Developer Network</a> (MDN), <code>font-size</code></p>
+				
+				<blockquote><em>specifies the size of the font. Setting the font size may, in turn, change the size of other items, since it is used to compute the value of the em and ex <length> units.</em></blockquote>
+				
+				<p>What does that mean?</p>
+				
+				<p>When you set a value for <code>font-size</code>, you tell broswers how big or small to make the text on your webpage. You can give different types of text - like headers and paragraphs - different font sizes, and you can use <code>id</code> and <code>class</code> to give even more specific <code>font-size</code> instructions to different parts of your page.</p>
+				
+				<p>Here, <code>em</code> is a unit of measurement of <code>font-size</code>, with broswers' default paragraph text set to <code>1em</code>. You can also set <code>font-size</code> in pixels, or <code>px</code>, with a default value of something like <code>12px</code>.
+				
+				<p>If you look at <code>line 31</code>, <code>line 35</code>, and <code>line 62</code> of <code>style.css</code>, you can see different <code>font-size</code> values for parts of our webpage like <code>h1</code>, <code>h2</code>, and <code>.textRow</code>.</p>
+				
+				<p><a href="#navList">Back to navigation.</a></p>
+				
+			</li>
+			
+			<li>
+
+				<h4><a id="change-font-size">Change the <code>font-size</code></a></h4>
+				
+				<p><strong>TL;DR:</strong> Change the <code>font-size</code> of each <code>.textRow</code> to invert the pyramid of words.</p>
+				
+				<p>Go to <code>line 41</code> of <code>style.css</code>. Change the <code>font-size</code> values of the <code>div</code> elements (each labeled with an <code>id</code>) called <code>levelOne</code>, <code>levelTwo</code>, and <code>levelThree</code> to invert the pyramid and make the top line the biggest and the bottom line the smallest.</p>
+				
+				<p><a href="#navList">Back to navigation.</a></p>
+				
+			</li>
+			
+			<li>
+
+				<h4><a id="mess-with-the-code">Mess with the code</a></h4>
+				
+				<p><strong>TL;DR:</strong> You can mess with any line of code you want.</p>
+				
+				<p>Dive into <code>style.css</code>. See what else you can change and how your changes affect the way your broswer displays <code>index.html</code>. For example, you can see what happens when you change the <code>background-color</code> of the <code>body</code> element or the <code>color</code> of text tagged with <code>h2</code> or <code>h2</code>. Play around and see what you can learn!</p>
+				
+				<p><a href="#navList">Back to navigation.</a></p>
+				
+			</li>
+			
+		</ol>
+
+		<p>Congratulations! You've completed your first CSS activity and level-up your web literacy. Keep learning and find out what else you can do with HTML and CSS on a webpage!</p>
+		
+		<h4>Secret missions!</h4>
+		
+		<p>Can you find out how to make each row of text in the pyramid into a block of color you can size with <code>height</code> and <code>width</code>? Can you create a pyramid out of blocks and then invert it by maniuplating the size of the blocks in CSS?</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/*Layout*/
+
+body{
+	background-color:#303;
+}
+
+header, main, footer{
+	padding-left: 1em;
+}
+
+h1{
+	padding-bottom:.1em;
+	padding-top:.1em;
+}
+
+h2{
+	padding-bottom:.1em;
+	padding-top:.1em;
+}
+
+/*Typography*/
+
+body{
+	color: #fff;
+}
+
+h1, h2 {
+	font-family: 'Copse', serif;
+}
+
+h1{
+	font-size: 3em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+/*Specific styles*/
+
+#levelOne{
+	font-size: 2em;
+}
+
+#levelTwo{
+	font-size: 4em;
+}
+
+#levelThree{
+	font-size: 6em;
+}
+
+#license{
+	font-family: monospace;
+	font-size: .9em;
+}
+
+#license a {
+	color: #fff;
+}
+
+.textRow{
+	color:#303;
+	font-family: 'Fredoka One', cursive;
+	text-align:center;
+	text-shadow: -1px -1px #aaa;
+}
+
+#wrapper{
+	background-color:#fff;
+	border:5px solid #fff;
+	border-radius:10px;
+	margin-bottom:1em;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1em;
+	width:80%;
+	z-index:999;
+}
