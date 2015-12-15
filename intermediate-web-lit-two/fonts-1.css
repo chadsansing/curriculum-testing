@@ -1,0 +1,130 @@
+/*Layout*/
+
+body{
+	margin:0;
+}
+
+footer{
+
+	clear:both;
+	padding-bottom:2em;
+	padding-top:2em;
+	width:100%;
+}
+
+/*Background image CC-BY-SA 3.0  France3470, https://commons.wikimedia.org/wiki/File:Plantin_letterpress.jpg*/
+
+header{
+	background: -webkit-linear-gradient(left top, #663399 , #ff00cc); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #663399, #ff00cc); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #663399, #ff00cc); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #663399 , #ff00cc); /* Standard syntax */
+	height:10em;
+	padding-bottom:2em;
+	width:100%;
+}
+
+
+h1{
+	color:#fff;
+	margin-bottom:.25em;
+	margin-left:.6em;
+	margin-top:0;
+}
+
+h2{
+	color:#fff;
+	margin-bottom:.25em;
+	margin-left:1em;
+	margin-top:.25em;
+}
+
+#imageOverlay{
+	background-image:url('letter-tray.png');
+	background-size: cover;
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:12em;
+	z-index:499;
+	opacity:.2;
+	overflow:hidden;
+}
+
+main{
+	margin-bottom:2em;
+	margin-left:2em;
+	margin-top:2em;
+}
+
+#textBox{
+	position:relative;
+	top:2.5em;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:999;
+	opacity:1;
+}
+
+/*Typography*/
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size:3em;
+	font-weight:600;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.75em;
+	font-weight:300;
+}
+
+/*Specific styles*/
+
+#firstFont{
+	font-family: 'Press Start 2P', cursive;
+	font-size:2em;
+}
+
+#secondFont{
+	font-family: 'La Belle Aurore', cursive;
+	font-size:2em;
+}
+
+#thirdFont{
+	font-family: 'Creepster', cursive;
+	font-size:2em;		
+}
+
+#fourthFont{
+	font-family: 'Black Ops One', cursive;
+	font-size: 2em;
+}
+
+#fifthFont{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 2em;
+	
+}
+
+#sixthFont{
+	font-family: 'Bangers', cursive;
+	font-size: 2em;
+}
+
+#license{
+	color:#000;
+	font-family:monospace;
+	font-size:.9em;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:80%;
+}
+
+#license a{
+	color:#000;
+}
