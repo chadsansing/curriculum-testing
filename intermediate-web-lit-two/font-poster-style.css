@@ -1,0 +1,53 @@
+/*Layout*/
+
+/*Image credit Warwick Goble, "Away to the Mountains," http://www.oldbookillustrations.com/illustrations/away-mountains/*/
+
+footer, main{
+	margin-top:1em;
+}
+
+header, footer, main{
+	margin-left:.5em;
+}
+
+/*Typography*/
+
+/*Specific styles*/
+
+#license{
+	color:#000;
+	font-family:monospace;
+	font-size:.9em;
+}
+
+#license a{
+	color:#000;
+}
+
+#moviePoster{
+	border:solid 5px none;
+	height:800px;
+	width:600px;	
+}
+
+#moviePosterImage{
+	background-image:url('away-to-the-mountains.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:800px;
+	left:0;
+	position:relative;
+	top:0;
+	width:600px;
+	z-index:-999;
+}
+
+#moviePosterOverlay{
+	height:800px;
+	left:0;
+	opacity:.25;
+	position:relative;
+	top:0;
+	width:600px;
+	z-index:-499;
+}
