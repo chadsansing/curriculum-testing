@@ -18,6 +18,7 @@
 		<p>This project will help you find and include webfonts into your webpages using HTML and CSS. As you follow the tutorial you will</p>
 		
 		<ol>
+			<li>Know and understand what a webfont is.</li>
 			<li>Find webfonts online.</li>
 			<li>Link webfonts to a webpage using HTML and CSS.</li>
 			<li>Know and understand the connections between your HTML webpage and the CSS stylesheet that makes your webfonts work.</li> 
@@ -55,7 +56,7 @@
 				<ul>
 					<li><span style="font-family:serif;"><strong>Serif</strong></span> - these fonts are easy to read in print. They have serifs - or 'little feet' - that accent each letter.</li>
 					<li><span style="font-family:sans-serif;"><strong>Sans-serif</strong></span> - these fonts do not have serifs. They are easily readable on the screen.</li>
-					<li><span style="font-family:cursive;"><strong>Cursive</strong></span> - these fonts imitate handwriting, but can be difficult to read on devices.</li>
+					<li><span style="font-family:cursive;"><strong>Cursive/Script</strong></span> - these fonts imitate handwriting, but can be difficult to read on devices.</li>
 					<li><span style="font-family:monospace;"><strong>Monospace</strong></span> - in these fonts, each letter takes up the same amount of horizontal space. All of the letters take up the equivalent of 'one space' in the font. These fonts are generally used for highlighting parts of texts that should be read like code (but are not part of a page's code), like in a coding tutorial.</li>
 				</ul>
 				
@@ -73,7 +74,16 @@
 				
 				<p><strong>TL;DR:</strong> Webfonts live online so you can link to them and use them in your webpages.</p>
 				
-				<p></p>
+				<p>Modern browsers include several default 'web safe' fonts you can call into your webpages just by adding them to your stylesheet (we'll get to that step soon). <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">This list from w3schools.com</a> shows you several web safe fonts, grouped by family, that you can use in your projects.</p>
+				
+				<p>Companies like Adobe and Google also host large libraries of webfonts for you to use free of charge. These sites also give you the snippets of code you need both to link to the fonts in your HTML webpages and to apply the fonts in your CSS stylesheets. Check out these collections and browse for fonts you might like to include in your project.</p>
+				
+				<ul>
+					<li><a href="https://edgewebfonts.adobe.com/">Adobe Edge wbefonts</a></li>
+					<li><a href="https://www.google.com/fonts">Google webfonts</a></li>
+				</ul>
+				
+				<p>Google uses links to external stylsheets to serve its webfonts, while Adobe uses external scripts. When you click on a font on either site, the site will show you instructions for how to call that font into your webpage and how to include it in your stylesheet. For the purposes of our tutorial, beginnning in the next step, we'll walk through an example using Google's site since it provides links to stylesheets and we are in a CSS module (though it also lets you import the fonts in others ways).</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>		
 					
@@ -84,9 +94,33 @@
 				
 				<h4><a id="link-to-a-webfont">Link to a webfont</a></h4>
 				
-				<p><strong>TL;DR:</strong> </p>
+				<p><strong>TL;DR:</strong> You link to a webfont in the <code>head</code> of a webpage to call it into your project.</p>
 				
-				<p></p>
+				<p>Google's site lets you browse fonts several different ways. Click on the 'Poster' tab to see asnapshot of each font with its name displayed using that same font.</p>
+				
+				<img src="fonts0.png" height="150px" width="300px">
+				
+				<p>Let's take a look at the font called 'Righteous.' We're going to use this to replace the 'happy' font on our webpage, <code>index.html</code>. You can scroll down to find it or search for it using the box  above the left sidebar. Notice that when you hover over a font in the main part of the page, it pops up from the background.</p>
+				
+				<img src="fonts1.png" height="150px" width="300px"> 
+				
+				<p>Next, click on the leftmost icon under the font's name. It looks like an arrow inside a box. This is the 'quick-use' button. The quick-use button takes to a set of instructions for using the font.</p>
+				
+				<ol>
+					<li>First, you can choose different font-weights to include in your webpage if more than one is available.<br><br>
+						<img src="fonts2.png" height="150px" width="300px">
+					</li>
+					<li>Next, you can choose different character sets for encoding the font in different languages if any other sets are available.<br><br>
+						<img src="fonts3.png" height="160px" width="275px">
+					</li>
+					<li>After that, you copy and paste the provided link at <code>line 14</code> of <code>index.html</code>, which you can find in the left, FILES sidebar of the Thimble interface. This link connects your page to a stylesheet hosted by Goolge that has instructions for displaying the font you've chosen.
+						<br><br><code>&lt;link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'&gt;</code><br><br> 
+						with<br><br> 
+						<code>&lt;link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'&gt;</code>.
+						<br><br><img src="fonts4.png" height="100px" width="300px"></li>
+				</ol>
+				
+				<p>In the next step of the tutorial, we'll look at how to use the rest of the instructions on your font's quick-use guide to include the font in your stylesheet.</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -96,9 +130,34 @@
 				
 				<h4><a id="style-a-webfont">Style a webfont</a></h4>
 				
-				<p><strong>TL;DR:</strong> </p>
+				<p><strong>TL;DR:</strong> You use the <code>font-family</code> selector in a CSS stylesheet to change the font of an HTML element.</p>
 				
-				<p></p>
+				<p>The link we just pasted into <code>index.html</code> will call our webfont into our project. However, we still need to style whatever HTNL elements we want to display in our font.</p>
+				<p>To do so, we have to visit <code>style.css</code>, which you can find in the FILES sidebar. In addition to linking to Google's stylesheet in order to borrow the 'Rigteous' font, we also have our own stylesheet that let's use decide how to display each part of our webpage.</P>
+					<P>The <code>index.html</code> file links to our <code>style.css</code> file at <code>line 32</code> of <code>index.html</code>. Any webpage you make can link to a stylesheet that lives in the same place, or folder (like <code>zstyle.css</code>), or to a stylesheet that lives online at an accessible URL, or web address (like the Google webfont).</p>
+						
+						<p>Let's take a look at <code>style.css</code>. Our first, 'happy' font lives at <code>line 87</code> of <code>style.css</code>. It has an <code>id</code> called <code>firstFont</code> that connects the instructions here with both our webfont and the <code>div</code> called <code>firstFont</code> at <code>line 58</code> of <code>index.html</code>.</p>
+							
+						<p>Now is the time to copy and paste the styling instructions from Goolge into our steylsheet.<p>
+							
+							<img src="fonts5.png" height="100px" width="400px">
+						
+						<p>The styling instructions for <code>#firstFont</code> look like this:</p>
+						
+						<p><code>#firstFont{<br>
+							font-family: 'Press Start 2P', cursive;<br>
+							font-size:2em;<br>
+						}</code></p>
+						
+						<p>We want to replace the old font, called <code>Press Start 2P</code> with our new font so that these instructions look like this instead:</p>
+						
+						<p><code>#firstFont{<br>
+							font-family: 'Righteous', cursive;<br>
+							font-size:2em;<br>
+						}</code></p>
+						
+						<p>After you make these changes, click on <code>index.html</code> one more time and check it out in the preview pane on the right side of the Thimble interface. The line of text that says 'This font makes me feel happy,' should now be displayed with the Righteous font.</p>
+
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -109,9 +168,9 @@
 				
 				<h4><a id="change-the-other-fonts">Change the other fonts</a></h4>
 				
-				<p><strong>TL;DR:</strong> </p>
+				<p><strong>TL;DR:</strong> Repeat Steps 3 and 4 to change the other fontson your webpage.</p>
 				
-				<p></p>
+				<p>Continue to browse Google's webfonts and find replacements for each line of text on <code>index.html</code>. See if you can use the <code>id</code> on each <code>div</code> to find the right part of <code>style.css</code> to change for each line. Don't forget to link to each font in the <code>head</code> of <code>index.html</code>, either. Those links live between <code>line 17</code> and <code>line 30</code> of <code>index.html</code>. And if the Righteous font doesn't make you happy, change that one again, as well!</p>
 				
 				<p><a href="#navList">Back to navigation.</a></p>
 				
@@ -131,7 +190,7 @@
 			
 		</ol>
 
-		<p>Congratulations! You made several design decisions and found the fonts to match. By linking your webpage and stylesheet together, you've called fonts from the web to improve the design of your project. Keep thinking about design as you explore other CSS applications in this module.</p>
+		<p>Congratulations! You made several design decisions and found the fonts to match the feelings on your page. By linking your webpage and stylesheet together, you've called fonts from the web to improve the look and feel of your project. Keep thinking about design as you explore other CSS activities in this module.</p>
 		
 		<h4>Secret missions!</h4>
 		
