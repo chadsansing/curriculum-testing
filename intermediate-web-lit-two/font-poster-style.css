@@ -25,29 +25,47 @@ header, footer, main{
 }
 
 #moviePoster{
-	border:solid 5px none;
-	height:800px;
-	width:600px;	
+	height:600px;
+	width:449px;	
 }
 
 #moviePosterImage{
 	background-image:url('away-to-the-mountains.png');
 	background-repeat:no-repeat;
 	background-size:cover;
-	height:800px;
-	left:0;
+	height:600px;
+	left:-9px;
+	opacity:.6;
 	position:relative;
 	top:0;
-	width:600px;
+	width:449px;
 	z-index:-999;
 }
 
 #moviePosterOverlay{
-	height:800px;
-	left:0;
-	opacity:.25;
-	position:relative;
-	top:0;
-	width:600px;
+	background: -webkit-linear-gradient(left top, #036, #cff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #036, #cff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #036, #cff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #036, #cff); /* Standard syntax */
+	height:600px;
+	left:.5em;
+	opacity:.8;
+	position:absolute;
+	top:1em;
+	width:449px;
 	z-index:-499;
+}
+
+#moviePosterTitle{
+	color:#fff;
+	display:inline-block;
+	font-family: 'Questrial', sans-serif;
+	font-size:3em;
+	font-weight:400;
+	left:.125em;
+	padding-left:0;
+	padding-top:0;
+	position:absolute;
+	text-transform:lowercase;
+	top:.125em;
 }

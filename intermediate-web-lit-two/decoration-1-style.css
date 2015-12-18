@@ -1,0 +1,157 @@
+/*Layout*/
+
+body{
+	background-color:#000;
+}
+
+header, main, footer{
+	margin-left:1em;
+}
+	
+
+header, main{
+	margin-bottom:2em;
+}
+
+h1, h2{
+	font-family: 'Open Sans', sans-serif;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+main{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:99%;
+}
+
+/*Typography*/
+
+h1{
+	color:#c90;
+	font-size:3em;
+	font-weight:600;
+}
+
+h2{
+	color:#5b5;
+	font-size:1.5em;
+	font-weight:300;
+}
+
+p{
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.25em;
+}
+
+/*Specific styles*/
+
+#amazing{
+	color:#fff;
+	font-family: 'Bubblegum Sans', sans-serif;
+	font-size:2em;
+	text-decoration:underline;
+	text-shadow:0 0 5px #69c, 0 0 10px #69c, 0 0 15px #69c, 0 0 20px #69c, 0 0 25px #69c;
+}
+
+#boxName{
+	color:#fff;
+	font-family: 'Atomic Age', sans-serif;
+	font-size:3em;
+	text-shadow: 
+	1px 1px #393,
+	3px 3px #393, 
+	5px 5px #393, 
+	6px 6px #369,
+	8px 8px #369, 
+	10px 10px #369,
+	11px 11px #d71, 
+	13px 13px #d71, 
+	15px 15px #d71,
+	16px 16px #555, 
+	18px 18px #555, 
+	20px 20px #555; 
+	text-transform:uppercase;
+}
+
+/*Background image credit PEXELS, https://www.pexels.com/photo/pet-kitten-cat-3415/*/
+
+#theBox{
+	background-image:url('decoration-cat.jpg');
+	background-repeat:no-repeat;
+	background-size:300px 300px;
+	border:3px solid #fff;
+	box-shadow:
+	1px 1px #5b5,
+	2px 2px #5b5,
+	3px 3px #5b5,
+	4px 4px #5b5,
+	5px 5px #5b5,
+	6px 6px #5b5,
+	7px 7px #5b5,
+	8px 8px #5b5,
+	9px 9px #5b5,
+	10px 10px #5b5,
+	11px 11px #5b5,
+	12px 12px #5b5,
+	13px 13px #5b5,
+	14px 14px #5b5,
+	15px 15px #5b5,
+	16px 16px #5b5,
+	17px 17px #5b5,
+	18px 18px #5b5,
+	19px 19px #5b5,
+	20px 20px #5b5;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+}
+
+#license{
+	color:#c90;
+	font-family:monospace;
+	font-size:.9em;
+	
+}
+
+#license a{
+	color:#c90;
+}
+
+#stupendous{
+	color:#fff;
+	font-family: 'Contrail One', sans-serif;
+	font-size:1.6em;
+	text-decoration:underline;
+	text-shadow:0 0 5px #f93, 0 0 10px #f93, 0 0 15px #f93, 0 0 20px #f93, 0 0 25px #f93;
+	
+}
+
+#stupefying{
+	color:#fff;
+	font-family: 'Londrina Solid', cursive;
+	font-size:2em;
+	text-decoration:underline;
+	text-shadow:0 0 5px #777, 0 0 10px #777, 0 0 15px #777, 0 0 20px #777, 0 0 25px #777;
+	
+}
+
+#sublime{
+	color:#fff;
+	font-family: 'Slackey', sans-serif;
+	font-size:1.6em;
+	text-decoration:underline;
+	text-shadow:0 0 5px #69c, 0 0 10px #69c, 0 0 15px #69c, 0 0 20px #69c, 0 0 25px #69c;
+	
+}
+
+#spine-tingling{
+	color:#fff;
+	font-family: 'Creepster', cursive;
+	font-size:1.5em;
+	text-decoration:underline;
+	text-shadow:0 0 5px #f93, 0 0 10px #f93, 0 0 15px #f93, 0 0 20px #f93, 0 0 25px #f93;
+}
