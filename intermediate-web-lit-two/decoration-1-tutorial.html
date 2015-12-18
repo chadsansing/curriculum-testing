@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>CSS Decoration Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="https://thimble.mozilla.org/tutorial/tutorial.css">
+
+    <style>
+
+      li{
+        flex-direction:column;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="tutorial">
+
+      <h1>CSS DecorationTutorial</h1>
+
+      <p>This project will help you use CSS to decorate text and <code>div</code> elements on an HTML webpage using <code>box-shadow</code>, <code>text-shadow</code>, <code>text-decoration</code>, <code>text-tranform</code>, and webfonts. As you work through the tutorial, you will</p>
+
+      <ol>
+        <li>Know and understand how an HTML webpage and CSS stylesheet link together and interact.</li>
+        <li>USe CSS to change the appearance of text on a webpage.</li>
+        <li>Use CSS to change the <code>background-image</code> and appearance of a <code>div</code> element syled like a box on a webpage.</li>
+        <li>Stack multiple CSS values to create larger text and box effects on an HTML webpage.</li>
+      </ol>
+
+      <p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
+
+      <p>
+        Let's get started! You can follow the tutorial sequentially - step by step in order - or jump between sections using these links: <a name="navList">&nbsp;</a>
+      </p>
+
+      <ol>
+		<li><a href="#how-do-webpages-and-stylesheets-link">How do webpages and stylesheets link?</a></li>
+        <li><a href="#whats-text-decoration">What's <code>text-decoration</code>?</a></li>
+        <li><a href="#whats-text-transform">What's <code>text-transform</code>?</a></li>
+        <li><a href="#whats-text-shadow">What's <code>text-shadow</code>?</a></li>
+        <li><a href="#whats-box-shadow">What's <code>box-shadow</code>?</a></li>
+        <li><a href="#change-the-text-decoration">Change the <code>text-decoration</code></a></li>
+        <li><a href="#change-the-text-transform">Change the <code>text-transform</code></a></li>
+        <li><a href="#change-the-text-shadow">Change the <code>text-shadow</code></a></li>
+        <li><a href="#change-the-box-shadow">Change the <code>box-shadow</code></a></li>
+		<li><a href="#change-the-background-image">Change the <code>background-image</code></a></li>
+		<li><a href="#change-the-webfonts">Change the webfonts</a></li>
+		<li><a href="#mess-with-the-code">Mess with the code</a></li>
+      </ol>
+
+      <h3>Step-by-Step Instructions</h3>
+
+      <ol class="steps">
+
+        <li>
+
+          <h4><a id="how-do-webpages-and-stylesheets-link">How do webpages and stylesheets connect?</a></h4>
+
+          <p><strong>TL;DR:</strong> HTML webpages use the <code>link</code> element to call in instructions from external CSS stylesheets.</p>
+
+          <p>If you check out <code>line 21</code> of <code>index.html</code>, you can see how that webpage connects to <code>style.css</code> with a <code>link</code>. The <code>link</code> takes an <code>href</code>, or 'hypertext reference,' attribute with the stylesheet's home address as its value. Some stylesheets, like <code>style.css</code>, live in the same folder alongside <code>index.html</code>, so you just need to type in the file's name.</p>
+		  
+		  <p>You can also use the <code>link</code> element to call in external stylesheets from the web. In fact, many of the fonts used on <code>index.html</code> are webfonts called in with the stylesheet links between <code>line 13</code> and <code>line 19</code>.</p>
+		  
+		  <p>The <code>link</code> acts like a tunnel or passageway for the instructions from the stylesheet to enter the webpage and 'cascade' downwards, telling each subsequent part of the page how to look.</p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+        
+        <li>
+
+          <h4><a id="whats-text-decoration">What's <code>text-decoration</code>?</a></h4>
+
+          <p><strong>TL;DR:</strong> You can use the <code>text-decoration</code> property to underline, overline, or strikethrough text.</p>
+
+          <p>You can use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"><code>text-decoration</code></a> property in a stylesheet instead of the HTML tag <code>&lt;u&gt;</code> (for 'underline') to underline text. You can also overline or strike-through text using <code>text-decoration</code>. However, to make a text bold or italic with CSS you have to play around with the <code>font-family</code> and <code>font-weight</code> properties or else use <code>&lt;strong&gt;</code> or <code>&lt;em&gt;</code> tags right in your HTML. The <code>strong</code> tag makes text bold, while the <code>em</code> tag makes text italic using 'emphasis.'</p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="whats-text-transform">What's <code>text-transform</code>?</a></h4>
+
+          <p><strong>TL;DR:</strong> You can use the <code>text-transform</code> property to control the capitalization in any passage of text.</p>
+
+          <p>If you want to draw attention to a particular passage of text or give it a definite mood, tone, or voice, you can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform"><code>text-transform</code></a> to make every letter in the passage <code>lowercase</code> or <code>uppercase</code>. You can also set  the value of <code>text-transform</code> to <code>capitalize</code> to capitalize the first letter in each word of a passage of text.</p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="whats-text-shadow">What's <code>text-shadow</code>?</a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="whats-box-shadow">What's <code>box-shadow</code>?</a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="change-the-text-decoration">Change the <code>text-decoration</code></a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="change-the-text-transform">Change the <code>text-transform</code></a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="change-the-text-shadow">Change the <code>text-shadow</code></a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="change-the-box-shadow">Change the <code>box-shadow</code></a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="change-the-background-image">Change the <code>background-image</code></a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="change-the-webfonts">Change the webfonts</a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+        <li>
+
+          <h4><a id="mess-with-the-code">Mess with the code</a></h4>
+
+          <p><strong>TL;DR:</strong> </p>
+
+          <p></p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+		
+      </ol>
+
+    <p>Congratulations! You've used CSS to manipulate several text properties on this webpage. Keep playing with the code to find stylings that match your purpose and voice in composing for the Web!</p>
+
+    </div>
+
+  </body>
+
+</html>

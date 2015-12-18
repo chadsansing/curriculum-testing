@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>My First VR Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="https://thimble.mozilla.org/tutorial/tutorial.css">
+
+    <style>
+
+      li{
+        flex-direction:column;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="tutorial">
+
+      <h1>My First VR Tutorial</h1>
+
+      <p>This project will help you build your first virtual reality (VR) site on the Web using Mozilla's A-Frame JavaScript library. As you follow the tutorial you will</p>
+
+      <ol>
+        <li>Know and understand what VR is.</li>
+        <li>Know and understand what A-Frame is.</li>
+        <li>Know and understand how a webpage can call and run an external script or library on the page.</li>
+        <li>Style A-Frame 'primitives' using attributes like <code>position</code>.</li>
+        <li>Find and use an 'equirectangular' image to replace the webpage's background.</li>
+        <li>Change the lighting in your VR environment to approximate the position and angle of light in your background.</li>
+      </ol>
+
+      <p>Reach out to <a href="https://twitter.com/MozTeach">@MozTeach</a> on Twitter or ask a question on <a href="https://discourse.webmaker.org/c/curriculum">Discourse</a>, our online community forum, if you need an assist!</p>
+
+      <p>
+        Let's get started! You can follow the tutorial sequentially - step by step in order - or jump between sections using these links: <a name="navList">&nbsp;</a>
+      </p>
+
+      <ol>
+        <li><a href="#unleash-web-vr">Unleash Web VR!</a></li>
+        <li><a href="#whats-vr">What's VR?</a></li>
+        <li><a href="#whats-a-frame">What's A-Frame?</a></li>
+        <li><a href="#how-do-external-scripts-work">How do external scripts work?</a></li>
+        <li><a href="#whats-a-primitive">What's a primitive?</a></li>
+        <li><a href="#style-the-shapes">Style the shapes.</a></li>
+        <li><a href="#change-the-background">Change the background</a></li>
+        <li><a href="#change-the-lighting">Change the lighting</a></li>
+      </ol>
+
+      <h3>Step-by-Step Instructions</h3>
+
+      <ol class="steps">
+
+        <li>
+
+          <h4><a id="unleash-web-vr">Unleash Web VR!</a></h4>
+
+          <p><strong>TL;DR:</strong> Delete the comment tags on <code>index.html</code> to get started.</p>
+
+          <p>Right now, this webpage looks wicked boring</p>.
+
+          <p>Let's fix that.</p>
+
+          <p>Go to <code>line 23</code> of <code>index.html</code> and delete <code>&lt;!--</code>.</p>
+
+          <p>Go to <code>line 40</code> of <code>index.html</code> and delete <code>--&gt;</code>.</p>
+
+          <p>Take a lookt at <code>index.html</code> to see A-Frame's Web VR technology come to life. Onward!</p>
+
+          <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+        
+        <li>
+
+        <h4><a id="whats-vr">What's VR?</a></h4>
+
+        <p><strong>TL;DR:</strong> 'VR' stands for 'virtual reality' - an explorable digital environment that seems three-dimensional (3D) to a user.</p>
+
+        <p>VR environments are built to have the illusion of depth, even on a two-dimensional (2D) screen. While different VR technologies have been around for a long time, the <a href="https://www.oculus.com/en-us/rift/">Oculus Rift</a> and <a href="https://www.google.com/get/cardboard/">Google Cardboard</a> VR headsets, along with Web technologies like <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">Web Graphics Library (WebGL)</a> and <a href="https://aframe.io/">Mozilla's A-Frame</a>, are making VR more accessible and mainstream than ever before.</p>
+
+        <p>In this tutorial, we'll use <a href="https://aframe.io/">Mozilla's A-Frame JavaScript library</a> to make wesbites that look 3D. If you have access to an Oculus Rift or Google Cardboard headset and a VR-enabled browswer, you can read more about exploring your page at the <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVR_API/WebVR_environment_setup">Mozilla Developer Network</a>.
+
+        <p><a href="#navList">Back to navigation.</a></p>
+
+        </li>
+
+      <li>
+
+        <h4><a id="whats-a-frame">What's A-Frame?</a></h4>
+
+        <p><strong>TL;DR:</strong> A-Frame is a Mozilla-developed JavaScript library that makes it easy to create VR websites using HTML.</p>
+
+        <p>According to its <a href="https://aframe.io/faq/">FAQ</a>, A-Frame</p>
+
+        <blockquote>...is an open source framework for easily creating WebVR experiences with HTML. It is designed and maintained by MozVR (Mozilla’s virtual reality team research team). A-Frame wraps WebGL in HTML custom elements, enabling web developers to create 3D VR scenes that leverage WebGL’s power, without having to learn its complex low-level API. </blockquote>
+
+        <p>What does that mean?</p>
+
+        <p>A-Frame let's you create 3D, VR environments without having to learn the complexities of WebGL. The A-Frame JavaScript library has all the code you need to call and maniulate primitives like cubes, spheres, and cylinders, as well as to create scenes with backgrounds, cameras, and lighting.</p>
+
+        <p>While you can learn to do an awful lot with A-Frame, it's easy to begin coding simple shapes and effects. With very little HTML experience, you can create a 3D, VR environment online using A-Frame.</p>
+
+        <p><a href="#navList">Back to navigation.</a></p>		
+
+
+      </li>
+
+      <li>
+
+        <h4><a id="how-do-external-scripts-work">How do external scripts work?</a></h4>
+
+        <p><strong>TL;DR:</strong> When you link to an external script, you run its code on your webpage even though it's hosted from another computer on the Internet.</p>
+
+        <p>When you use the <code>script</code> tag on your webpage, you have to provide the <code>src</code>, or source, for that script, as well. A script's <code>src</code> is its location, or address, either inside a folder on your computer or somewhere on the Web. As your webpage loads, it brings the code from your <code>script</code> into the page and executes it, applying its rules and effects to your page.</p>
+
+        <p>If you click on <code>index.html</code> in the FILES sidebar on the left-hand side of the Thimble interface, you can see how this looks at <code>line 11</code>:</p>
+
+        <p><code>&lt;script src="https://aframe.io/releases/latest/aframe.min.js"&gt;&lt;/script&gt;</code>
+
+
+        <p>Some external scripts are small and discrete - they do one or two things like make a button work on a survey. Other scripts are large, made of several parts, and much more complex, like a Web-native video game.</p>
+
+        <p>Another kind of script - called a library - contains an entire set of primitives and rules for using them in your webpage. A-Frame is a library that gives you access to 'primitives' - generic primitives like <code>a-camera</code>, <code>a-cube</code>, and <code>a-light</code> - along with rules you can use for maniupalting them - like <code>color</code>, <code>position</code>, and <code>rotation</code>.</p>
+
+        <p>The <code>a-</code> prefix before each primitive lets your webpage know that it's following rules from the A-Frame JavaScript library at <code>line 11</code>.
+
+        <p>People call in external libraries like A-Frame to take advantage of their primitives and rules without having to write all the code that runs theme every time they make a new VR webpage.</p>
+
+        <p>A-Frame is an open source project, which means that everyone with access (and we need to help many more people have much more access) can use the library and even copy and change it for their own uses. Open source projects like A-Frame in emerging technology areas like VR are important because they make it easy for non-experts to understand and use rich web technologies to voice themselves and read, write, and participate on the Web. Making new technologies available to as many people as possible is one way to safeguard the Web as a free, public resource and democratic space for communication, creativity, and problem-solving.</p>
+
+        <p><a href="#navList">Back to navigation.</a></p>
+
+      </li>
+
+      <li>
+
+        <h4><a id="whats-a-primitive">What's a primitive?</a></h4>
+
+        <p><strong>TL;DR:</strong> A primitive is a basic, generic primitive you can copy repeatedly and customize with code.</p>
+
+        <p>In A-Frame, primitives include the basic shapes you might use to create an explorable webpage or graphic design in 3D. These include <code>a-cube</code>, <code>a-cylinder</code>, and <code>a-sphere</code>. Notice how A-frame's developers name primitives to be easily readble by humans, as well as machines.</p>
+
+        <p>In this tutorial, you'll have the chance to manipulate several different primitives and effects like camera-position and lighting.</p>
+
+
+        <p><a href="#navList">Back to navigation.</a></p>
+
+
+      </li>
+
+      <li>
+
+        <h4><a id="style-the-shapes">Style the shapes</a></h4>
+
+        <p><strong>TL;DR:</strong> You can easily change the <code>color</code>, dimensions, and <code>position</code> of an A-Frame primitive.</p>
+
+        <p>First, look at <code>line 25</code> and <code>line 36</code> of <code>index.html</code>. You can see the <code>a-scene</code> tags that surround our other A-Frame elements. This set of <code>a-scene</code> tags has to go around your VR elements so that your webpage knows everything inside of them uses the A-Frame JavaScript library.</p>
+
+        <p>Next, take a look at <code>a-camera</code>, <code>a-cube</code>, <code>a-cylinder</code>, and <code>a-sphere</code>, beginning at <code>line 27</code> of <code>index.html</code>. Each primitive has a <code>position</code> you can maniuplate by changing the numbers inside the quotation marks.
+        <ul>
+          <li>The first number is the horizontal x-axis value for positioning. Negative values go left. Positive values go right.</li>
+          <li>The second number is the vertical y-axis value. Negative values go down. Positive values go up.</li>
+          <li>The third number is the front-back z-axis value. Negative values go backwards into the screen. Positive values move forward towards you.</li>
+        </ul>
+
+        <p>In A-Frame, these primitives all begin with a default position of <code>"0 0 0"</code>. If you have multiple primitives, it's important to position them differently so they don't cover each other. Also in A-Frame, <code>1</code> equals one meter. If you position an primitive with a high value like <code>20</code>, it might appear off-screen.</p>
+
+        <p>You can position <code>a-camera</code> and <code>a-light</code> the same way to create new camera angles and lighting effects on your page.</p>
+
+        <p>That one-meter unit of measurement also applies while sizing primitives. Try changing the <code>height</code>, <code>width</code>, and <code>depth</code> of <code>a-cube</code>, the <code>height</code> of <code>a-cylinder</code>, and the <code>radius</code> of <code>a-sphere</code>. See what happens as you increase and decrese the values for each shape's dimensions. Remember to use relatively low values for the size of each primitive unless you want it to take up the entire screen and block out the rest of your page.</p>
+
+        <p>Finally, mess around some with the <code>color</code> of each shape. You can use <a href="http://www.visibone.com/color/hexagon_800.gif">an HTML color-picker like this one</a> to change each shape's <code>color</code>.</p>
+
+
+        <p><a href="#navList">Back to navigation.</a></p>
+
+      </li>
+
+      <li>
+
+        <h4><a id="change-the-background">Change the background</a></h4>
+
+        <p><strong>TL;DR:</strong> You can use any 'equirectangular' picture as a background for your VR webpage.</p>
+
+        <p>A-Frame lets you create a background for your page using an <code>a-sky</code> primitive like the one at <code>line 31</code> of <code>index.html</code>. The <code>a-sky</code> element uses <code>src</code> to call an external image into the webpage in much the same way our <code>script</code> tags call in the A-Frame library. You can create your own background image or find one online. However, your background image has to be 'equirectangular:' it has to have a 2:1 width to height ratio.</p>
+
+        <p>Let's change the background on this page.</p>
+
+        <p>Online photo-sharing sites like <a href="https://flickr.com">Flickr</a> have <a href="https://www.flickr.com/groups/equirectangular/">equirectangular photo groups</a> you can browse for images to use in your <code>a-sky</code> element. Broswe for the image you want. Try to use pictures that have <a href="http://creativecommons.org/">Creative Commons licenses</a>, like CC-BY or CC-BY-SA, to avoid copyright issues and to include easily shareable, openly licensed assets in your work.</p>
+
+        <p>Once you've found your image, control-click or right-click it to 'copy image address.' Next, paste that image's URL (or web address) into the quotation marks following <code>src</code> in <code>a-sky</code>. Take a look at <code>index.html</code> in Thimble's preview pane to see how your background has changed.</p>
+
+        <p><a href="#navList">Back to navigation.</a></p>
+
+      </li>
+
+      <li>
+
+        <h4><a id="change-the-lighting">Change the lighting</a></h4>
+
+        <p><strong>TL;DR:</strong> You can position the <code>a-light</code> element to match a light source in your background picture.</p>
+
+        <p>After you update your background image using <code>a-sky</code>, revisit the <code>position</code> attrbiute of <code>a-light</code> at <code>line 32</code> of <code>index.html</code>. Try to match the position of <code>a-light</code> with the position of a light source in your background. Look for obvious sources such as the sun or a candle.  Then approximate where you should place <code>a-light</code> using the x-y-z coordinates in <code>position</code>.</p>
+
+        <p>You can add multiple light sources with different colors and positions if you need to.</p>
+
+        <p>Once you're satisfied with the way light and shadow interact with your shapes, hit 'Publish' in the upper right-hand corner of the Thimble interface. Describe your project, publish it, and share the link to your first Web VR project with the world!</p>
+
+        <p><a href="#navList">Back to navigation.</a></p>
+
+      </li>
+
+      </ol>
+
+    <p>Congratulations! You've built your first 3D, VR site on the Web! Keep working with A-Frame to create more complex, explorable projects online.</p>
+
+    </div>
+
+  </body>
+
+</html>
