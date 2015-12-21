@@ -23,11 +23,12 @@
 
       <h1>CSS DecorationTutorial</h1>
 
-      <p>This project will help you use CSS to decorate text and <code>div</code> elements on an HTML webpage using <code>box-shadow</code>, <code>text-shadow</code>, <code>text-decoration</code>, <code>text-tranform</code>, and webfonts. As you work through the tutorial, you will</p>
+      <p>This project will help you use CSS to decorate text and <code>div</code> elements on an HTML webpage using <code>box-shadow</code>, <code>text-shadow</code>, <code>text-decoration</code>, and <code>text-tranform</code>. As you work through the tutorial, you will</p>
 
       <ol>
-        <li>Know and understand how an HTML webpage and CSS stylesheet link together and interact.</li>
-        <li>USe CSS to change the appearance of text on a webpage.</li>
+        <li>Know and understand how an HTML webpage and CSS stylesheet connect and interact.</li>
+        <li>Use CSS to change the appearance of <code>inline</code> text on a webpage.</li>
+		<li>Use CSS to changer the appearance of <code>block</code> elements on a webpage.</li>
         <li>Use CSS to change the <code>background-image</code> and appearance of a <code>div</code> element syled like a box on a webpage.</li>
         <li>Stack multiple CSS values to create larger text and box effects on an HTML webpage.</li>
       </ol>
@@ -49,7 +50,6 @@
         <li><a href="#change-the-text-shadow">Change the <code>text-shadow</code></a></li>
         <li><a href="#change-the-box-shadow">Change the <code>box-shadow</code></a></li>
 		<li><a href="#change-the-background-image">Change the <code>background-image</code></a></li>
-		<li><a href="#change-the-webfonts">Change the webfonts</a></li>
 		<li><a href="#mess-with-the-code">Mess with the code</a></li>
       </ol>
 
@@ -79,7 +79,21 @@
 
           <p><strong>TL;DR:</strong> You can use the <code>text-decoration</code> property to underline, overline, or strikethrough text.</p>
 
-          <p>You can use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"><code>text-decoration</code></a> property in a stylesheet instead of the HTML tag <code>&lt;u&gt;</code> (for 'underline') to underline text. You can also overline or strike-through text using <code>text-decoration</code>. However, to make a text bold or italic with CSS you have to play around with the <code>font-family</code> and <code>font-weight</code> properties or else use <code>&lt;strong&gt;</code> or <code>&lt;em&gt;</code> tags right in your HTML. The <code>strong</code> tag makes text bold, while the <code>em</code> tag makes text italic using 'emphasis.'</p>
+          <p>You can use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration"><code>text-decoration</code></a> property in a stylesheet instead of the HTML tag <code>&lt;u&gt;</code> (for 'underline') to underline text. You can also overline or strike-through text using <code>text-decoration</code>.</p>
+		  
+		  <p>Commonly used values for the <code>text-decoration</code> property include <code>underline</code>, <code>overline</code>, <code>line-through</code>, and <code>none</code>. You can add a color after each initial value, as well as a line style, like <code>wavy</code>. A line of stling instructions like this</p>
+		  
+		  <p><code>text-decoration:underline red dotted</code></p>
+		  
+		  <p style="text-decoration:underline red dotted; font-size:2em;">Looks like this when displayed on a webpage.</p>
+		  
+		  <p>Moreover, you can apply multiple <code>text-decoration</code> styles to the same text. For example,</p>
+		  
+		  <p><code>text-decoration: underline overline;</code></p>
+		  
+		  <p style="text-decoration:underline overline; font-size:2em;">Looks like this when displayed on a webpage.</p>
+		  
+		  <p>To make a text bold or italic with CSS you have to play around with the <code>font-family</code> and <code>font-weight</code> properties or else use <code>&lt;strong&gt;</code> or <code>&lt;em&gt;</code> tags right in your HTML. The <code>strong</code> tag makes text bold, while the <code>em</code> tag makes text italic using 'emphasis.'</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -91,7 +105,13 @@
 
           <p><strong>TL;DR:</strong> You can use the <code>text-transform</code> property to control the capitalization in any passage of text.</p>
 
-          <p>If you want to draw attention to a particular passage of text or give it a definite mood, tone, or voice, you can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform"><code>text-transform</code></a> to make every letter in the passage <code>lowercase</code> or <code>uppercase</code>. You can also set  the value of <code>text-transform</code> to <code>capitalize</code> to capitalize the first letter in each word of a passage of text.</p>
+          <p>If you want to draw attention to a particular passage of text or give it a definite mood, tone, or voice, you can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform"><code>text-transform</code></a> to make every letter in the passage <code>lowercase</code> or <code>uppercase</code>. You can also set  the value of <code>text-transform</code> to <code>capitalize</code> if you want the first letter in each word of a passage of text to be capitalized.</p>
+		  
+		  <p>Here is an example of <code>text-transform</code> in action. A stylesheet that looks like this</p>
+		  
+		  <p><code>text-transform:capitalize</code></p>
+		  
+		  <p style="text-transform:capitalize; font-size: 2em;">would have this effect on the webpage.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -101,9 +121,28 @@
 
           <h4><a id="whats-text-shadow">What's <code>text-shadow</code>?</a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> You can use <code>text-shadow</code> to style text inside HTML elements with a shadow.</p>
 
-          <p></p>
+          <p>As you might suspect, the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow"><code>text-shadow</code></a> property adds a shadow to the passage of text it styles. Each <code>text-shadow</code> has an x-offset and a y-offset, as well as optional color and blur radius values. A simple <code>text-shadow</code> looks like this on a stylesheet:</p>
+		  
+		  <p><code>text-shadow: 2px 2px #fff;</code></p>
+		  
+		  <p style="text-shadow:2px 2px #fff; font-size:2em;">And like this on a webpage.</p>
+		  
+		  <p>A <code>text-shadow</code> value like that would add a shadow cast 2 pixels to the right of a word and 2 pixels down in white. You can stack multiple shadows like this to create thicker shadows or multi-colored ones (using a color picker like <a href="http://www.visibone.com/color/hexagon_800.gif">this one</a>). To stack shadows, you separate them using commas. For example, this...</p>
+		  
+		  <p><code>text-shadow: 2px 2px #0c5, 4px 4px #50c, 6px 6px #c50</code></p>
+		  
+		  <p style="text-shadow: 2px 2px #fff, 6px 6px #fff, 10px 10px #fff; font-size:2em;">...looks like this on a webpage.</p>
+		  
+		  <p>You can also add a blur radius valoue in bteween the y-offset and the color to turn the shadow into a kind of aura or cloud all around the word. A blurred <code>text-shadow</code> looks like this on a stylesheet:</p>
+		  
+		  <p><code>text-shadow: 5px 5px 10px #f00;</code></p>
+		  
+		  <p style="text-shadow:5px 5px 10px #f00; font-size:2em;">And like this on a webpage.</p>
+		  
+		  <P>A shadow like that blurs, or smudges, its x- and y-offset shadow by 5 pixels. You can stack blurred shadows to create ndifferent text effects, like a neon glow.</p>
+			  
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -113,11 +152,19 @@
 
           <h4><a id="whats-box-shadow">What's <code>box-shadow</code>?</a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> You can use a <code>box-shadow</code> to style HTML elements like <code>img</code> and <code>div</code> with a shadow.</p>
 
-          <p></p>
+          <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"><code>box-shadow</code></a> property works just like <code>text-shadow</code> except that it styles <code>block</code> and container elements instead of the <code>inline</code> text inside of them. If you have an element like an image (<code>img</code>) or <code>div</code> or even a paragraph (<code>p</code>), you can use <code>box-shadow</code> to style a shadow around the outside boundaries of that element. For example, if we decided to create a <code>box-shadow</code> around an entire paragraph, we could use stylesheet language like this</p>
+		  
+		  <p><code>box-shadow: 10px 10px #fff;</code></p>
+		  
+		  <p style="box-shadow: 10px 10px #fff; font-size:2em;">to style the that paragraph like this.</p>
+		  
+		  <p style="text-shadow: 10px 10px #fff; font-size:2em;">Whereas, a similar <code>text-shadow</code> would look like this.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
+		  
+		  <p>You can add a blur radius to <code>box-shadow</code>, as well, and also stack as many effects as you'd like.
 
         </li>
 		
@@ -125,9 +172,13 @@
 
           <h4><a id="change-the-text-decoration">Change the <code>text-decoration</code></a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> You can underline or strike-through text using <code>text-decoration</code> in your stylesheet to emphasize particular text.</p>
 
-          <p></p>
+          <p>You can find <code>text-decoration</code> effects on each styled <code>div</code> element on <code>style.css</code>. The instance of the <code>text-decoration</code> property live at <code>line 55</code>, <code>line 63</code>, <code>line 128</code>, <code>line 137</code>, <code>line 146</code>, and <code>line 155</code> of the stylesheet.</p>
+		  
+		  <p>Pick your favorite adjective from the list of <code>div</code> elements with the <code>text-decoration</code> property.  Leave the styling instructions for that adjective's <code>div</code> alone. Go back to the other <code>div</code> elements and change the <code>text-decoration</code> value from <code>underline</code> to <code>line-through</code>. When you finish, your adjective should be the only one that isn't struck through.</p>
+		  
+		  <p>After you've styled <code>text-decoration</code> to emphasize the adjective you chose, continue with the tutorial.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -137,9 +188,9 @@
 
           <h4><a id="change-the-text-transform">Change the <code>text-transform</code></a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> The <code>text-transform</code> property lets you emphasize passages of text using capitalization.</p>
 
-          <p></p>
+          <p>Go to <code>line 76</code> of <code>style.css</code> in the FILES sidebar on the left-hand side of the Thimble interface. Change the <code>text-transform</code> value to <code>lowercase</code> or <code>capitalize</code> to see how the name of the box on the page changes over on <code>index.html</code>. Click the preview pane to see how changing <code>style.css</code> impacts our webpage<code>index.html</code>.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -149,9 +200,11 @@
 
           <h4><a id="change-the-text-shadow">Change the <code>text-shadow</code></a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> You can create layered, inline effects using multiple <code>text-shadow</code> values in your stylesheet.</p>
 
-          <p></p>
+          <p>You can find <code>text-shadow</code> effects at <code>line 56</code>, <code>line 63</code>, <code>line 129</code>, <code>line 138</code>, <code>line 147</code>, and <code>line 156</code> of <code>style.css</code>. Each <code>div</code> with a <code>text-shadow</code> effect, like <code>amazing</code> (which lives at <code>line 38</code> of <code>index.html</code> and <code>line 51</code> of <code>style.css</code>), can have its x-offset, y-offset, blur radius, and/or color changed. Try changing all of the color values for one <code>div</code>, like <code>amazing</code>, to a new color on <code>style.css</code> to see what happens on <code>index.html</code>.</p>
+			  
+			  <p>Then, find other instances of <code>text-shadow</code> in other <code>div</code> elements and make more changes - see what happens as you mess around with all the values of <code>text-shadow</code>. Finish with colors and text effects you like before moving on to the next step of the tutorial.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -161,9 +214,13 @@
 
           <h4><a id="change-the-box-shadow">Change the <code>box-shadow</code></a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> You can create layered effects on <code>block</code> and container elements using  <code>box-shadow</code> in your stylesheet.</p>
 
-          <p></p>
+          <p>On our webpage, the <code>div</code> called <code>theBox</code>, at <code>line 40</code> of <code>index.html</code>, gets its styling instructions beginning at <code>line 81</code> of <code>style.css</code>. The stacked <code>box-shadow</code> effects here built out a deep, green-ish shadow from the box elemnt that holds the picture of the cat.</p>
+		  
+		  <p>Try changing the colors of each <code>box-shadow</code> value here and then play with the x- and y-offsets, as well. If you feel especially adventurour, add a blur radius value, in pixels (<code>px</code>) between each y-offset value and each color value.</p>
+		  
+		  <p>Once you have a <code>box-shadow</code> effect that pleases you, continue with the the next step of the tutorial.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -173,21 +230,11 @@
 
           <h4><a id="change-the-background-image">Change the <code>background-image</code></a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> Swap out the image in the box.</p>
 
-          <p></p>
-
-          <p><a href="#navList">Back to navigation.</a></p>
-
-        </li>
-		
-        <li>
-
-          <h4><a id="change-the-webfonts">Change the webfonts</a></h4>
-
-          <p><strong>TL;DR:</strong> </p>
-
-          <p></p>
+          <p>Use an open license seach engine, like <a href="https://search.creativecommons.org">Creative Commons Search</a> to find your own background picture for the <code>div</code> called <code>theBox</code>. Once you find an image you like, control- or right-click it to copy the images URL, or web address. Paste the address of your picture of the URL of the cat picture at <code>line 82</code> of <code>stle.css</code>. When you check back on <code>index.html</code>, your picture should be inside the box with the <code>box-shadow</code>.</p>
+		  
+		  <p>If you pick a picture of somethoing other than a cat, rewrite the header copy at <code>line 31</code> on <code>index.html</code> to provide some humor and context for your webpage.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
@@ -197,9 +244,21 @@
 
           <h4><a id="mess-with-the-code">Mess with the code</a></h4>
 
-          <p><strong>TL;DR:</strong> </p>
+          <p><strong>TL;DR:</strong> You can change nearly any part of the <code>style.css</code> to impact the way <code>index.html</code> looks on the screen.</p>
 
-          <p></p>
+          <p>Draw on what you learned here, as well as on what you've learned from past activities in this module to radically change <code>index.html</code>. You might</p>
+		  
+		  <ul>
+			  <li>Apply moar shadows!</li>
+			  <li>Change the webfonts used in this project.</li>
+			  <li>Add more images.</li>
+			  <li>Search for - and then apply - more advanced text effect techniques using <code>text-shadow</code>.</li>
+			  <li>Create a more dynamic layout using <code>position</code>, <code>float</code>, and <code>block</code> elements or container <code>div</code> elements.</li>
+		  </ul>
+		  
+		  <p>Have fun breaking the page and exploring what you can do with CSS, HTML, and your own design decisions.</p>
+			  		  
+		  <p>If you'd like to keep learning about decorating text using CSS, check out <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Text_Decoration">this module from the Mozilla Developer Network</a>.</p>
 
           <p><a href="#navList">Back to navigation.</a></p>
 
