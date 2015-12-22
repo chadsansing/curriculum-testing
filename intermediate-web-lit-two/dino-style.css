@@ -1,0 +1,50 @@
+/*Layout*/
+
+/*Typography*/
+
+h1{
+	font-family: 'Walter Turncoat', monospace;
+	font-size:2em;
+	margin-left:.25em;
+	margin-top:.25em;
+}
+
+h2{
+	font-family: 'Walter Turncoat', monospace;
+	font-size:1.25em;
+	margin-left:.25em;
+	margin-top:.25em;
+}
+
+p{}
+
+/*Specific styles*/
+
+.box{
+	border: 4px solid #000;
+	border-radius:10px;
+	float:left;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.25em;
+	height:600px;
+	margin-bottom:2em;
+	margin-left:1em;
+}
+
+#drawing{
+	width:350px;
+}
+
+#instructions{
+	width:200px;
+}
+
+#license{
+	clear:both;
+	font-family:monospace;
+	font-size:.9em;
+}
+
+#license a{
+	color:#000;
+}
