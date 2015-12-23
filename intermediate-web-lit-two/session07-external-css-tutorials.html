@@ -66,7 +66,7 @@ content, links and media.
             <!--You can create a thread on Disource, our community forum, for this activity and link to it here.-->
 
             <li>
-              <a href="https://discourse.webmaker.org/t/testing-intermediate-web-lit-css-decoration/409/1">Disourse Thread</a>
+              <a href="https://discourse.webmaker.org/t/testing-intermediate-web-lit-external-css-tutorials/379">Disourse Thread</a>
             </li>
 
             <!--If you are sharing work in GitHub, you can edit this adress. Otherwise, it will link to this template.-->
@@ -109,9 +109,9 @@ or to your homepage or Twitter account if you made the image.
 
 -->
 			  
-		  <!--Image credit 'Ubosoth Decoration,' CC-By-SA 3.0 by MichaelJanich, https://commons.wikimedia.org/wiki/File:Ubosoth_decoration.jpg-->
+		  <!--Image credit screen capture of Flexbox Froggy by Mozilla Leadership Network -->
 
-          <img src="flexbox-froggy-screen-cap-1.png" alt="An detail of the decotation on the Ubosoth, the main building of Wat Phra Kaew, Grand Palace, Bangkok"> <a href="https://teach.mozilla.org" class="attribution"><i class="fa fa-camera"></i> Mozilla Leadership Network</a>
+          <img src="flexbox-froggy-screen-cap-1.png" alt="An screenshot of the CSS flexbox layout tutorial called 'Flexbox Frggy' that shows two rows of three green frogs each on green lilypads followed by one row of three red frogs on ref lilipads"> <a href="https://teach.mozilla.org" class="attribution"><i class="fa fa-camera"></i> Mozilla Leadership Network</a>
 
         </div>
 
@@ -154,6 +154,7 @@ https://drive.google.com/a/mozillafoundation.org/folderview?id=0B_rbDAen9prkUmd1
             <ul>
 
 			  <li>Internet-connected computers</li>
+			  <li>Empty plate template</li>
               <li>Markers</li>
 			  <li>Paper</li>
 			  <li>Pecils and pens</li>
@@ -168,14 +169,14 @@ at https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Obj
             <ul>
               <li>Understand and apply multi-part CSS selectors.</li>
 			  <li>Understand and apply flexbox layout selectors and values on a webpage using CSS and HTML.</li>
-			  <li>Evaluate the best CSS selectors and properties to use for design and styling needs on an HTML webpage.</li>
+			  <li>Evaluate the best CSS selectors and properties to use for layout and styling needs on an HTML webpage.</li>
 		 	</ul>
 
             <!--Here is another link to Discourse for discussing the activity. Delete the generic address and add your own if you start a thread on Discourse for this activity.-->
 
             <h4>Join the Discussion</h4>
 
-            <p>Ask questions and find inspiration for adaptation and remix on <a href="https://discourse.webmaker.org/t/testing-intermediate-web-lit-css-decoration/409/1" target="blank_">Discourse</a>, our community forum.</p>
+            <p>Ask questions and find inspiration for adaptation and remix on <a href="https://discourse.webmaker.org/t/testing-intermediate-web-lit-external-css-tutorials/379" target="blank_">Discourse</a>, our community forum.</p>
 
           </div>
 
@@ -201,7 +202,7 @@ at https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Obj
 
               <!--Next, credit yourself and others who worked on the lesson. You may wish to link names to homepages or social media pages.-->
 
-              <p id="made-by">Made by <a href="https://teach.mozilla.org">Mozilla Leadership Network</a>. 
+              <p id="made-by">Made by <a href="https://teach.mozilla.org">Mozilla Leadership Network</a> with external tutorials by <a href="https://twitter.com/flukeout">Luke Pacholski</a> and <a href="https://twitter.com/thomashpark">Thomas Park</a>. 
 
                 <!--Write a brief summary of your lesson including the Web Literacy competencies covered in it.--></p>
 
@@ -235,9 +236,11 @@ at https://github.com/mozilla/webmaker-curriculum/wiki/How-to-write-Learning-Obj
 				  <p>
 					  <ul>
 						  <li><a href="http://flukeout.github.io/">CSS Diner</a> takes players from using simple, single CSS selectors to using multi-part selectors that style very specific HTML elements of affect multiple elements at once.</li>
-						  <li><a href="">Flexbox Froggy</a> teaches players how to use flexbox properties and values to create dyanmic layouts that avoid hiccups from using <code>float</code> instead.</li>
+						  <li><a href="http://flexboxfroggy.com/">Flexbox Froggy</a> teaches players how to use <code>flexbox</code> properties and values to create dyanmic layouts that avoid hiccups from using <code>float</code> instead.</li>
 					  </ul>
 				  </p>
+				  
+				  <p>You should also familiarize yourself with the advantages of using <code>flexbox</code> over <code>float</code>. The <a href="https://developer.mozilla.org">Mozilla Developer Network</a> has <a href="https://developer.mozilla.org/en-US/docs/Inbox/Advanced_layouts_with_flexbox">an explainer here</a>.
 
                 <!--Here you can remind teachers to set up any accounts they and  their students might need for your lesson. Add your link  after href= and edit in the name of the web service you'll  use.-->
 
@@ -299,18 +302,40 @@ Happy lesson planning!
           <li>
             <div>
               <div class="time">
-                <p>25<br>
+                <p>20<br>
                   min</p>
               </div><!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
 
-              <h3>[Name of the Step]</h3>
+              <h3>Selecting Favorite Foods</h3>
 
-              <p>You can explain the steps in paragraphs...</p>
+              <p>Welcome students to today's activity and explain that we'll be using online, game-like CSS tutorials to learnnew ways to organize webpages and style their elements.</p>
+			  
+			  <p>First. we're going to practice sorting our favorite foods using multiple, overlapping categories as a way to conceptualize using multiple, specific CSS selectors all at once. Then we'll try to fit all of our favorite foods on to a plat using flexible layout as a way to think of the principles behind the <code>flexbox</code> layout properties we'll learn in one of today's tutorials.</p>
+			  
+			  <p>Invite students to share their favorite foods with the class. Make a visible list on a large piece of paper, a whiteboard, or a shared document on your projected computer. Try to come up with a large list in under five minutes.</p>
+			  
+			  <p>Once you have a list of several foods, ask students how they would select as many alike foods as possible using a mix of general and specific labels. How could they capture several foods at once with just a handul of selectors (or descriptions)? Start with 'Food' as an umbrella category and then asl students to come up with a handful of selectors that describe as many favorite foods as possible.</p>
+			  
+			  <p>For example, if students came up with a list like this...</p>
+			  
+			  <p>
+				  <ul>
+					  <li><code>Chocolate bars</code></li>
+					  <li><code>Orange chicken</code></li>
+					  <li><code>Potato chips (or crisps)</code></li>
+					  <li><code>Edamame</code></li>
+					  <li><code>Mofongo</code></li>
+				  </ul>
+			  </p>
+			  
+			  <p>...you might all together come up with a series of selectors like <code>food sweet</code> to cover <code>chocolate bars</code>, <code>mofongo</code>, and <code>orange chicken</code> and another series of selectors like <code>food not-meat savory</code> to cover <code>potato chips (or crisps)</code> and <code>edamame</code>.</p>
+			  
+			  <p>Have students generate several series of selectors or ways to categorize several foods at once. Take up to 10 minutes for this part of the activity.</p>
+			  
+			  <p>Once once you have 5 or more series of selectors, pass out the empty plate template. Ask students to pick their facotire series of selectors and to fit all the foods inside of it on the plate. Tell them that the idea is to think of the plate as a webpage and the arrangement of their foods as the layout of that page.</p>
 
-              <p>
-              <ol>
-                <li>...or use lists</li>
-              </ol>
+              <p>Finally, ask students to post their plates in a shared space in the classroom and to see how their peers arranged their foods on thier plates according to the available space and the food selectors they used for the activity.</p>
+
               </p>
 
           </div>
@@ -320,25 +345,25 @@ Happy lesson planning!
           <li>
             <div>
               <div class="time">
-                <p>30<br>
+                <p>35<br>
                   min</p>
               </div><!-- ADD DETAILS OF THE INTRODUCTION TO YOUR SESSION -->
 
-              <h3>[Name of the Step]</h3>
+              <h3>Playing the Tutorials</h3>
 			  
-			  <p>After students settle at their computers, explain that next we're going to learn how to bring new fonts hosted on the Web into our own webpages and projects.</p>
+			  <p>After students settle at their computers, introduce them to today's tutorials on your projected computer and make sure every student can get to both sites.</p>
 			  
-			  <p>Share <a href="https://d157rqmxrxj6ey.cloudfront.net/chadsansing/20997/">the link to today's project</a> with students. You might want to shorten this linke ahead of time or else provide a link to it from a classwebpage or shared document. Help students who experience difficulty with processing or typing links get to the webpage and encourage classmates to help, as well.</p>
+			  <p>
+				  <ul>
+					  <li>CSS Diner - <a href="http://flukeout.github.io/">http://flukeout.github.io/</a></li>
+					  <li>Flexbox Froggy - <a href="http://flexboxfroggy.com/">http://flexboxfroggy.com/</a></li>
+				  </ul>
+			  </p>
 			  
-			  <p>Once students all arrive at the project, invite them to click the green 'Remix' button. This will take students into the Thimble code editor. They will be ablse to see the code of the webpage, as well as a preview of how it looks in a broswer. Students can also switch between this 'Preview' pane (in the upper righthand part of the Thimble interface) and a 'Tutorial' pane that takes them through today's work in a step-by-step way.</p>
+			  <p>Explain that today's we'll look at how we can use CSS to select very specific parts of a page for styling, as well as to select multiple parts of a page at once. We'll also play around with <code>flexbox</code> layout selectors which can help us make flowing, dynamic (or flexible) layouts that are difficult to do with other positioning properties.</p>
 			  
-			  <p>Work through the tutorial on a projected computer. Invite students to help one another, but also to work ahead if they feel ready to do so. Through the course of the tutorial, you'll ask students to:</p>
+			  <p>Briefly work through a few levels of each tutorial on a projected computer to demo they work. Invite students to come up with solutions for the early levels of the games. Then let students work alone or in pairs for about a half hour. Tell them that the goal is to make it through both tutorials in that time, but that there will be places where each of us gets stuck - it's not a problem to ask for help or to run out of time today.</p>
 			  
-			  <ol>
-				  <li></li>
-				  <li>Mess with the code to discover new ways to create decorative effects on a webpage in an independent and playful way.</li>
-			  </ol>
-
           </div>
 
         </li>
@@ -352,13 +377,20 @@ Happy lesson planning!
 
               <h3>Reflection and Assessment</h3>
 
-              <p>After working through the tutorial, bring students back together as a group and facilitate a brief, reflective conversation about today's work. Make a list of your own questions or ask questions like those suggested below.</p>
+              <p>After spending about 35 minutes on the tutorials, bring students back together as a group and facilitate a brief, reflective conversation about today's work. Make a list of your own questions or ask questions like those suggested below.</p>
 			  
 			  <p>If you have time, consider asking students to write, type, or otherwise record their responses for self-assessment and teacher evaluation. Just be sure to match recording technologies to students' needs so that whatever medium (or media) you chose for (or with) the group isn't a barrier to learners' expression.</p>
 
               <p>
               <ul>
-                <li></li>
+                <li>What did you pick up and learn about CSS today that you didn't know before?</li>
+				<li>How would you explain the relationships between CSS selectors, properties, and values in your own words?</li>
+				<li>How would you summarize the way HTML and CSS work together?</li>
+				<li>How would you explain <code>flexbox</code> layout?</li>
+				<li>How did working through these external, game-like tutorials compare to other web literacy lessons you did?</li>
+				<li>If you were able to create a tutorial game to teach a part of HTML or CSS, what would it be like? What would it teach?</li>
+				<li>Are there activities you've completed in Thimble that you'd like to try re-styling with <code>flexbox</code> instead of <code>position</code> or <code>float</code>? Which activities? Why do you think <code>flexbox</code> would work well on them?</li>
+				<li>What seemed easiest about today's work? Most difficult? Why?</li>
               </ul>
               </p>
 
