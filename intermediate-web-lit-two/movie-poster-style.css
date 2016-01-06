@@ -1,0 +1,112 @@
+/*Built from the original Webmaker Movie Poster Hack, https://webmaker.makes.org/thimble/movie-poster-hack*/
+
+/*Layout*/
+
+/*Image credit 'Seaside' by L.E. Spry, https://www.flickr.com/photos/lspry/2271837503/, CC-BY 2.0*/
+
+body{
+	background-image:url('https://c1.staticflickr.com/3/2224/2271837503_756e2260b5_o.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top center;
+	padding:0; 
+}
+
+h1 {
+  margin-top:50px;
+  margin-bottom:0;
+  line-height: 1em;
+}
+h2 {
+  margin-top:30px;
+  margin-bottom:100px;  
+}
+
+blockquote {
+  display: inline-block;
+  width: 28%;
+  margin:0 2%;
+}
+
+blockquote .star {
+  font-size: 40px;
+  display: block;
+}
+blockquote footer {
+  display: block;
+  font-size: 80%;
+}
+
+/*Typography*/
+
+blockquote{
+	color:white;
+	font-size: 20px;
+}
+
+body {
+	color:white;
+	font-family: 'Ewert', cursive;
+	text-align:center;
+	text-shadow: 1px 1px black, 2px 2px black;
+}
+
+
+h1 , h2 {
+	font-family: 'Ewert', cursive;
+	font-style: italic;
+	font-weight: normal;
+}
+
+h1 {
+	font-size:116px;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px #333, 3px 3px #333;
+}
+
+h2{
+	text-shadow: 1px 1px #333, 2px 2px #333;
+}
+
+/*Specific styles*/
+
+.actors {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin:0 0 40px 0;
+}
+
+.actors li {
+	display: inline-block;
+	margin:0 20px;
+}
+
+.credits {
+	text-transform: uppercase;
+	font-size:10px;
+}
+
+.credits strong {
+	font-size:17px;
+}
+
+.wrapper{
+	margin-top:3em;
+}
+
+#license{
+	margin-top:3em;
+	text-align:left;
+	top:.25em;
+	color:#fff;
+	font-family:monospace;
+	font-size:.9em;
+	left:.25em;
+	position:relative;
+}
+
+#license a{
+	color:#fff;
+}
