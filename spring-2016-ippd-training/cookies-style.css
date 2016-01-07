@@ -1,15 +1,214 @@
+/*Palette inspired by igaranti, http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project & http://www.igaranti.com.tr/ig/*/
+
 /*Layout*/
+
+body{
+	background-color:#982395;
+}
+
+blockquote{
+	background-color:#24A8AC;
+	padding:1em;
+}
+
+h1, h2, h3, h4, p, table{
+	padding-left:2%;
+	padding-right:2%;
+}
+
+h1{
+	margin-bottom:1%;
+	margin-top:1%;
+}
+
+h2{
+	margin-bottom:1%;
+	margin-top:1%;
+}
+
+h3{
+	margin-bottom:1%;
+	margin-top:1%;
+}
+
+h4{
+	margin-bottom:1%;
+	margin-top:1%;
+}
+
+header, main, footer{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+	width:95%;
+}
+
+header{
+	background-color:#0087CB;
+	height:100%;
+	z-index:-999;
+}
+
+main{
+	background-color:#fff;
+	height:100%;
+	z-index:-499;
+}
+
+footer{
+	background-color:#0087CB;
+	height:100%;
+	z-index:0;
+}
+
+li{
+	line-height:1.5em;
+}
+
+table{
+	margin-bottom:1em;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1em;
+	width:80%;
+}
+
+th{
+	text-align:center;
+}
+
+th, td{
+	border:.25px solid #eee;
+	border-radius:8px;
+	box-shadow:0 4px 4px #ccc;
+	padding-left:.25em;
+}
+
+th, td{
+	height:3em;
+	padding-top:.25em;
+	text-indent:.125em;
+}
 
 /*Typograpy*/
 
+a{
+	color:#00A03E;
+}
+
+strong a {
+	font-size:1em;
+}
+
+blockquote, p, table{
+	font-family: 'Petrona', serif;
+}
+
+blockquote{
+	color:#fff;
+}
+
+blockquote strong{
+	font-size:1.125em;
+}
+
+h1{
+	color:#fff;
+	font-family: 'Ranchers', monospace;
+	font-size:4em;
+}
+
+h2{
+	color:#fff;
+	font-family:'CabiN Condensed', sans-serif;
+	font-size:2em;
+	font-weight:400;
+}
+
+h3{
+	font-family: 'Ranchers', monospace;
+	font-size:2em;
+	letter-spacing:.05em;
+}
+
+h4{
+	font-family:'CabiN Condensed', sans-serif;
+	font-size:1.5em;
+	font-weight:400;
+}
+
+li{
+	font-size:1.1em;
+}
+
+p{
+	font-size:1.1em;
+}
+
+strong{
+	font-size:1.125em;
+}
+
+table, th, td{
+	font-size:1em;
+}
+
+th{
+	color:#fff;
+	font-size:1.25em;
+}
+
 /*Specific styles*/
 
+.wrapper{
+	height:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+#first-party-cookies{
+	background-color:#0087CB;
+	width:15%;
+}
+
 #license{
-	color:#000;
+	color:#fff;
 	font-family:monospace;
 	font-size:.9em;
+	margin-bottom:1%;
+	margin-left:2%;
+	margin-top:1%;
 }
 
 #license a{
-	color:#000;
+	color:#fff;
+}
+
+#privacy-cost{
+	background-color:#24A8AC;
+}
+
+#purchased{
+	background-color:#FFA200;
+	width:15%;
+}
+
+#score{
+	background-color:#00A03E;
+	width:15%;
+}
+
+#service{
+	background-color:#00A03E;
+	width:15%;
+}
+
+#third-party-cookies{
+	background-color:#982395;
+	width:15%;
+}
+
+#turn{
+	background-color:#FFA200;
+	width:10%;
 }
