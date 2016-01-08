@@ -1,0 +1,9 @@
+/* line 4, ../../sass/partials/tables.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 8, ../../sass/partials/tables.scss */
+th, td {
+  border: 2px solid black;
+}

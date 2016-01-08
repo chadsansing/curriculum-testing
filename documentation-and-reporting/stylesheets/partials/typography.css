@@ -1,0 +1,31 @@
+/* line 6, ../../sass/partials/typography.scss */
+h1 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* line 18, ../../sass/partials/typography.scss */
+h2 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* line 30, ../../sass/partials/typography.scss */
+p {
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/* line 43, ../../sass/partials/typography.scss */
+li {
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  font-weight: 300;
+}

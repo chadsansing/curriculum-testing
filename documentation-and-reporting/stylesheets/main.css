@@ -1,0 +1,78 @@
+/* line 4, ../sass/partials/layout.scss */
+h1 {
+  margin-bottom: 0.125em;
+  margin-left: 0.25em;
+  margin-top: 0.125em;
+}
+
+/* line 10, ../sass/partials/layout.scss */
+h2 {
+  margin-bottom: 0.125em;
+  margin-left: 0.25em;
+  margin-top: 0.125em;
+}
+
+/* line 6, ../sass/partials/typography.scss */
+h1 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* line 18, ../sass/partials/typography.scss */
+h2 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* line 30, ../sass/partials/typography.scss */
+p {
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/* line 43, ../sass/partials/typography.scss */
+li {
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/* line 12, ../sass/partials/specific-styles.scss */
+#license {
+  color: black;
+  font-family: monospace;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  margin-left: 0.25em;
+  margin-top: 1em;
+}
+
+/* line 21, ../sass/partials/specific-styles.scss */
+#license a {
+  color: black;
+}
+
+/* line 25, ../sass/partials/specific-styles.scss */
+.wrapper {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/* line 4, ../sass/partials/tables.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 8, ../sass/partials/tables.scss */
+th, td {
+  border: 2px solid black;
+}
