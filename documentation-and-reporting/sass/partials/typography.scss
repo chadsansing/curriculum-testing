@@ -1,6 +1,6 @@
 $primary-h1-color:black;
 $primary-h1-font:'Open Sans', sans-serif;
-$primary-h1-size:2em;
+$primary-h1-size:3em;
 $primary-h1-weight:700;
 
 h1{
@@ -12,7 +12,7 @@ h1{
 
 $primary-h2-color:black;
 $primary-h2-font: 'Open Sans', sans-serif;
-$primary-h2-size:1.5em;
+$primary-h2-size:2em;
 $primary-h2-weight:300;
 
 h2{
@@ -20,6 +20,19 @@ h2{
 	font-family:$primary-h2-font;
 	font-size:$primary-h2-size;
 	font-weight:$primary-h2-weight;
+}
+
+$primary-col-color:black;
+$primary-col-font:'Open Sans', sans-serif;
+$primary-col-line-spacing:1.1em;
+$primary-col-size:1em;
+$primary-col-weight:300;
+
+[class*='col-']{
+	color:$primary-col-color;
+	font-family:$primary-col-font;
+	font-size:$primary-col-size;
+	font-weight:$primary-col-weight;
 }
 
 $primary-p-color:black;
@@ -34,15 +47,22 @@ p{
 	font-weight:$primary-p-weight;
 }
 
-$primary-li-color:black;
-$primary-li-font:'Roboto Slab', serif;
-$primary-li-line-spacing:1.1em;
-$primary-li-size:1em;
-$primary-li-weight:300;
+$primary-table-color:black;
+$primary-table-font:'Open Sans', sans-serif;
+$primary-table-size:1em;
+$lightweight-table-font:300;
+$heavyweight-table-font:600;
 
-li{
-	color:$primary-li-color;
-	font-family:$primary-li-font;
-	font-size:$primary-li-size;
-	font-weight:$primary-li-weight;
+td{
+	color:$primary-table-color;
+	font-family:$primary-table-font;
+	font-size:$primary-table-size;
+	font-weight:$lightweight-table-font;
+}
+
+th{
+	color:$primary-table-color;
+	font-family:$primary-table-font;
+	font-size:$primary-table-size;
+	font-weight:$heavyweight-table-font;	
 }
