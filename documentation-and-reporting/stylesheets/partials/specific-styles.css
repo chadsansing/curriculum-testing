@@ -1,0 +1,22 @@
+/* line 12, ../../sass/partials/specific-styles.scss */
+#license {
+  color: black;
+  font-family: monospace;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  margin-left: 0.25em;
+  margin-top: 1em;
+}
+
+/* line 21, ../../sass/partials/specific-styles.scss */
+#license a {
+  color: black;
+}
+
+/* line 25, ../../sass/partials/specific-styles.scss */
+.wrapper {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}

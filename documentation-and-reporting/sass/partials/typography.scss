@@ -1,0 +1,48 @@
+$primary-h1-color:black;
+$primary-h1-font:'Open Sans', sans-serif;
+$primary-h1-size:2em;
+$primary-h1-weight:700;
+
+h1{
+	color:$primary-h1-color;
+	font-family:$primary-h1-font;
+	font-size:$primary-h1-size;
+	font-weight:$primary-h1-weight;
+}
+
+$primary-h2-color:black;
+$primary-h2-font: 'Open Sans', sans-serif;
+$primary-h2-size:1.5em;
+$primary-h2-weight:300;
+
+h2{
+	color:$primary-h2-color;
+	font-family:$primary-h2-font;
+	font-size:$primary-h2-size;
+	font-weight:$primary-h2-weight;
+}
+
+$primary-p-color:black;
+$primary-p-font:'Roboto Slab', serif;
+$primary-p-size:1em;
+$primary-p-weight:300;
+
+p{
+	color:$primary-p-color;
+	font-family:$primary-p-font;
+	font-size:$primary-p-size;
+	font-weight:$primary-p-weight;
+}
+
+$primary-li-color:black;
+$primary-li-font:'Roboto Slab', serif;
+$primary-li-line-spacing:1.1em;
+$primary-li-size:1em;
+$primary-li-weight:300;
+
+li{
+	color:$primary-li-color;
+	font-family:$primary-li-font;
+	font-size:$primary-li-size;
+	font-weight:$primary-li-weight;
+}

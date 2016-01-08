@@ -1,0 +1,14 @@
+$primary-header-h-spacing:.25em;
+$primary-header-v-spacing:.125em;
+
+h1{
+	margin-bottom:$primary-header-v-spacing;
+	margin-left:$primary-header-h-spacing;
+	margin-top:$primary-header-v-spacing;
+}
+
+h2{
+	margin-bottom:$primary-header-v-spacing;
+	margin-left:$primary-header-h-spacing;
+	margin-top:$primary-header-v-spacing;
+}
