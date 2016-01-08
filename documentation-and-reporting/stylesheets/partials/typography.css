@@ -2,7 +2,7 @@
 h1 {
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
 }
 
@@ -10,11 +10,19 @@ h1 {
 h2 {
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 300;
 }
 
-/* line 30, ../../sass/partials/typography.scss */
+/* line 31, ../../sass/partials/typography.scss */
+[class*='col-'] {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/* line 43, ../../sass/partials/typography.scss */
 p {
   color: black;
   font-family: "Roboto Slab", serif;
@@ -22,10 +30,18 @@ p {
   font-weight: 300;
 }
 
-/* line 43, ../../sass/partials/typography.scss */
-li {
+/* line 56, ../../sass/partials/typography.scss */
+td {
   color: black;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: 300;
+}
+
+/* line 63, ../../sass/partials/typography.scss */
+th {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
 }
