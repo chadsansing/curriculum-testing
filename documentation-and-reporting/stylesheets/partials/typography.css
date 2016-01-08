@@ -31,17 +31,29 @@ p {
 }
 
 /* line 56, ../../sass/partials/typography.scss */
-td {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
+[class*=col-] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em;
+  font-weight: 300em;
+  text-align: left;
 }
 
 /* line 63, ../../sass/partials/typography.scss */
-th {
-  color: black;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+.label {
+  font-size: 1.5em;
   font-weight: 600;
+  text-align: center;
+}
+
+/* line 69, ../../sass/partials/typography.scss */
+.sub-label {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+/* line 74, ../../sass/partials/typography.scss */
+.sub-label-only {
+  font-size: 1.125em;
+  font-weight: 400;
+  text-align: left;
 }

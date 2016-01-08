@@ -53,16 +53,26 @@ $primary-table-size:1em;
 $lightweight-table-font:300;
 $heavyweight-table-font:600;
 
-td{
-	color:$primary-table-color;
-	font-family:$primary-table-font;
-	font-size:$primary-table-size;
-	font-weight:$lightweight-table-font;
+[class*=col-] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight:300em;
+	text-align:left;
 }
 
-th{
-	color:$primary-table-color;
-	font-family:$primary-table-font;
-	font-size:$primary-table-size;
-	font-weight:$heavyweight-table-font;	
+.label{
+	font-size:1.5em;
+	font-weight:600;
+	text-align:center;
+}
+
+.sub-label{
+	font-size:1.125em;
+	font-weight:400;
+}
+
+.sub-label-only{
+	font-size:1.125em;
+	font-weight:400;
+	text-align:left;
 }
