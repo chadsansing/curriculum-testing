@@ -1,6 +1,11 @@
 $primary-header-h-spacing:2.5%;
 $primary-header-v-spacing:.125em;
 
+body{
+	background-color: #01bc85;
+	margin:0;
+}
+
 h1{
 	margin-bottom:$primary-header-v-spacing;
 	margin-left:$primary-header-h-spacing;
@@ -13,10 +18,41 @@ h2{
 	margin-top:$primary-header-v-spacing;
 }
 
-.label{
+header{
+	background-color:#01bc85;
+	z-index:0;
+}
+
+main{
+	background-color:#01bc85;
+	margin-top:2em;
+	z-index:-499;
 	
 }
 
+footer{
+	z-index:-999;
+	margin-top:2em;
+}
+
+.label{
+	padding-bottom:1em;
+	padding-top:1em;
+	
+}
+
+.label-left{
+	background-color:#63cfea;
+	padding-bottom:2em;
+	padding-top:2em;
+}
+
+.last{
+	padding-bottom:1em;
+}
+
 .sub-label{
+	padding-bottom:.5em;
+	padding-top:.5em;
 	
 }

@@ -8,8 +8,8 @@ $primary-margin-r:auto;
 $half:50%;
 $quarter:25%;
 $three-quarters:75%;
-$third:33%;
-$two-thirds:66%;
+$third:33.33%;
+$two-thirds:66.66%;
 $four-fifths:80%;
 $whole:100%;
 
@@ -23,6 +23,7 @@ $whole:100%;
 }
 
 .grid{
+	background-color:#fff;
 	margin-left:$primary-margin-l;
 	margin-right:$primary-margin-r;
 	width:$four-fifths;
@@ -35,8 +36,10 @@ $whole:100%;
 }
 
 [class*='col-'] {
+	border: 0 solid none;
 	float:left;
-	padding-right: 20px;
+	padding-left:1em;
+	padding-right:1em;
 }
 
 [class*='col-']:last-of-type {

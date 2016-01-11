@@ -1,6 +1,6 @@
 /* line 6, ../../sass/partials/typography.scss */
 h1 {
-  color: black;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 3em;
   font-weight: 700;
@@ -8,7 +8,7 @@ h1 {
 
 /* line 18, ../../sass/partials/typography.scss */
 h2 {
-  color: black;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 2em;
   font-weight: 300;
@@ -46,14 +46,23 @@ p {
 }
 
 /* line 69, ../../sass/partials/typography.scss */
+.label-left {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* line 76, ../../sass/partials/typography.scss */
 .sub-label {
   font-size: 1.125em;
   font-weight: 400;
+  text-align: left;
 }
 
-/* line 74, ../../sass/partials/typography.scss */
+/* line 82, ../../sass/partials/typography.scss */
 .sub-label-only {
   font-size: 1.125em;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
