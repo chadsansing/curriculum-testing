@@ -1,13 +1,62 @@
 /* line 4, ../../sass/partials/layout.scss */
+body {
+  background-color: #01bc85;
+  margin: 0;
+}
+
+/* line 9, ../../sass/partials/layout.scss */
 h1 {
   margin-bottom: 0.125em;
   margin-left: 2.5%;
   margin-top: 0.125em;
 }
 
-/* line 10, ../../sass/partials/layout.scss */
+/* line 15, ../../sass/partials/layout.scss */
 h2 {
   margin-bottom: 0.125em;
   margin-left: 2.5%;
   margin-top: 0.125em;
+}
+
+/* line 21, ../../sass/partials/layout.scss */
+header {
+  background-color: #01bc85;
+  z-index: 0;
+}
+
+/* line 26, ../../sass/partials/layout.scss */
+main {
+  background-color: #01bc85;
+  margin-top: 2em;
+  z-index: -499;
+}
+
+/* line 33, ../../sass/partials/layout.scss */
+footer {
+  z-index: -999;
+  margin-top: 2em;
+}
+
+/* line 38, ../../sass/partials/layout.scss */
+.label {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/* line 44, ../../sass/partials/layout.scss */
+.label-left {
+  background-color: #63cfea;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+/* line 50, ../../sass/partials/layout.scss */
+.last {
+  padding-bottom: 1em;
+}
+
+/* line 54, ../../sass/partials/layout.scss */
+.sub-label {
+  padding-bottom: .5em;
+  padding-top: .5em;
 }
