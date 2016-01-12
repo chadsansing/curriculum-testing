@@ -36,11 +36,11 @@ $primary-col-weight:300;
 }
 
 $primary-p-color:black;
-$primary-p-font:'Roboto Slab', serif;
+$primary-p-font:'Open Sans', serif;
 $primary-p-size:1em;
 $primary-p-weight:300;
 
-p{
+p, li{
 	color:$primary-p-color;
 	font-family:$primary-p-font;
 	font-size:$primary-p-size;

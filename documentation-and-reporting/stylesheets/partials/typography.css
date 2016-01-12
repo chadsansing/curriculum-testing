@@ -23,9 +23,9 @@ h2 {
 }
 
 /* line 43, ../../sass/partials/typography.scss */
-p {
+p, li {
   color: black;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", serif;
   font-size: 1em;
   font-weight: 300;
 }
