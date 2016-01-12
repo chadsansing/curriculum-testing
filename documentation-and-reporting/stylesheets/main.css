@@ -46,8 +46,8 @@ footer {
 /* line 44, ../sass/partials/layout.scss */
 .label-left {
   background-color: #63cfea;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding-bottom: .5em;
+  padding-top: .5em;
 }
 
 /* line 50, ../sass/partials/layout.scss */
@@ -103,7 +103,7 @@ p {
 
 /* line 63, ../sass/partials/typography.scss */
 .label {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
   text-align: center;
 }
@@ -111,7 +111,7 @@ p {
 /* line 69, ../sass/partials/typography.scss */
 .label-left {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: 600;
   text-align: left;
 }
