@@ -46,8 +46,8 @@ footer {
 /* line 44, ../../sass/partials/layout.scss */
 .label-left {
   background-color: #63cfea;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding-bottom: .5em;
+  padding-top: .5em;
 }
 
 /* line 50, ../../sass/partials/layout.scss */
