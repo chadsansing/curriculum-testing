@@ -1,0 +1,587 @@
+body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+body * {
+  line-height: initial;
+}
+
+p, li, span {
+  color: rgba(0,0,0,.7);
+}
+
+.wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+}
+
+article {
+  max-width: 750px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 0 73px 0 0;
+  font-weight: normal;
+  color: black;
+  position: relative;
+}
+
+hr {
+  color: #FF4E1F;
+  background: #FF4E1F;
+  width: 75%;
+  height: 5px;
+}
+
+[mode=step] .activity-title {
+  font-size: 18px;
+  opacity: .6;
+  margin: 0;
+  font-weight: normal;
+  left: 0;
+}
+
+.made-by {
+  margin: 0 10px 0 0 ;
+  color: rgba(0,0,0,.5);
+}
+
+.summary {
+  background: #efefef;
+  margin: 22px 0 45px 0;
+  font-size: 18px;
+  line-height: 145%;
+  padding: 15px 20px;
+}
+
+.main ul {
+  color: rgba(0,0,0,.5);
+  margin-top: 0;
+  padding-left: 25px;
+}
+
+.main ul li {
+  line-height: 135%;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: rgba(0,0,0,.65);
+  margin: 50px 0 10px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+b, strong {
+  font-weight: normal;
+  color: rgba(0,0,0,1);
+}
+
+ul, p {
+  margin: 0 0 30px 0;
+}
+
+a {
+  color: #3897c1;
+  transition: background .1s ease-out;
+}
+
+a:hover {
+  color: #2f87a5;
+  background: rgba(56, 151,193,.1);
+}
+
+
+.main {
+  position: relative;
+  padding: 30px 40px;
+}
+
+/* These are the steps fo the Activity */
+
+.agenda h1 {
+  border-bottom: solid 2px #DDD;
+  padding-bottom: 10px;
+  margin: 0 0 18px 0;
+}
+
+.agenda p {
+  font-weight: 300;
+}
+
+
+/* Left column Navigation */
+
+aside {
+  background: #D64262;
+  max-width: 350px;
+}
+
+aside .image {
+  position: relative;
+}
+
+aside .image img {
+  width: 100%;
+}
+
+aside .image .attribution {
+  position: absolute;
+  bottom: 11px;
+  right: 6px;
+  padding: 4px 10px 5px 10px;
+  font-size: 13px;
+  margin-left: 5px;
+  color: rgba(255,255,255,.5);
+  background: rgba(0,0,0,.2);
+  text-decoration: none;
+  transition: color .1s ease-out;
+}
+
+aside .image .attribution i {
+  margin-right: 2px;
+}
+
+aside .image .attribution:hover {
+  color: rgba(255,255,255,.75);
+}
+
+
+ul.agenda {
+  margin: 0;
+  padding: 0;
+}
+
+.agenda > li {
+  list-style-type: none;
+}
+
+
+
+.sessions {
+  background: #FFF1C5;
+}
+
+.start {
+  margin-top:10%;
+  text-align: right;
+}
+
+figcaption {
+  font-weight: 300;
+  font-style: italic;
+  color: #4d4e53;
+  padding-bottom:2%;
+  float:right;
+  font-size: 14px;
+}
+
+.web-literacy {
+  display: inline-block;
+  padding: 8px;
+  background: #efefef;
+  margin-right: 2px;
+}
+
+.time {
+  color:#3fb58e;
+  background: #caf6e6;
+  border: solid 2px #3fb58e;
+}
+
+.total-time {
+  padding: 8px 12px;
+  margin: 18px 0 0 0;
+  display: inline-block;
+  border-width: 0 0 0 2px;
+  padding: 8px 12px 10px 12px;
+}
+
+.total-time:before {
+  content:   "\f017";
+  font-family: FontAwesome;
+  margin-right: 3px;
+}
+
+.step-time {
+  font-size: 18px;
+  padding: 10px 16px 10px 14px;
+  border-width: 0 0 0 2px;
+  display: block;
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  display: inline-block;
+}
+
+
+figure {
+  padding: 0 0 50px 0;
+  margin: 20px 0 0 0;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+}
+
+figcaption {
+  background: #efefef;
+  padding: 4px 8px;
+  margin-top: 8px;
+}
+
+.discussion-link {
+  border-top: solid 1px #DDD;
+  padding-top: 20px;
+  margin-top: 55px;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+
+/* Agenda Navigation */
+
+.agenda-navigation {
+  padding: 0;
+  margin: 15px 0 80px 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.agenda-navigation li {
+  position: relative;
+}
+
+.agenda-navigation li a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  transition: background .1s ease-out;
+}
+
+.agenda-navigation li.selected a {
+  background: #C92751;
+  font-weight: bold;
+}
+
+.agenda-navigation a:hover {
+  background: #C92751;
+}
+
+.agenda-navigation a {
+  padding: 18px 22px;
+}
+
+.agenda-navigation li a {
+  padding-left: 60px;
+  color: rgba(255,255,255,.6);
+}
+
+.agenda-navigation li.selected a {
+  color: rgba(255,255,255,1);
+}
+
+.agenda-navigation li:after {
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  border: solid 2px rgba(255,255,255,.25);
+  color: rgba(255,255,255,.5);
+  border-radius: 50%;
+  width: 28px;
+  height: 25px;
+  top: calc(50% - 15px);
+  left: 20px;
+  padding-top: 2px;
+}
+
+.agenda-navigation li.selected:after {
+  border: solid 2px rgba(255,255,255,.8);
+  color: rgba(255,255,255,1);
+}
+
+.agenda-navigation li:nth-child(1):after {
+  content:  "\f024";
+  font-family: FontAwesome;
+  border: none;
+  font-size: 18px;
+  top: 18px;
+  left: 22px;
+}
+
+/* For narrow viewports */
+
+@media all and (max-width: 600px) {
+
+  [mode=step] .activity-title {
+    margin: 0 0 5px 0;
+  }
+
+  .agenda > li > h1 {
+    font-size: 30px;
+    padding-bottom: 15px;
+    margin: 0 0 25px 0;
+  }
+
+  .total-time {
+    padding: 8px 12px;
+    margin: 20px 0 0px 0;
+  }
+
+  .step-time {
+    top: 26px;
+    right: 30px;
+    font-size: 16px;
+    padding: 5px 10px;
+    position: absolute;
+  }
+
+  aside {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .wrapper {
+    min-height: auto;
+  }
+
+  .main {
+    padding: 30px 25px 30px 25px;
+    margin-top: 50px;
+  }
+
+  aside {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+  }
+
+  aside img {
+    display: none;
+  }
+
+  .agenda-navigation {
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    /*    height: 80px;*/
+    line-height: 80px;
+  }
+
+  /*  This is the little arrow when there are scrolling steps*/
+  .agenda-navigation:after {
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    color: white;
+    height: 58px;
+    content:  "\f105";
+    font-family: FontAwesome;
+    padding: 18px 15px 18px 25px;
+    font-size: 22px;
+    color: rgba(255,255,255,.4);
+    box-sizing: border-box;
+    background-image: linear-gradient(90deg, rgba(201,39,81,0), #C92751 80%);
+  }
+
+
+  .agenda-navigation li {
+    flex: 1;
+    position: relative;
+    min-width: 40px;
+  }
+
+  .agenda-navigation li a {
+    padding: 18px 0;
+
+  }
+
+  .agenda-navigation li:after {
+    pointer-events: none;
+    position: absolute;
+    border: none !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding-top: 17px;
+    border: none;
+  }
+
+  .agenda-navigation li:first-child:after {
+    content:  "\f024";
+    font-family: FontAwesome;
+    top: 3px;
+  }
+
+  .agenda-navigation li:nth-child(1):after {
+    left: 0 !important;
+  }
+
+  .agenda-navigation li a {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+}
+
+
+
+/* This adds the numbers to each agenda step link */
+
+.agenda-navigation li:nth-child(2):after {
+  content: "1";
+}
+
+.agenda-navigation li:nth-child(3):after {
+  content: "2";
+}
+
+.agenda-navigation li:nth-child(4):after {
+  content: "3";
+}
+
+.agenda-navigation li:nth-child(5):after {
+  content: "4";
+}
+
+.agenda-navigation li:nth-child(6):after {
+  content: "5";
+}
+
+.agenda-navigation li:nth-child(7):after {
+  content: "6";
+}
+
+.agenda-navigation li:nth-child(8):after {
+  content: "7";
+}
+
+.agenda-navigation li:nth-child(9):after {
+  content: "8";
+}
+
+.agenda-navigation li:nth-child(10):after {
+  content: "9";
+}
+
+.agenda-navigation li:nth-child(11):after {
+  content: "10";
+}
+
+.agenda-navigation li:nth-child(12):after {
+  content: "11";
+}
+
+.agenda-navigation li:nth-child(13):after {
+  content: "12";
+}
+
+.agenda-navigation li:nth-child(14):after {
+  content: "13";
+}
+
+.agenda-navigation li:nth-child(15):after {
+  content: "14";
+}
+
+.agenda-navigation li:nth-child(16):after {
+  content: "15";
+}
+
+.agenda-navigation li:nth-child(17):after {
+  content: "16";
+}
+
+@media print {
+
+  h1.activity-title {
+    font-size: 30px;
+  }
+
+  .agenda h1 {
+    font-size: 30px;
+  }
+
+  body {
+    font-size: 15px !important;
+  }
+
+  article {
+    padding: 0 10px !important;
+  }
+
+  p.summary {
+    padding: 0;
+    background: transparent;
+    font-size: 15px;
+  }
+
+  .time {
+    border: solid 2px #DDD;
+    color: #999 !important;
+    border-width: 2px 2px 2px 2px;
+    background: transparent;
+
+  }
+
+  figure {
+    max-width: 65%;
+  }
+
+  .btn {
+    border: solid 2px #BBB !important;
+    color: #999 !important;
+    border-width: 2px 2px 2px 2px !important;
+    background: transparent !important;
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  .discussion-link {
+    display: none !important;
+  }
+
+  .agenda {
+    margin-top: 30px !important;
+  }
+
+  .main ul li {
+    line-height: 100%;
+  }
+
+  .agenda > li {
+    margin-top: 55px !important;
+    display: block !important;
+    position: relative !important;
+  }
+
+  .agenda > li .step-time {
+    right: 2px !important;
+    top: 0 !important;
+    padding: 8px;
+    font-size: 15px;
+  }
+
+}
+
