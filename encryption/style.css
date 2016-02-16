@@ -7,10 +7,11 @@ body {
 
 body * {
   line-height: initial;
+  color: rgba(0,0,0,.5);
 }
 
 p, li, span {
-  color: rgba(0,0,0,.7);
+
 }
 
 .wrapper {
@@ -38,6 +39,10 @@ hr {
   background: #FF4E1F;
   width: 75%;
   height: 5px;
+}
+
+blockquote {
+  margin-left: 15px;
 }
 
 [mode=step] .activity-title {
@@ -114,7 +119,7 @@ a:hover {
 }
 
 .agenda p {
-  font-weight: 300;
+/*  font-weight: 300;*/
 }
 
 
@@ -122,12 +127,29 @@ a:hover {
 
 aside {
   background: #D64262;
-  max-width: 350px;
+  min-width: 275px;
+  max-width: 275px;
 }
 
 aside .image {
   position: relative;
+  margin: 20px;
+  max-height: 0px;
+  transition: all .2s ease-out;
+  overflow: hidden;
+  margin: 0;
+  transform: scale(.5);
+  opacity: .3;
 }
+
+[mode=overview] aside .image {
+  max-height: 300px;
+  margin: 20px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+
 
 aside .image img {
   width: 100%;
@@ -137,20 +159,33 @@ aside .image .attribution {
   position: absolute;
   bottom: 11px;
   right: 6px;
-  padding: 4px 10px 5px 10px;
+  padding: 4px 10px 5px 30px;
   font-size: 13px;
   margin-left: 5px;
   color: rgba(255,255,255,.5);
   background: rgba(0,0,0,.2);
   text-decoration: none;
-  transition: color .1s ease-out;
+  transition: color .1s ease-out, max-width .25s ease-out;
+  max-width: 75px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 aside .image .attribution i {
   margin-right: 2px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: rgba(255,255,255,.5);
+  transition: color .1s ease-out;
 }
 
 aside .image .attribution:hover {
+  color: rgba(255,255,255,.75);
+  max-width: 200px;
+}
+
+aside .image .attribution:hover i {
   color: rgba(255,255,255,.75);
 }
 
@@ -253,6 +288,8 @@ figcaption {
   margin: 15px 0 80px 0;
   list-style-type: none;
   position: relative;
+  min-width: 275px;
+  max-width: 275px;
 }
 
 .agenda-navigation li {
@@ -273,7 +310,7 @@ figcaption {
 }
 
 .agenda-navigation a:hover {
-  background: #C92751;
+  background: #ce335b;
 }
 
 .agenda-navigation a {
@@ -327,6 +364,10 @@ figcaption {
     margin: 0 0 5px 0;
   }
 
+  aside .image {
+    margin: 0 !important;
+  }
+
   .agenda > li > h1 {
     font-size: 30px;
     padding-bottom: 15px;
@@ -376,8 +417,9 @@ figcaption {
     display: flex;
     overflow-x: auto;
     position: relative;
-    /*    height: 80px;*/
     line-height: 80px;
+    max-width: 100%;
+    min-width: 100%;
   }
 
   /*  This is the little arrow when there are scrolling steps*/

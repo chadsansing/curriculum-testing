@@ -5,12 +5,10 @@
 // * Shows the correct step based on the URL (when sending someone a link to a specific step, for example)
 // * Keeps the left-hand navigation fixed to the top of the page when in desktop mode
 
-var navTop, navEl, windowHeight, navHeight;
+var navEl, windowHeight, navHeight;
 
 $(document).ready(function(){
   navEl = $(".agenda-navigation");
-  var navOffset = navEl.offset();
-  navTop = navOffset.top;
 
   navigate(window.location.hash);
 
@@ -58,20 +56,22 @@ function navigate(hash){
   navEl.find(".selected").removeClass("selected");
   navEl.find("a[href="+hash+"]").parent().addClass("selected");
 
+  $(window).scrollTop(0);
+
   window.location.hash = hash;
 }
 
 function scroll(){
   var scrolled = $(window).scrollTop();
-  var delta = scrolled - navTop;
-  navHeight = $(".agenda-navigation").height();
-  windowHeight = $(window).height();
+  var topSpace = $("aside .image").height();
+  var delta = scrolled - topSpace;
 
-  if(navHeight < windowHeight){
-    if(delta > 0){
-      $(".agenda-navigation").css("top",delta + "px");
-    } else {
-      $(".agenda-navigation").css("top",0);
-    }
+  if(delta > 0){
+    $(".agenda-navigation").css("position", "fixed");
+    $(".agenda-navigation").css("top", 0);
+    // $(".agenda-navigation").css("top", delta + "px");
+  } else {
+    $(".agenda-navigation").css("position", "relative");
+    // $(".agenda-navigation").css("top", 0);
   }
 }
