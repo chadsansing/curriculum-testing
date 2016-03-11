@@ -1,0 +1,32 @@
+/*Layout*/
+
+body {
+	margin-left: 1em;
+}
+
+button {
+	
+}
+
+.license {
+	bottom: 1em;
+	position: absolute;
+}
+
+#my-picture {
+	height: 250px;
+	margin-top: 1em;
+	width:250px;
+}
+
+/*Typography*/
+
+.license {
+	color: #000;
+	font-family: monospace;
+	font-size: .9em;
+}
+
+.license a {
+	color: #000;
+}
