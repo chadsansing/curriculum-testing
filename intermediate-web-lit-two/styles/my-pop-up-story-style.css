@@ -1,0 +1,22 @@
+/*Layout*/
+
+body {
+	margin-left: 1em;
+}
+
+.license {
+	bottom: 1em;
+	position: absolute;
+}
+
+/*Typography*/
+
+.license {
+	color: #000;
+	font-family: monospace;
+	font-size: .9em;
+}
+
+.license a {
+	color: #000;
+}
