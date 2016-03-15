@@ -17,6 +17,6 @@ function foodRain() {
 	   document.getElementById("story-space").innerHTML = "<div><p>Oh, bummer. I only have a machine to make it rain pancakes.</p></div>"
 	 }
 	 else {
-		 console.log("Waiting....");
+		 console.log("Waiting for input.");
 	 }
 }

@@ -1,22 +1,98 @@
 /*Layout*/
 
+html {
+	
+	height: 100%;
+}
+
 body {
+	
+	/*Layout*/
+	
+  background: #39957B; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #39957B, #92D5C2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #39957B, #92D5C2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #39957B, #92D5C2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #39957B, #92D5C2); /* Standard syntax */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+
 	margin-left: 1em;
 }
 
-.license {
-	bottom: 1em;
-	position: absolute;
+button {
+	
+	/*Box model*/
+	
+	background-color: #eee;
+	border: 1px solid #555;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px #2B705D;
+	
+	/*Typography*/
+	
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.125em;
+	font-weight: 600;
+	
 }
 
-/*Typography*/
+h1, h2 {
+	
+	/*Layout*/
+	
+	margin-bottom:0;
+	
+	/*Typography*/
+	
+	color: #fff;
+	font-family: 'Fredoka One', sans-serif;
+	text-shadow: 4px 4px 4px #2B705D;
+}
+
+h1 {
+	
+	/*Layout*/
+	
+	margin-top:0;
+	
+	/*Typography*/
+	
+	font-size: 3em;
+	
+}
+
+h2 {
+	
+	/*Layout*/
+	
+	margin-top:.125em;
+	
+	/*Typography*/
+	
+	font-size: 2em;
+
+}
 
 .license {
-	color: #000;
+	/*Layout*/ 
+	
+	bottom: 1em;
+	position: absolute;
+
+	/*Typography*/
+	
+	color: #fff;
 	font-family: monospace;
 	font-size: .9em;
+	text-shadow: 2px 2px 2px #2B705D;
 }
 
 .license a {
-	color: #000;
+	
+	/*Typography*/
+	
+	color: #fff;
+	
 }
