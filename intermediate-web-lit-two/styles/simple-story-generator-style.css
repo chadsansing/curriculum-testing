@@ -1,25 +1,69 @@
 /*Layout*/
 
+html {
+	height: 100%;
+}
+
+/* Image credit CC 1.0 Public Domain by TaraTaylorDesign, https://commons.wikimedia.org/wiki/File:Vector_Book_blue.svg*/
+
 body {
+	
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Vector_Book_blue.svg/2000px-Vector_Book_blue.svg.png');
+	background-repeat: no-repeat;
+	background-size: fill;
+	height: 100%;
 	margin-left: 1em;
 }
 
 button {
 	
+	background-color: #ddd;
+	border: 2px solid #777;
+	border-radius: 5px;
+	
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.125em;
+	font-weight: 300;
+		
 }
 
-.license {
-	bottom: 1em;
-	position: absolute;
+h1, h2 {
+	margin-bottom: 0;
+	
+	font-family: 'Viga', sans-serif;
+}
+
+h1 {
+	margin-top:0;
+	
+	font-size: 3em;
+}
+
+h2 {
+	margin-top: .125em;
+	
+	font-size: 2em;
 }
 
 #story-space {
-	margin-top: 1em;	
+
+	border: 0px solid none;
+	border-radius: 5px;
+	margin-top: 1em;
+	padding:1em;
+	width: 75%;	
+	
+	font-family: "Roboto Slab", serif;
+	font-size: 3em;
 }
 
 /*Typography*/
 
 .license {
+	
+	bottom: 1em;
+	position: absolute;
+	
 	color: #000;
 	font-family: monospace;
 	font-size: .9em;

@@ -12,6 +12,6 @@ function storyTime() {
 	myForAReason = forAReason[Math.round(Math.random()*(forAReason.length-1))];
 	myAndThen = andThen[Math.round(Math.random()*(andThen.length-1))];
 	
-	document.getElementById("story-space").innerHTML = "<div>" + myLead + ", " + myWho+ " " + myDidWhat + " " + myForAReason + ", and then " + myAndThen + "</div>"
+	document.getElementById("story-space").innerHTML = "<div style='background-color:#fff; opacity: .75;'>" + myLead + ", " + myWho+ " " + myDidWhat + " " + myForAReason + ", and then " + myAndThen + "</div>"
 	
 }
