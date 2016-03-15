@@ -13,23 +13,23 @@ function pictureBook() {
 	
 	//If the first picture is displayed when the button is clicked, swtitch to the second one.
 	
-    if (document.getElementById("my-picture").src == "https://c1.staticflickr.com/9/8474/8134913912_4d725875a6_n.jpg") 
+    if (document.getElementById("my-pictures").src == "https://c1.staticflickr.com/9/8474/8134913912_4d725875a6_n.jpg") 
            {
-               document.getElementById("my-picture").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/320px-Fallen-ice_cream-cone.JPG";
+               document.getElementById("my-pictures").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/320px-Fallen-ice_cream-cone.JPG";
            }
 		   
 	//If the second picture is displayed when the button is clicked,, wwitch to the third one.
 		   	   
-		   else if (document.getElementById("my-picture").src == "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/320px-Fallen-ice_cream-cone.JPG") 
+		   else if (document.getElementById("my-pictures").src == "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/320px-Fallen-ice_cream-cone.JPG") 
            {
-               document.getElementById("my-picture").src = "http://reactiongifs.me/wp-content/uploads/2013/08/office-dwight-mad.gif";
+               document.getElementById("my-pictures").src = "http://reactiongifs.me/wp-content/uploads/2013/08/office-dwight-mad.gif";
            }
 		   
 	//If the thitd picture is displayed when the button is clicked,, go back to the first one.
 		   
 		   else
         {
-            document.getElementById("my-picture").src = "https://c1.staticflickr.com/9/8474/8134913912_4d725875a6_n.jpg";
+            document.getElementById("my-pictures").src = "https://c1.staticflickr.com/9/8474/8134913912_4d725875a6_n.jpg";
         }
 			
 }

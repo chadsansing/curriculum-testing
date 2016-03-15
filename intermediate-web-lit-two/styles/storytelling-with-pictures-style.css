@@ -1,27 +1,81 @@
 /*Layout*/
 
+html {
+	height: 100%;
+}
+
 body {
+	
+    /*background: #FFCD02; /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(left top, #FFCD02, #FFF5CD); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(bottom right, #FFCD02, #FFF5CD); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(bottom right, #FFCD02, #FFF5CD); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(to bottom right, #FFCD02, #FFF5CD); /* Standard syntax */
+    /*background-size: 100% 100%;
+    /*background-repeat: no-repeat;*/
+	
+	height: 100%;
 	margin-left: 1em;
 }
 
 button {
 	
+	background-color: #ddd;
+	border: 2px solid #777;
+	border-radius: 5px;
+	
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.125em;
+	font-weight: 300;
+		
 }
 
-.license {
-	bottom: 1em;
-	position: absolute;
+h1, h2 {
+	
+	margin-bottom: 0;
+	
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	/*text-shadow: 1px 1px 4px #FECD02;*/
 }
 
-#my-picture {
-	height: 250px;
-	margin-top: 1em;
-	width:250px;
+h1 {
+	
+	margin-top:0;
+	
+	font-size: 3em;
+	font-weight: 600;
+}
+
+h2 {
+	
+	margin-top: .125em;
+	
+	font-size: 2em;
+	font-weight:400;
+}
+
+#my-pictures {
+	
+	background-color: #ddd;
+	border: 2px solid #777;
+	border-radius: 5px;
+	min-height: 300px;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 300px;
+	width: 40%;
+
 }
 
 /*Typography*/
 
 .license {
+	
+	top: 1em;
+	position: relative;
+	
 	color: #000;
 	font-family: monospace;
 	font-size: .9em;
