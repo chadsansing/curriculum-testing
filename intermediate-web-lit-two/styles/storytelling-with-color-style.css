@@ -1,0 +1,81 @@
+/*Layout*/
+
+body {
+	margin-left: 1em;
+}
+
+button {
+
+}
+
+h1, h2 {
+	
+	/*Typography*/
+	
+	color: rgb(0, 0, 0);
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+	
+	/*Layout*/
+	
+	margin-top:0;
+	margin-bottom:0;
+	
+	/*Typography*/
+	
+	font-size: 3em;
+	font-weight:600;
+}
+
+h2 {
+	
+	/*Layout*/
+	
+	margin-top:.125em;
+	margin-bottom:0;
+	
+	/*Typography*/
+	
+	font-size: 2em;
+	font-weight:400;
+}
+
+.license {
+	bottom: 1em;
+	position: absolute;
+}
+
+#story-space {
+	
+	/*Box model*/
+	
+	background-color: rgb(255, 255, 255);
+	border-radius: 5px;
+	border: solid 3px rgb(25, 25, 25);
+	min-height:400px;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 1em;
+	width: 95%;
+	
+	/*Typography*/
+	
+	color: rgb(25, 25, 25);
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.125em;
+	
+}
+
+/*Typography*/
+
+.license {
+	color: #000;
+	font-family: monospace;
+	font-size: .9em;
+}
+
+.license a {
+	color: #000;
+}
