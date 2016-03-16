@@ -1,5 +1,7 @@
 //With help from http://stackoverflow.com/questions/6764961/change-an-image-with-onclick
 
+//Sync/PR test
+
 //Image credits
 // https://commons.wikimedia.org/wiki/File:Fallen-ice_cream-cone.JPG CC-BY 3.0 by Tamorlan
 // https://c1.staticflickr.com/9/8474/8134913912_4d725875a6_n.jpg CC-BY 2.0 by apasciuto
