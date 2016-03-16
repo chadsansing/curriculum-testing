@@ -6,13 +6,13 @@ html {
 
 body {
 	
-    /*background: #FFCD02; /* For browsers that do not support gradients */
-    /*background: -webkit-linear-gradient(left top, #FFCD02, #FFF5CD); /* For Safari 5.1 to 6.0 */
-    /*background: -o-linear-gradient(bottom right, #FFCD02, #FFF5CD); /* For Opera 11.1 to 12.0 */
-    /*background: -moz-linear-gradient(bottom right, #FFCD02, #FFF5CD); /* For Firefox 3.6 to 15 */
-    /*background: linear-gradient(to bottom right, #FFCD02, #FFF5CD); /* Standard syntax */
-    /*background-size: 100% 100%;
-    /*background-repeat: no-repeat;*/
+    background: #006D93; /* For browsers that do not support gradients*/
+	background: -webkit-linear-gradient(right bottom, #006D93, #2DC9FF); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(top left, #006D93, #2DC9FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top left, #006D93, #2DC9FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top left, #006D93, #2DC9FF); /* Standard syntax */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 	
 	height: 100%;
 	margin-left: 1em;
@@ -34,7 +34,7 @@ h1, h2 {
 	
 	margin-bottom: 0;
 	
-	color: #000;
+	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	/*text-shadow: 1px 1px 4px #FECD02;*/
 }
@@ -76,11 +76,11 @@ h2 {
 	top: 1em;
 	position: relative;
 	
-	color: #000;
+	color: #fff;
 	font-family: monospace;
 	font-size: .9em;
 }
 
 .license a {
-	color: #000;
+	color: #fff;
 }
