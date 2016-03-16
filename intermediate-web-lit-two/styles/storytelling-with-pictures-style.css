@@ -23,10 +23,12 @@ button {
 	background-color: #ddd;
 	border: 2px solid #777;
 	border-radius: 5px;
+	width: 6em;
 	
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.125em;
 	font-weight: 300;
+	text-align: center;
 		
 }
 
@@ -55,17 +57,39 @@ h2 {
 	font-weight:400;
 }
 
-#my-pictures {
+
+#my-pictures{
 	
-	background-color: #ddd;
-	border: 2px solid #777;
 	border-radius: 5px;
-	min-height: 300px;
-	height: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 300px;
-	width: 40%;
+	float: left;
+	min-height: 250px;
+	height: 250px;
+	min-width: 250px;
+	width: 250px;
+
+}
+
+#my-pictures-2 {
+	
+	border-radius: 5px;
+	float:left;
+	min-height: 250px;
+	height: 250px;
+	margin-left: 1em;
+	min-width: 250px;
+	width: 250px;
+
+}
+
+#my-pictures-3 {
+	
+	border-radius: 5px;
+	float:left;
+	min-height: 250px;
+	height: 250px;
+	margin-left: 1em;
+	min-width: 250px;
+	width: 250px;
 
 }
 
@@ -73,6 +97,7 @@ h2 {
 
 .license {
 	
+	clear:both;
 	top: 1em;
 	position: relative;
 	
