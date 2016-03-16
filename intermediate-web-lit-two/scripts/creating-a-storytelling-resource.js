@@ -55,6 +55,10 @@ function storyChallenge() {
 		this.trope = trope;
 	}
 	
+	function Medium(type) {
+		this.type = type;
+	}
+	
 	
 	//2. Making new objects. Now we'll make
 	// variabls that are new objects
@@ -103,7 +107,15 @@ function storyChallenge() {
 	var manga = new Genre ("manga");
 	var comedy = new Genre ("comedy");
 	var roadTrip= new Genre ("road trip");
-	var popMusicVideo = new Genre ("pop music video");
+	var superhero = new Genre ("superhero");
+	
+	//Medium
+	var videoGame = new Medium ("a video game");
+	var musicVideo = new Medium ("a music video");
+	var youngAdultNovel = new Medium ("a young adult novel");
+	var app = new Medium ("an app");
+	var tumblr = new Medium("a tumblr")
+	
 	
 	//3. Building arrays. Now we put our objects
 	//into arrays we can pull from later
@@ -114,7 +126,8 @@ function storyChallenge() {
 	var supportingCharacters = [dorcas, niki, markes, tumelo, leela];
 	var conflicts = [iVsSelf, iVsSociety, iVsSupernatural, iVsIndividual, iVsTechnology, iVsNature];
 	var settings = [nineties, oughties, eighties, teens, future];
-	var genres = [sciFi, manga, comedy, roadTrip, popMusicVideo];
+	var genres = [sciFi, manga, comedy, roadTrip, superhero];
+	var media = [videoGame, musicVideo, youngAdultNovel, app, tumblr];
 	
 	//4. Return a prompt. This part of the code
 	//will pick and ship values back to the webpage 
@@ -128,9 +141,10 @@ function storyChallenge() {
 	var myConflict = conflicts[Math.round(Math.random()*(conflicts.length-1))];
 	var mySetting = settings[Math.round(Math.random()*(settings.length-1))];
 	var myGenre = genres[Math.round(Math.random()*(genres.length-1))];
+	var myMedium = media[Math.round(Math.random()*(media.length-1))];
 	
 	document.getElementById("story-space").innerHTML =
 	
-	"<div><p>In this epic " + myConflict.type + " " + myGenre.trope + " set in a " + mySetting.time + " " + mySetting.place + ", " + myProtagonist.firstName + ", who " + myProtagonist.dream + ", has to struggle against " + myAntagonist.firstName + ", who " + myAntagonist.motivation + ".</p> <p>Luckily for " + myProtagonist.firstName + ", they get help from " + mySupportingCharacter.firstName + ", who is a fantasitc " + mySupportingCharacter.role + ".</p></div>"
+	"<div><p><h3>Build <em>" + myMedium.type + "</em> with these features:</h3></p> <p><strong>Protagonist's name:</strong> " + myProtagonist.firstName + "<br><strong>Protagonist's dream:</strong> " + myProtagonist.dream + "</p> <p><strong>Antagonist's name:</strong> " + myAntagonist.firstName + "<br><strong>Antagonist's motivation:</strong> " + myAntagonist.motivation + "</p> <p><strong>Supporting character's name:</strong> " + mySupportingCharacter.firstName + "<br><strong>Supporting character's role:</strong> " + mySupportingCharacter.role + "</p> <p><strong>Conflict:</strong> " + myConflict.type + "</p> <p><strong>Time:</strong> " + mySetting.time + "<br><strong>Place:</strong> " + mySetting.place + "</p> <p><strong>Genre:</strong> " + myGenre.trope + "</p></div>"
 	
 }
