@@ -38,7 +38,6 @@ h1, h2 {
 	
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	/*text-shadow: 1px 1px 4px #FECD02;*/
 }
 
 h1 {
@@ -72,10 +71,12 @@ h2 {
 #my-pictures-2 {
 	
 	border-radius: 5px;
+	clear:both;
 	float:left;
 	min-height: 250px;
 	height: 250px;
 	margin-left: 1em;
+	margin-top: 1em;
 	min-width: 250px;
 	width: 250px;
 
@@ -84,10 +85,12 @@ h2 {
 #my-pictures-3 {
 	
 	border-radius: 5px;
+	clear:both;
 	float:left;
 	min-height: 250px;
 	height: 250px;
 	margin-left: 1em;
+	margin-top: 1em;
 	min-width: 250px;
 	width: 250px;
 
