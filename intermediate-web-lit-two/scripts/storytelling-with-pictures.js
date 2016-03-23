@@ -18,7 +18,7 @@ function pictureBook() {
 	if (document.getElementById("my-pictures").src == "https://c1.staticflickr.com/9/8474/8134913912_4d725875a6_n.jpg") 
 
            {			   
-               document.getElementById("my-pictures-2").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/320px-Fallen-ice_cream-cone.JPG";
+               document.getElementById("my-pictures-2").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/640px-Fallen-ice_cream-cone.JPG";
 			   document.getElementById("my-pictures-2").style.display = "inline-block";
 			   document.getElementById("my-button").innerHTML = "<div><p><button onclick='theEnd()'>Next</button></p></div>";
            }
@@ -28,14 +28,16 @@ function theEnd() {
 		   
    //If the second picture is displayed when the button is clicked,, switch to the third one.
 		   
-   if (document.getElementById("my-pictures-2").src == "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/320px-Fallen-ice_cream-cone.JPG") 
+   if (document.getElementById("my-pictures-2").src == "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fallen-ice_cream-cone.JPG/640px-Fallen-ice_cream-cone.JPG") 
            
 	   {
-           document.getElementById("my-pictures-3").src = "http://reactiongifs.me/wp-content/uploads/2013/08/office-dwight-mad.gif";
+           document.getElementById("my-pictures-3").src = "images/office-dwight-mad.gif";
 		   document.getElementById("my-pictures-3").style.display = "inline-block";
 		   document.getElementById("my-button").innerHTML = "<div><p><button onclick='restartButton()'>Restart</button></p</div>";			   
        }
    }
+   
+   //Otherwise, like when the third image is displayed, reload the page and start again.
 		   
 function restartButton() {
    	
