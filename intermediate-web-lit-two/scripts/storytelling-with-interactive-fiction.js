@@ -37,7 +37,7 @@ function toppings() {
 	 }
 
 	 else if (myTopping.value == 'ice cream') {
-	 	document.getElementById('story-space').innerHTML = "<div><p>Is this dessert for breakfast or breakfast for dessert?</p><p><form><input name='box3' id='box3' type='text' oninput='newBrunch()'></form></p></div>"
+	 	document.getElementById('story-space').innerHTML = "<div><p>Is this DESSERT FOR BREAKFAST or BREAKFAST FOR DESSERT?</p><p><form><input name='box3' id='box3' type='text' oninput='newBrunch()'></form></p></div>"
  
 		 console.log('Winning.');
 
