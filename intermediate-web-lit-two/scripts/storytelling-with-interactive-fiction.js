@@ -11,7 +11,7 @@ function foodRain() {
 	 if (myFav.value == 'pancakes') {
 	  document.getElementById('story-space').innerHTML = "<div><p>How fortunate. Look outside - it's raining pancakes!</p><p>SYRUP or ICE CREAM?</p><p><form><input name='box2' id='box2' type='text' oninput='toppings()'></form></p></div>"
 		 
-		 console.log("Pancake machine = science.");
+		 console.log("Pancake-rain machine = science.");
 	 }
 	 else if (myFav.value == 'waffles') {
 	   document.getElementById('story-space').innerHTML = "<div><p>Oh, bummer. I only have a machine to make it rain pancakes.</p><p>SYRUP or ICE CREAM?</p><p><form><input name='box2' id='box2' type='text' oninput='toppings()'></form></p></div>"
