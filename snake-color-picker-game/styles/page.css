@@ -10,13 +10,14 @@ hgroup, menu, nav, section {
   display: block; 
 }
 body {
+  left-margin: 1em;
   background-color: #CCC;
 }
 h1 {
-  text-align: center;
+  text-align: left;
 }
 p {
-  text-align: center;
+  text-align: left;
 }
 canvas {
   display: block;
