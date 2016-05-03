@@ -1,0 +1,25 @@
+/* Original project forked from https://github.com/JDStraughan/html5-snake 
+under a MIT License http://opensource.org/licenses/MIT 
+and Copyright (c) 2013 Jason D. Straughan. */
+
+/* Fork by Chad Sansing under an MIT License http://opensource.org/licenses/MIT. */
+
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section { 
+  display: block; 
+}
+body {
+  background-color: #CCC;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #666;
+}
