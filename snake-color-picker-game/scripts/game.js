@@ -212,6 +212,11 @@ function loop() {
     snake.draw();
     game.drawMessage();
   }
+  
+  document.getElementById("colorCode").innerHTML = "<span>" + food.color + "</span>";
+  document.body.style.backgroundColor = food.color;
+  
+  
   setTimeout(function() {
     requestAnimationFrame(loop);
   }, 1000 / game.fps);
