@@ -5,7 +5,7 @@
 	<!--Original project forked from https://github.com/JDStraughan/html5-snake under a MIT License - http://opensource.org/licenses/MIT - and Copyright (c) 2013 Jason D. Straughan.-->
 	
 <meta charset="utf-8" />
-<title>HTML5 snake - Canvas Snake Game</title>
+<title>Color Picker Snake Game</title>
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -13,24 +13,29 @@
 </head>
 <body>
 
-<h1>html5-snake</h1>
-<p><a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a> variation of the classic <a href="http://en.wikipedia.org/wiki/Snake_(video_game)">snake game</a>.</p>
+<h1>Color Picker Snake Game</h1>
 
 <div>
   <canvas id="the-game" width="320" height="240">
 </div>
 
-<p>Control snake with arrow keys, WASD, or HJKL (vim keys).</p>
+<h2>Gameplay</h2>
 
-<p>New food may appear under snake, uncoil to reveal.</p>
-
-<p>Collect the food to grow and increase speed.</p>
+<ol>
+	<li>Control snake with arrow keys, WASD, or HJKL (vim keys).</li>
+	<li>New food may appear under snake, uncoil to reveal.</li>
+	<li>Collect the food to grow and increase speed.</li>
+</ol>
 
 <p>Color hexcode value = <span id="hexColorCode"></span><br>
    Color rgb value = <span id="rgbColorCode"></span></p>
 
+<p><a href="http://en.wikipedia.org/wiki/HTML5">HTML5</a> variation of the classic <a href="http://en.wikipedia.org/wiki/Snake_(video_game)">snake game</a>.</p>
 
-<p>&copy; 2013 - <a href="http://JDStraughan.com">JDStraughan.com</a> - <a href="https://github.com/JDStraughan/html5-snake">Source on GitHub</a></p>  
+<p>The big idea is to surface the connections between the JS game, CSS color styling, and webpage in an interactive way.</p>
+
+<p>&copy; 2013 - <a href="http://JDStraughan.com">JDStraughan.com</a> - <a href="https://github.com/JDStraughan/html5-snake">Source</a> licensed under an <a href="https://opensource.org/licenses/MIT">MIT License</a> on <a href="https://github.com">GitHub</a><br>
+	This fork is by Chad Sansing &amp; Luke Pacholski for <a href="https://teach.mozilla.org">Mozilla</a>.</p>  
 <script type="text/javascript" src="scripts/game.js"></script>
 </body>
 </html>
