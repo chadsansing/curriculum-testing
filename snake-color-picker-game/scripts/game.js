@@ -42,26 +42,22 @@ game = {
   },
 
   drawScore: function() {
-    context.fillStyle = '#999';
-    context.font = (canvas.height) + 'px Impact, sans-serif';
+    context.fillStyle = 'transparent';
+    context.font = (canvas.height) + 'px sans-serif';
     context.textAlign = 'center';
     context.fillText(game.score, canvas.width / 2, canvas.height * 0.9);
   },
-
+  
   drawMessage: function() {
     if (game.message !== null) {
-      context.fillStyle = '#00F';
-      context.strokeStyle = '#FFF';
-      context.font = (canvas.height / 10) + 'px Impact';
+      context.fillStyle = '#000';
+      context.strokeStyle = '#none';
+      context.font = (canvas.height / 14) + 'px sans-serif';
       context.textAlign = 'center';
       context.fillText(game.message, canvas.width / 2, canvas.height / 2);
-      context.strokeText(game.message, canvas.width / 2, canvas.height / 2);
-
-      // This draws onto the canvas what is in the game.message object
-      // If we want it to draw the last eaten color, we'll have to set the
-      // game.message object to the color value
-
+      //context.strokeText(game.message, canvas.width / 2, canvas.height / 2);
     }
+	
   },
 
   resetCanvas: function() {
@@ -138,22 +134,12 @@ snake = {
   checkGrowth: function() {
     if (snake.x == food.x && snake.y == food.y) {
       // Note - This code runs when the snake eats the food
-	  snake.color = food.color;
+      snake.color = food.color;
       game.score++;
       if (game.score % 5 == 0 && game.fps < 60) {
         game.fps++;
       }
       food.set();
-      // If we can get the food color here (food.color), then we can use that value
-      // To change the color of the snake & background color.
-      //
-      // * We can change the color of the snake by changing the .color property of the snake object
-      // * The canvas color is set via CSS, so we'll have to use that
-      //
-      // However - if you change the snake and background color to the same thing
-      // The snake will be impossible to see!
-	  
-	  //Chad-note: Changing the background-color of body, not canvas :)
 
     } else {
       snake.sections.shift();
@@ -171,17 +157,42 @@ food = {
 
   set: function() {
     // Note - This is where new food is generated, and where we want to set the food color
-
     food.size = snake.size;
     food.x = (Math.ceil(Math.random() * 10) * snake.size * 4) - snake.size / 2;
     food.y = (Math.ceil(Math.random() * 10) * snake.size * 3) - snake.size / 2;
     food.color='#' + ("000000" + Math.random().toString(16).slice(2,8).toUpperCase()).slice(-6);
 	
+	var rgbFood =hexToRgb(food.color);
+	this.rgbFood = rgbFood;
+
+    document.body.style.backgroundColor = food.color;
+    document.getElementById("hexColorCode").innerHTML = "<span style='font-weight: 700;'>" + food.color + "</span>";
+    document.getElementById("rgbColorCode").innerHTML = "<span style='font-weight: 700;'>" + hexToRgb(food.color) + "</span>";
+	document.getElementById("my-score").innerHTML = "<span style='font-weight: 700;'>" + game.score + "</span>";
+	
   },
 
   draw: function() {
-    game.drawBox(food.x, food.y, food.size, food.color); // Note - This draws the food every frame
-  }
+	  
+	  if (this.rgbFood == undefined) {
+  	    context.fillStyle = '#777';
+  	    context.font = (canvas.height/20) + 'px monospace';
+  	    context.textAlign = 'center';
+  	    context.fillText("", canvas.width / 2, canvas.height * .97);
+  	    game.drawBox(food.x, food.y, food.size, food.color); // Note - This draws the food every frame
+	  	
+		
+	  }
+	  else {
+	  	
+	    context.fillStyle = '#777';
+	    context.font = (canvas.height/16) + 'px monospace';
+	    context.textAlign = 'center';
+	    context.fillText(food.color + ", " + this.rgbFood, canvas.width / 2, canvas.height * .97);
+	    game.drawBox(food.x, food.y, food.size, food.color); // Note - This draws the food every frame
+	}
+  },
+  
 };
 
 var inverseDirection = {
@@ -229,36 +240,35 @@ function loop() {
     snake.move();
     food.draw();
     snake.draw();
-    game.drawMessage(); // Note - this is what draws the score in the background
-}
-  
-  
-  //Chad-note: Where do I put this to make it work with line 253?
-  
-  function hexToRgb(hex) {
-      var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-      return result ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16)
-      } : null;
-	
-  	var rValue = hexToRgb(food.color).r;
-  	var gValue = hexToRgb(food.color).g;
-  	var bValue = hexToRgb(food.color).b
-
-  	var rgbValue = "rgb(" + rValue + ", " + gValue + ", " + bValue + ")";
-  	this.rgbValue = rgbValue;
-
-  }
-  
-  document.getElementById("hexColorCode").innerHTML = "<span>" + food.color + "</span>";
-  document.getElementById("rgbColorCode").innerHTML = "<span>" + this.rgbValue + "</span>";
-  document.body.style.backgroundColor = food.color;
-  
+    game.drawMessage();
+  }  
   setTimeout(function() {
     requestAnimationFrame(loop);
   }, 1000 / game.fps);
 }
 
 requestAnimationFrame(loop);
+
+
+//Chad-note: how do we get something like this to work?
+
+// var colorArray = [""];
+// colorArray.push(food.color);
+// for (var i = 0; i < colorArray.length; i++) {
+//	console.log(colorArray[i]);
+//	document.getElementById("my-colors").innerHTML = <"<div><span style='color:" + food.color + ";'>" + food.color + "</span></div>";
+//}
+
+function hexToRgb(hex) {
+  var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+  hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+    return r + r + g + g + b + b;
+  });
+
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  var r = parseInt(result[1], 16);
+  var g = parseInt(result[2], 16);
+  var b = parseInt(result[2], 16);
+
+  return "rgb("+r+", "+g+", "+b+")";
+}
