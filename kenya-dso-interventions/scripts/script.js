@@ -5,12 +5,15 @@
 // * Shows the correct step based on the URL (when sending someone a link to a specific step, for example)
 // * Keeps the left-hand navigation fixed to the top of the page when in desktop mode
 
-var navTop, navEl, windowHeight, navHeight;
+var navTop, navEl, windowHeight, navHeight, navOffset;
 
 $(document).ready(function(){
   navEl = $(".agenda-navigation");
-  var navOffset = navEl.offset();
-  navTop = navOffset.top;
+
+  $("aside .image img").on("load",function(){
+    navOffset = navEl.offset();
+    navTop = navOffset.top;
+  });
 
   navigate(window.location.hash);
 
@@ -62,6 +65,7 @@ function navigate(hash){
 }
 
 function scroll(){
+
   var scrolled = $(window).scrollTop();
   var delta = scrolled - navTop;
   navHeight = $(".agenda-navigation").height();
