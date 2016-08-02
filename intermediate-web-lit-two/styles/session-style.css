@@ -7,6 +7,8 @@ body {
 
 body * {
   line-height: initial;
+  margin: 0;
+  padding: 0;
 }
 
 p, li, span {
@@ -27,10 +29,27 @@ article {
 h1 {
   font-size: 40px;
   margin: 0;
-  padding: 0 73px 0 0;
+
   font-weight: normal;
   color: black;
   position: relative;
+}
+
+.activity-title .meta {
+  display: block;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(0,0,0,.5);
+}
+
+.activity-title .meta a {
+  text-decoration: none;
+}
+
+.activity-title .meta a:hover {
+  text-decoration: underline;
+  color: #3897c1;
+  background: none;
 }
 
 hr {
@@ -41,71 +60,95 @@ hr {
 }
 
 [mode=step] .activity-title {
-  font-size: 18px;
-  opacity: .6;
+  font-size: 16px !important;
+  color: rgba(0,0,0,.5);
   margin: 0;
   font-weight: normal;
   left: 0;
 }
 
+[mode=step] .activity-title .title {
+  color: rgba(0,0,0,.5);
+}
+
+
+[mode=step] .activity-title  * {
+  font-size: inherit !important;
+}
+
+[mode=step] .activity-title .meta {
+  display: inline;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+[mode=step] .activity-title .meta:after {
+  font-family: "FontAwesome";
+  content: "\f105";
+  padding-left: 8px;
+  color: rgba(0,0,0,.3);
+}
+
 .made-by {
-  margin: 0 10px 0 0 ;
+  margin: 5px 0 10px 0 ;
   color: rgba(0,0,0,.5);
 }
 
 .summary {
-  background: #efefef;
-  margin: 22px 0 45px 0;
+  color: #D3627F;
+  border-left: solid 2px #EF9AB6;
+  background: #fae6ea;
+  margin: 25px 0 35px 0;
   font-size: 18px;
   line-height: 145%;
-  padding: 15px 20px;
+  padding: 20px ;
+  font-style: italic;
 }
 
-.main ul {
-  color: rgba(0,0,0,.5);
-  margin-top: 0;
-  padding-left: 25px;
+blockquote {
+  color: #D3627F;
+  border-left: solid 2px #EF9AB6;
+  background: #fae6ea;
+  margin: 25px 0 35px 0;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 20px;
 }
 
-.main ul li {
-  line-height: 135%;
-  margin-bottom: 10px;
+h2 {
+  color: rgba(0,0,0,.65);
+  margin: 30px 0 20px 0;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 h4 {
   color: rgba(0,0,0,.65);
-  margin: 50px 0 10px 0;
+  margin: 40px 0 10px 0;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-
 b, strong {
-  font-weight: normal;
-  color: rgba(0,0,0,1);
-}
-
-ul, p {
-  margin: 0 0 30px 0;
+  font-weight: 600;
+  color: inherit;
 }
 
 a {
   color: #3897c1;
-  transition: background .1s ease-out;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #2f87a5;
-  background: rgba(56, 151,193,.1);
+  text-decoration: underline;
 }
-
 
 .main {
   position: relative;
-  padding: 30px 40px;
+  padding: 30px 40px 30px 50px;
 }
 
-/* These are the steps fo the Activity */
+/* These are the activity steps */
 
 .agenda h1 {
   border-bottom: solid 2px #DDD;
@@ -113,10 +156,11 @@ a:hover {
   margin: 0 0 18px 0;
 }
 
-.agenda p {
-  font-weight: 300;
+.agenda ul,
+.agenda p,
+.agenda ol {
+  margin: 0 0 30px 0;
 }
-
 
 /* Left column Navigation */
 
@@ -154,17 +198,71 @@ aside .image .attribution:hover {
   color: rgba(255,255,255,.75);
 }
 
+.agenda ul.fancy, .agenda ol.fancy {
+  background: #fae6ea;
+  color: #D3627F;
+  margin: 25px 0 35px 0;
+  padding: 5px 35px 5px 40px;
+  padding-left: 45px !important;
+  border-left: solid 2px rgba(203,35,79,.2);
+}
+
+.agenda ul.fancy {
+  list-style-type: disc;
+}
+
+.agenda .fancy li {
+  color: #D3627F;
+  border-bottom: solid 1px rgba(203,35,79,.15);
+}
+
+.overview li:last-child,
+.agenda li:last-child {
+  border: none;
+}
 
 ul.agenda {
   margin: 0;
   padding: 0;
 }
 
+.agenda ul li {
+  line-height: 135%;
+  margin-bottom: 10px;
+}
+
+.agenda ol, .agenda ul, .overview ol, .overview ul {
+  padding-left: 25px;
+}
+
+.agenda ol li, .agenda ul li {
+  border-bottom: solid 1px #DDD;
+  margin: 0;
+  padding: 14px 0;
+}
+
+.overview ol li, .overview ul li {
+  margin: 0;
+  padding: 0 0 12px 0;
+}
+
+.agenda ul {
+  list-style-type: disc;
+}
+
 .agenda > li {
   list-style-type: none;
 }
 
+.agenda p {
+  line-height: 150%;
+}
 
+.agenda code {
+  padding: 1px 4px;
+  color: #D3627F;
+  background: #fae6ea;
+}
 
 .sessions {
   background: #FFF1C5;
@@ -195,6 +293,15 @@ figcaption {
   color:#3fb58e;
   background: #caf6e6;
   border: solid 2px #3fb58e;
+}
+
+.activity-indicator {
+  padding: 8px 12px;
+  margin: 18px 0 0 0;
+  display: inline-block;
+  border-width: 0 0 0 2px;
+  padding: 8px 12px 10px 12px;
+  margin-right: 10px;
 }
 
 .total-time {
@@ -269,7 +376,19 @@ figcaption {
 
 .agenda-navigation li.selected a {
   background: #C92751;
+  font-weight: 600;
+  position: relative;
+}
+
+.agenda-navigation li.selected a:after {
+  content: "";
   font-weight: bold;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  background: url("../images/selected-nav-arrow.svg") left center no-repeat;
 }
 
 .agenda-navigation a:hover {
@@ -339,11 +458,8 @@ figcaption {
   }
 
   .step-time {
-    top: 26px;
-    right: 30px;
     font-size: 16px;
     padding: 5px 10px;
-    position: absolute;
   }
 
   aside {
@@ -538,7 +654,6 @@ figcaption {
     color: #999 !important;
     border-width: 2px 2px 2px 2px;
     background: transparent;
-
   }
 
   figure {
@@ -582,6 +697,21 @@ figcaption {
     padding: 8px;
     font-size: 15px;
   }
-
 }
 
+.next-up {
+  background: #eee;
+  padding: 20px 50px 20px 30px;
+  text-align: right;
+  position: relative;
+}
+
+.next-up:after {
+  content:  "\f105";
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  font-family: "FontAwesome";
+  color: rgba(0,0,0,.2);
+  font-size: 30px;
+}
