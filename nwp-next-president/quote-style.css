@@ -1,0 +1,62 @@
+/*Image credit CC0 Barbara Kinney - Clinton Presidential Library & Museum, https://en.wikipedia.org/wiki/United_States_presidential_pets#/media/File:Socks_the_Cat_Explores.jpg*/
+
+body {
+  background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Socks_the_Cat_Explores.jpg/1024px-Socks_the_Cat_Explores.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  margin-left:1em;
+}
+
+header {
+	background-color:#fff;
+	border: 4px solid #1F1D5E;
+	border-radius:10px;
+	opacity:.8;
+	padding-left:1em;
+	width:90%;
+}
+
+main{
+	left:2em;
+	position:relative;
+	top:.25em;
+}
+
+h1, h2 {
+	color:#1F1D5E;
+	font-family: 'Viga', sans-serif;
+	margin-bottom:.25em;
+	margin-top:.25em;
+}
+
+h1{
+	font-size:3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.candidate-quote{
+	color:#fff;
+	font-family: 'News Cycle', sans-serif;
+	font-size:3em;
+}
+
+.candidate-credit {
+	color:#fff;
+	font-family: 'News Cycle', sans-serif;
+	font-size:1em;
+}
+
+.license {
+	color: #fff;
+	bottom:1em;
+	font-family:monospace;
+	font-size:.9em;
+	position:absolute;
+}
+
+.license a {
+	color:#fff;
+}
