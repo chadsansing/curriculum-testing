@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+}
+
+
+#content {
+  margin: 0px auto;
+}
+
+#meme {
+	background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Silly_Dog_%282277051513%29.jpg/800px-Silly_Dog_%282277051513%29.jpg');
+	background-size: fill;
+	position: relative;
+ 	margin-left: auto;
+	margin-right: auto;
+	margin-top:5em;
+	text-align:center;
+	height:450px;
+	width:90%;
+}
+
+#meme, img {
+  width: 560px;
+}
+
+h1, h2, h3 {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 3px 3px 0px #000000;
+  filter: dropshadow(color=#000000, offx=5, offy=5);
+}
+
+
+h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5em;
+  padding-top: 30px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5em;
+  padding-top: 220px;
+}
+
+h3 {
+  color: white;
+  font-family: Impact;
+  font-size: 30px;
+  padding-top: 220px;
+}
+
+.top-text {
+	display:inline;
+	position:relative;
+	top:.001em;
+}
+
+.bottom-text {
+	display:inline;
+	position:relative;
+	top:8em;
+}
+
+img {
+  border: 10px solid #000;
+  margin: 20px auto;
+  position: absolute;
+}
