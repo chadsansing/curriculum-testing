@@ -25,6 +25,11 @@ $(document).ready(function(){
       scroll();
     }
   });
+
+  $("aside img").on("load",function(){
+    navOffset = navEl.offset();
+    navTop = navOffset.top;
+  });
 });
 
 function navigate(hash){
